@@ -27,7 +27,7 @@ Icon | GUID | Name | Production Unlock
 
 - Make sure products are only shown when used in mods. Ask for help if you don't know how to do that.
 - Balancing of factories should match vanilla.
-- Don't use DLC models, textures - except if the product itself is from that DLC.
+- Don't use DLC Cfgs - except if the product itself is from that DLC.
 - Try to keep the factory model, texture sizes small. Re-use from the game if possible.
 - Prefer to use shared ground textures instead of custom decals
 
@@ -50,8 +50,3 @@ npm install .
 npm run build
 npm run package
 ```
-
-## Todos
-
-- replace Suits Maker and Fish Cannery with non-DLC buildings
-

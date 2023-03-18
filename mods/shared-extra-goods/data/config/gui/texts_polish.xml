@@ -168,6 +168,14 @@
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
     </Text>  
   </ModOp>
+
+  <!-- # Suits Factory -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500011150</GUID>
+      <Text>[AssetData(1500010128) Text]</Text> <!-- building: Suits Factory -->
+    </Text>
+  </ModOp>
   
   <!-- # Tea Maker -->
   <ModOp Type="add" Path="/TextExport/Texts">

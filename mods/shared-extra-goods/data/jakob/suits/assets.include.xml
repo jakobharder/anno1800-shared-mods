@@ -11,11 +11,12 @@
   <!-- # Triggers -->
   <ModOp Type="addNextSibling" GUID="502019">
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010181</GUID>
-          <Name>unlock everything 1500 artisans</Name>
+          <!-- <GUID>1500010181</GUID> -->
+          <GUID>1500011152</GUID>
+          <Name>@ 1500 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -38,27 +39,9 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
-                      <!-- <Item>
-                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010163</Asset> <!- - tools asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010164</Asset> <!- - canned fish asset pool - ->
-                      </Item> -->
                       <Item>
                         <Asset>1500010165</Asset> <!-- OW suits asset pool -->
                       </Item>
-                      <!-- <Item>
-                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010167</Asset> <!- - cheese asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
-                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -71,11 +54,12 @@
     </Asset>
     <Asset>
       <!-- add another trigger for 1 engineer, happens when you already progressed and don't have 1500 artisans anymore -->
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010179</GUID>
-          <Name>unlock everything 1 engineer</Name>
+          <!-- <GUID>1500010179</GUID> -->
+          <GUID>1500011153</GUID>
+          <Name>@ 1 Engineer</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -98,27 +82,9 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
-                      <!-- <Item>
-                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010163</Asset> <!- - tools asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010164</Asset> <!- - canned fish asset pool - ->
-                      </Item> -->
                       <Item>
                         <Asset>1500010165</Asset> <!-- OW suits asset pool -->
                       </Item>
-                      <!-- <Item>
-                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010167</Asset> <!- - cheese asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
-                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -541,7 +507,7 @@
       <Values>
         <Standard>
           <GUID>1500010128</GUID>
-          <Name>suits_maker</Name>
+          <Name>Land of Lions Suits Maker</Name>
           <IconFilename>products\suits\icon_suits.png</IconFilename>
         </Standard>
         <Building>
@@ -553,99 +519,24 @@
         <Cost>
           <Costs>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010017</Ingredient>
               <Amount>9000</Amount>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>1</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>1</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010196</Ingredient>
               <Amount>6</Amount>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>2</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>2</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010205</Ingredient>
               <Amount>10</Amount>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>3</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>3</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>3</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010218</Ingredient>
               <Amount>8</Amount>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>4</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>4</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>4</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010207</Ingredient>
               <Amount>8</Amount>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>5</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                  <Entry>
-                    <TemplateName>FactoryBuilding7</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
             </Item>
           </Costs>
         </Cost>
@@ -664,9 +555,7 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
+        <Locked />
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -680,18 +569,6 @@
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <!-- disable BuffFactory due to doubled factory side effect -->
-        <!-- <BuffFactory>
-          <ProductionBuffs>
-            <Item>
-              <ProductivityBuff>1500010184</ProductivityBuff>
-              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
-              <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>15</ProductionBuffDistance>
-        </BuffFactory> -->
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -714,7 +591,7 @@
             </Item>
           </FactoryOutputs>
           <CycleTime>30</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
         <AmbientMoodProvider />
@@ -758,6 +635,144 @@
       </Values>
     </Asset>
     <Asset>
+      <Template>FactoryBuilding7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011150</GUID>
+          <Name>New Suits Maker</Name>
+          <IconFilename>products\suits\icon_suits.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>3000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\suits\suits_factory\suits_factory_1b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\suits_factory\suits_factory_2b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\suits_factory\suits_factory_3.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>200682</Sound>
+            </Item>
+            <Item>
+              <Sound>273649</Sound>
+            </Item>
+          </ActiveSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>114391</Product>
+              <Amount>1</Amount>
+              <StorageAmount>6</StorageAmount>
+            </Item>
+            <Item>
+              <Product>1010197</Product>
+              <Amount>1</Amount>
+              <StorageAmount>6</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1500010127</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <AmbientMoodProvider />
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>350</Amount>
+              <InactiveAmount>250</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>125</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <MaximumHitPoints>5250</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture />
+        <Electrifiable />
+      </Values>
+    </Asset>
+    <Asset>
       <Template>AssetPool</Template>
       <Values>
         <Standard>
@@ -783,6 +798,9 @@
             </Item>
             <Item>
               <Asset>1500010128</Asset>
+            </Item>
+            <Item>
+              <Asset>1500011150</Asset>
             </Item>
             <Item>
               <Asset>1500010129</Asset>
@@ -865,6 +883,9 @@
     <Item>
       <Building>1500010128</Building>
     </Item>
+    <Item>
+      <Building>1500011150</Building>
+    </Item>
   </ModOp>
 
   <!-- # Construction Menu: after Fur Coats -->
@@ -878,7 +899,7 @@
           <IconFilename>products\suits\icon_suits.png</IconFilename>
         </Standard>
         <ProductionChain>
-          <Building>1500010128</Building>
+          <Building>1500011150</Building>
           <Tier1>
             <Item>
               <Building>1500010126</Building>
@@ -917,6 +938,9 @@
       <GUID>1500010128</GUID>
     </Item>
     <Item>
+      <GUID>1500011150</GUID>
+    </Item>
+    <Item>
       <GUID>1500010124</GUID>
     </Item>
     <Item>
@@ -940,6 +964,9 @@
     <Item>
       <GUID>1500010128</GUID>
     </Item>
+    <Item>
+      <GUID>1500011150</GUID>
+    </Item>
   </ModOp>
   <ModOp Type="add" GUID="190748" Path="/Values/ItemEffect/EffectTargets">
     <Item>
@@ -957,6 +984,9 @@
     <Item>
       <GUID>1500010128</GUID>
     </Item>
+    <Item>
+      <GUID>1500011150</GUID>
+    </Item>
   </ModOp>
   <!-- electricity -->
   <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -965,6 +995,9 @@
     </Item>
     <Item>
       <GUID>1500010128</GUID>
+    </Item>
+    <Item>
+      <GUID>1500011150</GUID>
     </Item>
   </ModOp>
   <!-- boostable buildings -->
@@ -976,7 +1009,7 @@
       <Factory>1500010124</Factory>
     </Item>
     <Item>
-      <Factory>1500010128</Factory>
+      <Factory>1500011150</Factory>
     </Item>
   </ModOp>
 </ModOps>

@@ -140,6 +140,14 @@
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
   </ModOp>
+
+  <!-- # Suits Factory -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500011150</GUID>
+      <Text>[AssetData(1500010128) Text]</Text> <!-- building: Suits Factory -->
+    </Text>
+  </ModOp>
   
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">

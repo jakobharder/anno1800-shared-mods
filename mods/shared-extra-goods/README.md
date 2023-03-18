@@ -3,10 +3,6 @@
 Productions like cheese and tools.
 Every end product is available as an alternative Lifestyle need to normal Basic Needs.
 
-## Requirements
-
-Land of Lions required for Suits and Fish Cannery.
-
 ## Alternative Needs
 
 Use mod `[Gameplay] Alternative Needs` to enable alternative needs.
@@ -62,6 +58,11 @@ There is no double consumption.
 You can disable some productions if you go to `features.include.xml` and remove single lines.
 
 ## Changes
+
+## 2.4
+
+- Custom model for suits factory (3 variants)
+- Suits factory is smaller, produces slower and has re-balanced costs
 
 ## 2.3
 

@@ -46,7 +46,7 @@
     }
   ],
   "modinfo": {
-    "Version": "2.3",
+    "Version": "2.4",
     "ModID": "jakob_extra_goods",
     "LoadAfterIds": [ "*" ],
     "IncompatibleIds": [],
