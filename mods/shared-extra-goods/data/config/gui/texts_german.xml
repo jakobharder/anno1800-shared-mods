@@ -1,7 +1,12 @@
 <ModOps>
   <!-- # Shared Goods -->
   <Include File="../../../products/texts/texts_german.include.xml" />
-  
+    
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <Text>Maritime Rohstoffe und Handelsgüter</Text>
+  </ModOp>
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>

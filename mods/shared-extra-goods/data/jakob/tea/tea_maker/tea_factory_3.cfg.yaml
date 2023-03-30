@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ./tea_factory_1b.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\tea\tea_maker\rdm\tea_factory_3_lod0.rdm

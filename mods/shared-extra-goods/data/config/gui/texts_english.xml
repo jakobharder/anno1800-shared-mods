@@ -2,6 +2,11 @@
   <!-- # Shared Goods -->
   <Include File="../../../products/texts/texts_english.include.xml" />
   
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <Text>Maritime and Trade Resource</Text>
+  </ModOp>
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -181,6 +186,12 @@
     </Text>  
   </ModOp>
 
+  <ModOp Type="merge" Path="/TextExport/Texts/Text[GUID='7328']">
+    <Text>
+      <Text>Verschönerung und Cheats</Text>
+    </Text>
+  </ModOp>
+
   <!-- # Tea Maker -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
@@ -206,6 +217,19 @@
     <Text>
       <GUID>1500010959</GUID>
       <Text>[AssetData(1500010847) Text]</Text> <!-- menu: Tea -->
+    </Text>
+
+    <Text>
+      <GUID>1500011160</GUID>
+      <Text>Tea Docks</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <GUID>1500011161</GUID>
+      <Text>Imported Tea</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <GUID>1500011162</GUID>
+      <Text>Tea Factory</Text> <!-- Module: Herbs Field -->
     </Text>
   </ModOp>
 </ModOps>

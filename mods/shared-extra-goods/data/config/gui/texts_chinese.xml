@@ -44,6 +44,10 @@
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
+      <GUID>1500010123</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
+    </Text>
+    <Text>
       <GUID>1500010121</GUID>
       <Text>罐装鱼肉工厂</Text> <!-- fish cannery: building -->
     </Text>
@@ -70,6 +74,10 @@
     <Text>
       <GUID>1500010129</GUID>
       <Text>[AssetData(1500010127) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010184</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Hemp -->
     </Text>
     <Text>
       <GUID>1500010150</GUID>
@@ -152,6 +160,10 @@
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
+      <GUID>1500010114</GUID>
+      <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
+    </Text>
+    <Text>
       <GUID>1500010830</GUID>
       <Text>蔬菜农场</Text>
     </Text>
@@ -190,6 +202,10 @@
     <Text>
       <GUID>1500010945</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
+    </Text>
+    <Text>
+      <GUID>1500010959</GUID>
+      <Text>[AssetData(1500010847) Text]</Text> <!-- menu: Tea -->
     </Text>
   </ModOp>
 </ModOps>

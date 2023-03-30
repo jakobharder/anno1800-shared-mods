@@ -59,6 +59,10 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.5
+
+- Added Tea Docks and Tea Factory
+
 ## 2.4
 
 - Custom model for suits factory (3 variants)
