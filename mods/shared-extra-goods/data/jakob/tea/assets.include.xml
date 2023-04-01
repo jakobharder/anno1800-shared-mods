@@ -245,26 +245,33 @@
       <Item />
     </ignore>
   </ModOp>
-  <ModOp Type="add" GUID="120055"
+  <ModOp Type="add" GUID="120055,120057"
     Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500011161')] | //ignore[1]">
     <Item>
       <Product>1500011161</Product>
     </Item>
   </ModOp>
   <!-- goods: after coffee -->
-  <ModOp Type="addNextSibling" GUID="502018,502005"
+  <ModOp Type="addNextSibling" GUID="502020,502066"
     Path="/Values/ProductList/List/Item[Product='120032' and not(../Item/Product='1500011161')] | //ignore/Item[1]">
     <Item>
       <Product>1500011161</Product>
     </Item>
   </ModOp>
-  <!-- intermediate: after filaments -->
-  <ModOp Type="addNextSibling" GUID="502037"
-    Path="/Values/ProductList/List/Item[Product='1010243' and not(../Item/Product='1500011161')] | //ignore/Item[1]">
+  <ModOp Type="add" GUID="502005"
+    Path="/Values/ProductList/List[not(Item/Product='1500011161')] | //ignore[1]">
     <Item>
       <Product>1500011161</Product>
     </Item>
   </ModOp>
+  <!-- intermediate: after steam motors -->
+  <ModOp Type="addNextSibling" GUID="502043"
+    Path="/Values/ProductList/List/Item[Product='1010224' and not(../Item/Product='1500011161')] | //ignore/Item[1]">
+    <Item>
+      <Product>1500011161</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" Path="//ignore[1]" />
 
   <!-- # Tea Factory and Importer -->
   <ModOp Type="addNextSibling" GUID="1010265">
@@ -372,7 +379,7 @@
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>
-          <IsMainFactory>0</IsMainFactory>
+          <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
         <AmbientMoodProvider>
