@@ -502,21 +502,12 @@
         </Cost>
         <Object>
           <Variations>
-            <!-- <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_maker.cfg</Filename>
-            </Item> -->
             <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_factory_1.cfg</Filename>
+              <Filename>data\jakob\tea\tea_factory\tea_factory_1.cfg</Filename>
             </Item>
-            <!-- <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_factory_1b.cfg</Filename>
-            </Item> -->
             <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_factory_2.cfg</Filename>
+              <Filename>data\jakob\tea\tea_factory\tea_factory_2.cfg</Filename>
             </Item>
-            <!-- <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_factory_3.cfg</Filename>
-            </Item> -->
           </Variations>
         </Object>
         <Mesh />
