@@ -2,6 +2,11 @@
   <!-- # Shared Goods -->
   <Include File="../../../products/texts/texts_english.include.xml" />
   
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <Text>Maritime and Trade Resource</Text>
+  </ModOp>
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -56,30 +61,6 @@
       <Text>[AssetData(1500010120) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010124</GUID>
-      <Text>Hemp Farm</Text> <!-- hemp farm: building -->
-    </Text>
-    <Text>
-      <GUID>1500010125</GUID>
-      <Text>Hemp Field</Text> <!-- hemp field: module -->
-    </Text>
-    <Text>
-      <GUID>1500010126</GUID>
-      <Text>Linen Cloth Maker</Text> <!-- linen cloth maker: building -->
-    </Text>
-    <Text>
-      <GUID>1500010128</GUID>
-      <Text>Suits Factory</Text> <!-- suits factory: building -->
-    </Text>
-    <Text>
-      <GUID>1500010129</GUID>
-      <Text>[AssetData(1500010127) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010184</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Hemp -->
-    </Text>
-    <Text>
       <GUID>1500010150</GUID>
       <Text>Wooden Accessories</Text> <!-- wooden accessories: product -->
     </Text>
@@ -112,14 +93,6 @@
       <Text>[AssetData(1500010156) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010183</GUID>
-      <Text>Nearby Production</Text> <!-- nearby production: buff -->
-    </Text>
-    <Text>
-      <GUID>1500010184</GUID>
-      <Text>[AssetData(1500010183) Text]</Text>
-    </Text>
-    <Text>
       <GUID>1500010191</GUID>
       <Text>[AssetData(1500010106) Text]</Text> <!-- production chain -->
     </Text>
@@ -149,8 +122,32 @@
     </Text>
   </ModOp>
 
-  <!-- # Suits Factory -->
+  <!-- # Hemp, Linen Maker, Suits Factory -->
   <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010124</GUID>
+      <Text>Hemp Farm</Text> <!-- hemp farm: building -->
+    </Text>
+    <Text>
+      <GUID>1500010125</GUID>
+      <Text>Hemp Field</Text> <!-- hemp field: module -->
+    </Text>
+    <Text>
+      <GUID>1500010126</GUID>
+      <Text>Linen Cloth Maker</Text> <!-- linen cloth maker: building -->
+    </Text>
+    <Text>
+      <GUID>1500010128</GUID>
+      <Text>Suits Factory</Text> <!-- suits factory: building -->
+    </Text>
+    <Text>
+      <GUID>1500010129</GUID>
+      <Text>[AssetData(1500010127) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010184</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Hemp -->
+    </Text>
     <Text>
       <GUID>1500011150</GUID>
       <Text>[AssetData(1500010128) Text]</Text> <!-- building: Suits Factory -->
@@ -181,7 +178,7 @@
     </Text>  
   </ModOp>
 
-  <!-- # Tea Maker -->
+  <!-- # Herb Farm, Tea Maker, Docks, Factory -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010940</GUID>
@@ -206,6 +203,19 @@
     <Text>
       <GUID>1500010959</GUID>
       <Text>[AssetData(1500010847) Text]</Text> <!-- menu: Tea -->
+    </Text>
+
+    <Text>
+      <GUID>1500011160</GUID>
+      <Text>Tea Docks</Text>
+    </Text>
+    <Text>
+      <GUID>1500011161</GUID>
+      <Text>Imported Tea</Text>
+    </Text>
+    <Text>
+      <GUID>1500011162</GUID>
+      <Text>Tea Factory</Text>
     </Text>
   </ModOp>
 </ModOps>
