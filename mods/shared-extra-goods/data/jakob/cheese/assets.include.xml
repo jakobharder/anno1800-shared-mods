@@ -51,6 +51,11 @@
           <CycleTime>30</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
+        <ModuleOwner>
+          <FertilizerModuleData>
+            <Module>0</Module>
+          </FertilizerModuleData>
+        </ModuleOwner>        
         <Maintenance>
           <Maintenances>
             <Item>
