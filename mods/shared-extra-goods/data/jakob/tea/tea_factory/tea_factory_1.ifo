@@ -60,20 +60,20 @@
   <Dummy>
     <Name>transporter_spawn</Name>
     <Position>
-      <xf>2.119912</xf>
+      <xf>0.601592</xf>
       <yf>0.000000</yf>
-      <zf>-1.545404</zf>
+      <zf>1.967003</zf>
     </Position>
     <Rotation>
       <xf>0</xf>
-      <yf>-0.63392</yf>
+      <yf>0</yf>
       <zf>0</zf>
-      <wf>0.773399</wf>
+      <wf>1</wf>
     </Rotation>
     <Extents>
-      <xf>0.1</xf>
-      <yf>0.1</yf>
-      <zf>0.1</zf>
+      <xf>0.159124</xf>
+      <yf>0.159124</yf>
+      <zf>0.159124</zf>
     </Extents>
   </Dummy>
   <Dummy>

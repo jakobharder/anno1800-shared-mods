@@ -11,14 +11,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_01_0</Name>
           <Position>
-            <x>-0.600760</x>
+            <x>1.725777</x>
             <y>0.000000</y>
-            <z>0.888703</z>
+            <z>1.397752</z>
           </Position>
           <Orientation>
-            <w>0.270747</w>
+            <w>0.441484</w>
             <x>0.000000</x>
-            <y>-0.962651</y>
+            <y>0.897269</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -26,7 +26,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>2.593255</RotationY>
+          <RotationY>4.056096</RotationY>
           <Id>4</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -34,14 +34,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_02_0</Name>
           <Position>
-            <x>-0.903690</x>
+            <x>1.470656</x>
             <y>0.000000</y>
-            <z>1.137136</z>
+            <z>1.507811</z>
           </Position>
           <Orientation>
-            <w>0.942035</w>
+            <w>0.579907</w>
             <x>0.000000</x>
-            <y>0.335514</y>
+            <y>0.814682</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -49,7 +49,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>5.598882</RotationY>
+          <RotationY>4.378822</RotationY>
           <Id>2</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -165,14 +165,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_01_1</Name>
           <Position>
-            <x>-0.665028</x>
+            <x>-2.136874</x>
             <y>0.000000</y>
-            <z>1.192700</z>
+            <z>1.451001</z>
           </Position>
           <Orientation>
-            <w>0.612521</w>
+            <w>0.747722</w>
             <x>0.000000</x>
-            <y>0.790454</y>
+            <y>0.664012</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -180,7 +180,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>4.460085</RotationY>
+          <RotationY>4.830842</RotationY>
           <Id>5</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -188,14 +188,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_02_1</Name>
           <Position>
-            <x>-0.928006</x>
+            <x>-2.179417</x>
             <y>0.000000</y>
-            <z>0.869236</z>
+            <z>0.657434</z>
           </Position>
           <Orientation>
-            <w>0.924210</w>
+            <w>0.837988</w>
             <x>0.000000</x>
-            <y>-0.381884</y>
+            <y>-0.545689</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -203,7 +203,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>0.783669</RotationY>
+          <RotationY>1.154421</RotationY>
           <Id>3</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -219,14 +219,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_03_0</Name>
           <Position>
-            <x>-1.936989</x>
+            <x>0.423190</x>
             <y>0.000000</y>
-            <z>0.523666</z>
+            <z>0.295976</z>
           </Position>
           <Orientation>
-            <w>0.960751</w>
+            <w>0.997242</w>
             <x>0.000000</x>
-            <y>0.277412</y>
+            <y>0.074213</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -234,7 +234,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>5.720986</RotationY>
+          <RotationY>6.134612</RotationY>
           <Id>1</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -242,14 +242,14 @@
           <hasValue>1</hasValue>
           <Name>standing_workers_03_1</Name>
           <Position>
-            <x>-1.548271</x>
+            <x>0.766928</x>
             <y>0.000000</y>
-            <z>0.554015</z>
+            <z>0.480007</z>
           </Position>
           <Orientation>
-            <w>0.570755</w>
+            <w>0.727206</w>
             <x>0.000000</x>
-            <y>0.821120</y>
+            <y>0.686419</y>
             <z>0.000000</z>
           </Orientation>
           <Extents>
@@ -257,7 +257,7 @@
             <y>0.100000</y>
             <z>0.100000</z>
           </Extents>
-          <RotationY>4.356443</RotationY>
+          <RotationY>4.770078</RotationY>
           <Id>7</Id>
           <HeightAdaptationMode>1</HeightAdaptationMode>
         </i>
@@ -273,8 +273,8 @@
           <hasValue>1</hasValue>
           <Name>FireDummy_0</Name>
           <Position>
-            <x>0.304846</x>
-            <y>1.840375</y>
+            <x>0.134836</x>
+            <y>1.977521</y>
             <z>-1.470310</z>
           </Position>
           <Orientation>
@@ -296,9 +296,9 @@
           <hasValue>1</hasValue>
           <Name>FireDummy_1</Name>
           <Position>
-            <x>1.489874</x>
-            <y>1.003840</y>
-            <z>1.378835</z>
+            <x>1.593375</x>
+            <y>1.127039</y>
+            <z>1.009596</z>
           </Position>
           <Orientation>
             <w>0.706136</w>
@@ -319,7 +319,7 @@
           <hasValue>1</hasValue>
           <Name>FireDummy_2</Name>
           <Position>
-            <x>-0.401443</x>
+            <x>0.137752</x>
             <y>2.074886</y>
             <z>-0.329186</z>
           </Position>
@@ -342,9 +342,9 @@
           <hasValue>1</hasValue>
           <Name>FireDummy_3</Name>
           <Position>
-            <x>-0.420912</x>
-            <y>1.115012</y>
-            <z>0.308815</z>
+            <x>-1.192041</x>
+            <y>1.317432</y>
+            <z>1.119968</z>
           </Position>
           <Orientation>
             <w>0.000000</w>
@@ -365,9 +365,9 @@
           <hasValue>1</hasValue>
           <Name>FireDummy_4</Name>
           <Position>
-            <x>2.171988</x>
-            <y>0.863878</y>
-            <z>-0.276805</z>
+            <x>2.247978</x>
+            <y>1.076503</y>
+            <z>-0.079055</z>
           </Position>
           <Orientation>
             <w>0.999921</w>
@@ -396,9 +396,9 @@
           <hasValue>1</hasValue>
           <Name>feedback_door_0</Name>
           <Position>
-            <x>0.252834</x>
+            <x>0.324416</x>
             <y>0.000000</y>
-            <z>0.631682</z>
+            <z>-0.130446</z>
           </Position>
           <Orientation>
             <w>0.652377</w>
@@ -419,9 +419,9 @@
           <hasValue>1</hasValue>
           <Name>feedback_door_1</Name>
           <Position>
-            <x>1.476043</x>
+            <x>-1.235374</x>
             <y>0.000000</y>
-            <z>1.522981</z>
+            <z>1.264074</z>
           </Position>
           <Orientation>
             <w>0.709594</w>
@@ -450,7 +450,7 @@
           <hasValue>1</hasValue>
           <Name>broom_0</Name>
           <Position>
-            <x>-1.356954</x>
+            <x>0.258506</x>
             <y>0.000000</y>
             <z>0.918300</z>
           </Position>
@@ -473,7 +473,7 @@
           <hasValue>1</hasValue>
           <Name>broom_1</Name>
           <Position>
-            <x>-1.030512</x>
+            <x>0.584948</x>
             <y>0.000000</y>
             <z>1.523449</z>
           </Position>
@@ -496,9 +496,9 @@
           <hasValue>1</hasValue>
           <Name>broom_2</Name>
           <Position>
-            <x>-2.104769</x>
+            <x>-0.471300</x>
             <y>0.000000</y>
-            <z>0.858315</z>
+            <z>1.753473</z>
           </Position>
           <Orientation>
             <w>0.917044</w>
@@ -519,7 +519,7 @@
           <hasValue>1</hasValue>
           <Name>broom_3</Name>
           <Position>
-            <x>0.433687</x>
+            <x>2.049146</x>
             <y>0.000000</y>
             <z>1.670618</z>
           </Position>
