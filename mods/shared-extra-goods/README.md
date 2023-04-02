@@ -52,6 +52,7 @@ You can disable some productions if you go to `features.include.xml` and remove 
 ## 2.5
 
 - Replaced tea production chain with new tea factory, tea docks
+- Added Spanish translation
 
 ## 2.4
 

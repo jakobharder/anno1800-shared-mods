@@ -5,31 +5,31 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
-      <Text>Milk</Text> <!-- milk: product -->
+      <Text>Leche</Text> <!-- milk: product -->
     </Text>
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
-      <Text>Hemp</Text>
+      <Text>Cáñamo</Text>
     </Text>
     <Text>
       <GUID>1500010103</GUID> <!-- dairy: product -->
-      <Text>Cheese Dairy</Text>
+      <Text>Lácteos de queso</Text>
     </Text>
     <Text>
       <GUID>1500010104</GUID> <!-- milk farm: building -->
-      <Text>Milk Farm</Text>
+      <Text>Granja lechera</Text>
     </Text>
     <Text>
       <GUID>1500010105</GUID> <!-- olives: product -->
-      <Text>Olives</Text>
+      <Text>Aceitunas</Text>
     </Text>
     <Text>
       <GUID>1500010107</GUID>
-      <Text>Orchard: Olives</Text> <!-- orchard olives: building -->
+      <Text>Huerto: Aceitunas</Text> <!-- orchard olives: building -->
     </Text>
     <Text>
       <GUID>1500010108</GUID>
-      <Text>Olive Soap Factory</Text> <!-- olive soap factory: building -->
+      <Text>Fábrica de Jabones de Oliva</Text> <!-- olive soap factory: building -->
     </Text>
     <Text>
       <GUID>1500010109</GUID>
@@ -37,20 +37,19 @@
     </Text>
     <Text>
       <GUID>1500010110</GUID>
-      <Text>Olive Tree</Text> <!-- olive tree: module -->
+      <Text>Olivo</Text> <!-- olive tree: module -->
     </Text>
     <Text>
       <GUID>1500010111</GUID>
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010123</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
     </Text>
     <Text>
       <GUID>1500010121</GUID>
-      <Text>Fish Cannery</Text> <!-- fish cannery: building -->
+      <Text>Conservas de pescado</Text> <!-- fish cannery: building -->
     </Text>
     <Text>
       <GUID>1500010122</GUID>
@@ -58,11 +57,11 @@
     </Text>
     <Text>
       <GUID>1500010150</GUID>
-      <Text>Wooden Accessories</Text> <!-- wooden accessories: product -->
+      <Text>Accesorios de madera</Text> <!-- wooden accessories: product -->
     </Text>
     <Text>
       <GUID>1500010151</GUID>
-      <Text>Wood Workshop</Text> <!-- wood workshop: building -->
+      <Text>Taller de madera</Text> <!-- wood workshop: building -->
     </Text>
     <Text>
       <GUID>1500010152</GUID>
@@ -70,7 +69,7 @@
     </Text>
     <Text>
       <GUID>1500010154</GUID>
-      <Text>Tools Workshop</Text> <!-- tools workshop: building -->
+      <Text>Taller de herramientas</Text> <!-- tools workshop: building -->
     </Text>
     <Text>
       <GUID>1500010155</GUID>
@@ -78,11 +77,11 @@
     </Text>
     <Text>
       <GUID>1500010156</GUID>
-      <Text>Bottled Beer</Text> <!-- bottled beer: product -->
+      <Text>Cerveza embotellada</Text> <!-- bottled beer: product -->
     </Text>
     <Text>
       <GUID>1500010157</GUID>
-      <Text>Bottled Beer Brewery</Text> <!-- bottled beer brewery: building -->
+      <Text>Cervecería de cerveza embotellada</Text> <!-- bottled beer brewery: building -->
     </Text>
     <Text>
       <GUID>1500010158</GUID>
@@ -94,11 +93,11 @@
     </Text>
     <Text>
       <GUID>1500010250</GUID>
-      <Text>Hot Chocolate</Text>
+      <Text>Chocolate caliente</Text>
     </Text>
     <Text>
       <GUID>1500010251</GUID>
-      <Text>It doesn't have to be a coffee. Hot milk, cocoa powder and some cinnamon... that's all you need for a good caffeine free hot beverage.</Text>
+      <Text>No tiene que ser un café. Leche caliente, cacao en polvo y un poco de canela... eso es todo lo que necesitas para una buena bebida caliente sin cafeína.</Text>
     </Text>
     <Text>
       <GUID>1500010252</GUID>
@@ -122,15 +121,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010124</GUID>
-      <Text>Hemp Farm</Text> <!-- hemp farm: building -->
+      <Text>Granja de cáñamo</Text> <!-- hemp farm: building -->
     </Text>
     <Text>
       <GUID>1500010125</GUID>
-      <Text>Hemp Field</Text> <!-- hemp field: module -->
+      <Text>campo de cáñamo</Text> <!-- hemp field: module -->
     </Text>
     <Text>
       <GUID>1500010126</GUID>
-      <Text>Linen Cloth Maker</Text> <!-- linen cloth maker: building -->
+      <Text>Fabricante de telas de lino</Text> <!-- linen cloth maker: building -->
     </Text>
     <Text>
       <GUID>1500010128</GUID>
@@ -142,7 +141,7 @@
     </Text>
     <Text>
       <GUID>1500010184</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Hemp -->
+      <Text>[AssetData(1500010183) Text]</Text> <!-- Land Reform Act: Hemp -->
     </Text>
     <Text>
       <GUID>1500011150</GUID>
@@ -153,21 +152,20 @@
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010114</GUID>
       <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
     </Text>
     <Text>
       <GUID>1500010830</GUID>
-      <Text>Vegetable Farm</Text>
+      <Text>Granja vegetal</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
-      <Text>Vegetable Field</Text>
+      <Text>Campo vegetal</Text>
     </Text>
     <Text>
       <GUID>1500010835</GUID>
-      <Text>Kitchen</Text>
+      <Text>Cocina</Text>
     </Text>
     <Text>
       <GUID>1500010946</GUID>
@@ -179,19 +177,19 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010940</GUID>
-      <Text>Tea Maker</Text> <!-- Building: Tea Maker -->
+      <Text>Fabricante de Té</Text> <!-- Building: Tea Maker -->
     </Text>
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Herb Farm</Text> <!-- Building: Herb Farm -->
+      <Text>Granja de hierbas</Text> <!-- Building: Herb Farm -->
     </Text>
     <Text>
       <GUID>1500010849</GUID>
-      <Text>Herbs</Text> <!-- Product: Herbs -->
+      <Text>Hierbas</Text> <!-- Product: Herbs -->
     </Text>
     <Text>
       <GUID>1500010943</GUID>
-      <Text>Herbs Field</Text> <!-- Module: Herbs Field -->
+      <Text>Campo de hierbas</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
       <GUID>1500010945</GUID>
@@ -203,19 +201,16 @@
     </Text>
 
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011160</GUID>
-      <Text>Tea Docks</Text>
+      <Text>Muelles de Té</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011161</GUID>
-      <Text>Imported Tea</Text>
+      <Text>Té importado</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011162</GUID>
-      <Text>Tea Factory</Text>
+      <Text>Fabricante de Té</Text>
     </Text>
   </ModOp>
 </ModOps>
