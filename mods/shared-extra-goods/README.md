@@ -1,17 +1,7 @@
-# Extra Goods (Alternative Needs)
+# Extra Goods
 
 Productions like cheese and tools.
 Every end product is available as an alternative Lifestyle need to normal Basic Needs.
-
-## Alternative Needs
-
-Use mod `[Gameplay] Alternative Needs` to enable alternative needs.
-
-Every end product of the production chains can be used as an alternative input for Basic Needs.
-Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counterpart.
-
-If both needs are provided, the alternative is consumed first.
-There is no double consumption.
 
 ## Productions
 
@@ -58,6 +48,10 @@ There is no double consumption.
 You can disable some productions if you go to `features.include.xml` and remove single lines.
 
 ## Changes
+
+## 2.5
+
+- Replaced tea production chain with new tea factory, tea docks
 
 ## 2.4
 
