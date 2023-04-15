@@ -41,7 +41,7 @@ Every end product is available as an alternative Lifestyle need to normal Basic 
 ### Tea (→ Coffee)
 
 - Herbs Farm: Herbs
-- Tea Factory: (Herbal) Tea from Herbs 
+- Tea Factory: (Herbal) Tea from Herbs
 
 ## Disable Features
 
@@ -51,6 +51,7 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## 2.5
 
+- 2.5.1: Update Chinese translations
 - Replaced tea production chain with new tea factory, tea docks
 - Added Spanish translation
 
