@@ -1,6 +1,6 @@
 <ModOps>
   <!-- # Shared Goods -->
-  <Include File="../../../products/texts/texts_chinese.include.xml" />
+  <Include File="/products/texts/texts_chinese.include.xml" />
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
@@ -201,14 +201,12 @@
     </Text>
 
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011160</GUID>
-      <Text>Tea Docks</Text>
+      <Text>茶叶码头</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011161</GUID>
-      <Text>Imported Tea</Text>
+      <Text>进口茶叶</Text>
     </Text>
     <Text>
       <GUID>1500011162</GUID>
