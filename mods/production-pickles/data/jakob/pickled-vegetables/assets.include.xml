@@ -1,4 +1,6 @@
 <ModOps>
+  <Include File="/data/products/pickled-vegetables/assets.include.xml" />
+
   <!-- # Vegetables -->
   <ModOp GUID="1010265" Type="addNextSibling">
     <Asset>
@@ -230,16 +232,10 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="1010263">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500004' and not(//ForceIcon[.='1500010953']) and (//PopulationInputs/Item/Product='1500010831')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500004']">
     <Item>
       <Building>1500010114</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 </ModOps>

@@ -16,7 +16,7 @@
         <Standard>
           <GUID>1500010106</GUID>
           <Name>olive_soap</Name>
-          <IconFilename>products\olive-soap\icon_olive_soap.png</IconFilename>
+          <IconFilename>data/products/olive-soap/icon_olive_soap.png</IconFilename>
         </Standard>
         <Locked />
         <Product>
