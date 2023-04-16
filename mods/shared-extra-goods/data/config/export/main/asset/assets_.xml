@@ -17,11 +17,6 @@
   <!-- Tea Production: Herb Farm, Tea Maker -->
   <Include File="/data/jakob/tea/assets.include.xml" />
 
-  <!-- Olive Soap Production: Soap Factory (needs Canned Fish Production) -->
-  <Include File="/data/jakob/soap/assets.include.xml" />
-  <!-- Pickled Vegetables Production: Kitchen (needs Vegetable Production) -->
-  <Include File="/data/jakob/pickled-vegetables/assets.include.xml" />
-
   <!-- # Enable Tweaks -->
   <ImyaTweaks Title="Extra Goods Features" />
   <ModOp Type="merge" GUID="1500010830,1500010848,1500010124,1500010107" Path="/Values" ModOpID="FreeFarm" Skip="1">
