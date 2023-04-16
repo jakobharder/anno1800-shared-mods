@@ -22,8 +22,8 @@
     <Name>MeshBoundingBox</Name>
     <Position>
       <xf>0.09276557</xf>
-      <yf>0.5471191</yf>
-      <zf>-0.1317673</zf>
+      <yf>0.6570129</yf>
+      <zf>-0.2235641</zf>
     </Position>
     <Rotation>
       <xf>0</xf>
@@ -33,8 +33,8 @@
     </Rotation>
     <Extents>
       <xf>2.030315</xf>
-      <yf>0.8649902</yf>
-      <zf>1.942314</zf>
+      <yf>0.7550964</yf>
+      <zf>1.850517</zf>
     </Extents>
   </MeshBoundingBox>
   <DisableFeedbackArea>0</DisableFeedbackArea>
@@ -131,6 +131,25 @@
       <xf>0.3</xf>
       <yf>0.3</yf>
       <zf>0.3</zf>
+    </Extents>
+  </Dummy>
+  <Dummy>
+    <Name>DamageImpact73259</Name>
+    <Position>
+      <xf>0.6718872</xf>
+      <yf>0.6675024</yf>
+      <zf>-1.459559</zf>
+    </Position>
+    <Rotation>
+      <xf>0</xf>
+      <yf>0</yf>
+      <zf>0</zf>
+      <wf>1</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.3836578</xf>
+      <yf>0.3836578</yf>
+      <zf>0.3836578</zf>
     </Extents>
   </Dummy>
   <Sequence>

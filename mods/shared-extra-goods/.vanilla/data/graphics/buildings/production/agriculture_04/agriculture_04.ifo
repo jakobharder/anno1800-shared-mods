@@ -3,7 +3,7 @@
     <Name>BoundingBox</Name>
     <Position>
       <xf>0</xf>
-      <yf>0.9985142</yf>
+      <yf>0.9985144</yf>
       <zf>0</zf>
     </Position>
     <Rotation>
@@ -14,7 +14,7 @@
     </Rotation>
     <Extents>
       <xf>1.7</xf>
-      <yf>1.352321</yf>
+      <yf>1.35232</yf>
       <zf>1.7</zf>
     </Extents>
   </BoundingBox>
@@ -94,6 +94,59 @@
       <yf>0.1</yf>
       <zf>0.1</zf>
     </Extents>
+  </Dummy>
+  <Dummy>
+    <Name>DamageImpact18864</Name>
+    <Position>
+      <xf>-0.2628732</xf>
+      <yf>0.4994495</yf>
+      <zf>0.1488481</zf>
+    </Position>
+    <Rotation>
+      <xf>0</xf>
+      <yf>0</yf>
+      <zf>0</zf>
+      <wf>1</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.2483506</xf>
+      <yf>0.2483506</yf>
+      <zf>0.2483506</zf>
+    </Extents>
+  </Dummy>
+  <Dummy>
+    <Name>DamageImpact19415</Name>
+    <Position>
+      <xf>0.4103409</xf>
+      <yf>0.3844247</yf>
+      <zf>-0.3346024</zf>
+    </Position>
+    <Rotation>
+      <xf>0</xf>
+      <yf>0</yf>
+      <zf>0</zf>
+      <wf>1</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.3065722</xf>
+      <yf>0.3065722</yf>
+      <zf>0.3065722</zf>
+    </Extents>
+    <Transformer>
+      <Flags>8</Flags>
+      <BBoxCenter>
+        <xf>0</xf>
+        <yf>0</yf>
+      </BBoxCenter>
+      <BBoxXExtents>
+        <xf>0</xf>
+        <yf>0</yf>
+      </BBoxXExtents>
+      <BBoxZExtents>
+        <xf>0</xf>
+        <yf>0</yf>
+      </BBoxZExtents>
+    </Transformer>
   </Dummy>
   <Sequence>
     <Id>1000</Id>
