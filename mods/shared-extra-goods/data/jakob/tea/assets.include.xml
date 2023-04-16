@@ -1,6 +1,4 @@
 <ModOps>
-  <Include File="../../../products/tea/assets.include.xml" />
-
   <!-- # Vanilla: Maritime and Trade Resource -->
   <ModOp Type="replace" GUID="501525" Path="/Values/Standard/IconFilename">
     <IconFilename>data\jakob\tea\tea_import\icon_maritime_trade_resource.png</IconFilename>
@@ -14,7 +12,7 @@
         <Standard>
           <GUID>1500010940</GUID>
           <Name>Tea Maker</Name>
-          <IconFilename>products\tea\icon_tea.png</IconFilename>
+          <IconFilename>data/products/tea/icon_tea.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -462,7 +460,7 @@
         <Standard>
           <GUID>1500011162</GUID>
           <Name>Tea Factory</Name>
-          <IconFilename>products\tea\icon_tea.png</IconFilename>
+          <IconFilename>data/products/tea/icon_tea.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -925,7 +923,7 @@
         <Standard>
           <GUID>1500010959</GUID>
           <Name>Tea</Name>
-          <IconFilename>products\tea\icon_tea.png</IconFilename>
+          <IconFilename>data/products/tea/icon_tea.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500011162</Building>

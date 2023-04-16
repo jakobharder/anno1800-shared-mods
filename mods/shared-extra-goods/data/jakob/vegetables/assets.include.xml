@@ -1,6 +1,4 @@
 <ModOps>
-  <Include File="../../../products/vegetables/assets.include.xml" />
-
   <!-- # Vegetables -->
   <ModOp GUID="1010265" Type="addNextSibling">
     <Asset>
@@ -9,7 +7,7 @@
         <Standard>
           <GUID>1500010830</GUID>
           <Name>Vegetable Farm</Name>
-          <IconFilename>products\vegetables\icon_vegetables.png</IconFilename>
+          <IconFilename>data/products/vegetables/icon_vegetables.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -293,16 +291,6 @@
         <IrrigationUpgrade />
         <EcoSystemProviderUpgrade />
         <ResourceUpgrade />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Icon</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010958</GUID>
-          <Name>Vegetables Alt Icon</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
-        </Standard>
       </Values>
     </Asset>
   </ModOp>

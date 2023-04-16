@@ -1,11 +1,13 @@
 {
-  "src": [ "../../shared", "." ],
-  "bundle": {
-    "jakob_ground_industry": "https://github.com/anno-mods/shared-resources/releases/download/v2/Shared-Ground-Textures-Industry-1.0.zip"
-  },
-  "Version": "2.5.1",
-  "ModID": "jakob_extra_goods",
-  "LoadAfterIds": [ "*", "jakob_alternative_needs" ],
+  "bundle": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-ground-textures-industry-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-products-jakob.zip"
+  ],
+  "Version": "2.6",
+  "ModID": "shared-extra-goods-jakob",
+  "DeprecateIds": [ "jakob_extra_goods" ],
+  "ModDependencies": [ "shared-products-jakob" ],
+  "LoadAfterIds": [ "*" ],
   "Category": {
     "English": "Shared"
   },

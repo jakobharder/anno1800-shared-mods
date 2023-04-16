@@ -4,9 +4,6 @@
   Deprecated GUIDs: 1500010112
 -->
 <ModOps>
-  <!-- # Goods Lists -->
-  <Include File="../../../products/cheese/assets.include.xml" />
-
   <!-- # Milk Farm -->
   <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>

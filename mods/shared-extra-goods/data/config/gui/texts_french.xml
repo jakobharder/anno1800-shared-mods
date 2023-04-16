@@ -1,12 +1,5 @@
 <ModOps>
-  <!-- # Shared Goods -->
-  <Include File="../../../products/texts/texts_french.include.xml" />
-
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1440005</GUID>
-      <Text>Lait</Text> <!-- milk: product -->
-    </Text>
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
       <Text>Chanvre</Text>
@@ -20,31 +13,10 @@
       <Text>Ferme laitière</Text>
     </Text>
     <Text>
-      <GUID>1500010105</GUID> <!-- olives: product -->
-      <Text>Olives</Text>
-    </Text>
-    <Text>
-      <GUID>1500010107</GUID>
-      <Text>Verger : Olives</Text> <!-- orchard olives: building -->
-    </Text>
-    <Text>
-      <GUID>1500010108</GUID>
-      <Text>Savonnerie Marseillaise</Text> <!-- olive soap factory: building -->
-    </Text>
-    <Text>
-      <GUID>1500010109</GUID>
-      <Text>[AssetData(1500010106) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010110</GUID>
-      <Text>Olivier</Text> <!-- olive tree: module -->
-    </Text>
-    <Text>
       <GUID>1500010111</GUID>
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010123</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
     </Text>
@@ -153,13 +125,16 @@
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010114</GUID>
-      <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
+      <Text>[AssetData(1500010831) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010830</GUID>
       <Text>Ferme de légumes</Text>
+    </Text>
+    <Text>
+      <GUID>1500010831</GUID>
+      <Text>Légumes marinés</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
@@ -171,8 +146,8 @@
     </Text>
     <Text>
       <GUID>1500010946</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>  
+      <Text>[AssetData(269193) Text]</Text>
+    </Text>
   </ModOp>
 
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
@@ -213,9 +188,32 @@
       <Text>Imported Tea</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011162</GUID>
       <Text>Fabricant de thé</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Olives / Olive Soap -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010105</GUID>
+      <Text>Olives</Text>
+    </Text>
+    <Text>
+      <GUID>1500010106</GUID>
+      <Text>Savon de Marseille</Text>
+    </Text>
+    <Text>
+      <GUID>1500010107</GUID>
+      <Text>Verger : Olives</Text>
+    </Text>
+    <Text>
+      <GUID>1500010108</GUID>
+      <Text>Savonnerie Marseillaise</Text>
+    </Text>
+    <Text>
+      <GUID>1500010110</GUID>
+      <Text>Olivier</Text>
     </Text>
   </ModOp>
 </ModOps>

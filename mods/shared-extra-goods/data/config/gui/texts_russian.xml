@@ -1,12 +1,5 @@
 <ModOps>
-  <!-- # Shared Goods -->
-  <Include File="../../../products/texts/texts_russian.include.xml" />
-
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1440005</GUID>
-      <Text>Молоко</Text> <!-- milk: product -->
-    </Text>
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
       <Text>Конопля</Text>
@@ -18,26 +11,6 @@
     <Text>
       <GUID>1500010104</GUID> <!-- milk farm: building -->
       <Text>Молочная ферма</Text>
-    </Text>
-    <Text>
-      <GUID>1500010105</GUID> <!-- olives: product -->
-      <Text>Оливки</Text>
-    </Text>
-    <Text>
-      <GUID>1500010107</GUID>
-      <Text>Фруктовый сад: Оливки</Text> <!-- orchard olives: building -->
-    </Text>
-    <Text>
-      <GUID>1500010108</GUID>
-      <Text>Фабрика оливкового мыла</Text> <!-- olive soap factory: building -->
-    </Text>
-    <Text>
-      <GUID>1500010109</GUID>
-      <Text>[AssetData(1500010106) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010110</GUID>
-      <Text>Оливковое дерево</Text> <!-- olive tree: module -->
     </Text>
     <Text>
       <GUID>1500010111</GUID>
@@ -153,13 +126,16 @@
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010114</GUID>
-      <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
+      <Text>[AssetData(1500010831) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010830</GUID>
       <Text>Vegetable Farm</Text>
+    </Text>
+    <Text>
+      <GUID>1500010831</GUID>
+      <Text>Маринованные овощи</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
@@ -171,8 +147,8 @@
     </Text>
     <Text>
       <GUID>1500010946</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>  
+      <Text>[AssetData(269193) Text]</Text>
+    </Text>
   </ModOp>
 
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
@@ -216,6 +192,30 @@
       <!-- TODO translation -->
       <GUID>1500011162</GUID>
       <Text>Tea Factory</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Olives / Olive Soap -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010105</GUID>
+      <Text>Оливки</Text>
+    </Text>
+    <Text>
+      <GUID>1500010106</GUID>
+      <Text>Оливковое масло</Text>
+    </Text>
+    <Text>
+      <GUID>1500010107</GUID>
+      <Text>Фруктовый сад: Оливки</Text>
+    </Text>
+    <Text>
+      <GUID>1500010108</GUID>
+      <Text>Фабрика оливкового мыла</Text>
+    </Text>
+    <Text>
+      <GUID>1500010110</GUID>
+      <Text>Оливковое дерево</Text>
     </Text>
   </ModOp>
 </ModOps>

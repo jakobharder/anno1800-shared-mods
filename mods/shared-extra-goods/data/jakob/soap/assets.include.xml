@@ -3,7 +3,7 @@
 -->
 <ModOps>
   <!-- # Goods Lists -->
-  <Include File="../../../products/olive-soap/assets.include.xml" />
+  <Include File="/data/products/olive-soap/assets.include.xml" />
 
   <!-- # Olive Soap Maker -->
   <ModOp GUID='1010281' Type="addNextSibling">
@@ -13,7 +13,7 @@
         <Standard>
           <GUID>1500010108</GUID>
           <Name>olive_soap_factory</Name>
-          <IconFilename>products\olive-soap\icon_olive_soap.png</IconFilename>
+          <IconFilename>data/products/olive-soap/icon_olive_soap.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -198,7 +198,7 @@
         <Standard>
           <GUID>1500010191</GUID>
           <Name>olive_soap_chain</Name>
-          <IconFilename>products\olive-soap\icon_olive_soap.png</IconFilename>
+          <IconFilename>data/products/olive-soap/icon_olive_soap.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500010108</Building>

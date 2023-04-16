@@ -2,10 +2,8 @@
   Tools Production
 -->
 <ModOps>
-  <Include File="../../../products/tools/assets.include.xml" />
-
   <!-- # Tools Workshop -->
-  <ModOp GUID='1010200' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="1010200">
     <Asset>
       <Template>FactoryBuilding7Variable</Template>
       <Values>

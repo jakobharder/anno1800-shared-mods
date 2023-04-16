@@ -1,13 +1,9 @@
-<!-- 
+<!--
   Suits Production
 
   1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
 -->
 <ModOps>
-  <!-- # Goods Lists -->
-  <Include File="../../../products/suits/assets.include.xml" />
-  <Include File="../../../products/hemp/assets.include.xml" />
-
   <!-- # Triggers -->
   <ModOp Type="addNextSibling" GUID="502019">
     <Asset>
@@ -508,7 +504,7 @@
         <Standard>
           <GUID>1500010128</GUID>
           <Name>Land of Lions Suits Maker</Name>
-          <IconFilename>products\suits\icon_suits.png</IconFilename>
+          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -640,7 +636,7 @@
         <Standard>
           <GUID>1500011150</GUID>
           <Name>New Suits Maker</Name>
-          <IconFilename>products\suits\icon_suits.png</IconFilename>
+          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -815,7 +811,7 @@
         <Standard>
           <GUID>1500010184</GUID>
           <Name>suits_maker_reduced_needs</Name>
-          <IconFilename>products\suits\icon_suits.png</IconFilename>
+          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -896,7 +892,7 @@
         <Standard>
           <GUID>1500010129</GUID>
           <Name>suits_chain</Name>
-          <IconFilename>products\suits\icon_suits.png</IconFilename>
+          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500011150</Building>

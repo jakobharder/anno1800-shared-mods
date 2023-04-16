@@ -1,6 +1,4 @@
 <ModOps>
-  <Include File="../../../products/pickled-vegetables/assets.include.xml" />
-
   <!-- # Vegetables -->
   <ModOp GUID="1010265" Type="addNextSibling">
     <Asset>
@@ -9,7 +7,7 @@
         <Standard>
           <GUID>1500010835</GUID>
           <Name>Sauerkraut Kitchen</Name>
-          <IconFilename>products\pickled-vegetables\icon_vegetables.png</IconFilename>
+          <IconFilename>data/products/pickled-vegetables/icon_vegetables.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -216,7 +214,7 @@
         <Standard>
           <GUID>1500010114</GUID>
           <Name>Pickled Vegetables</Name>
-          <IconFilename>products\pickled-vegetables\icon_vegetables.png</IconFilename>
+          <IconFilename>data/products/pickled-vegetables/icon_vegetables.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500010835</Building>

@@ -1,12 +1,5 @@
 <ModOps>
-  <!-- # Shared Goods -->
-  <Include File="/products/texts/texts_chinese.include.xml" />
-
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1440005</GUID>
-      <Text>牛奶</Text> <!-- milk: product -->
-    </Text>
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
       <Text>苎麻</Text>
@@ -18,26 +11,6 @@
     <Text>
       <GUID>1500010104</GUID> <!-- milk farm: building -->
       <Text>牛奶牧场</Text>
-    </Text>
-    <Text>
-      <GUID>1500010105</GUID> <!-- olives: product -->
-      <Text>橄榄</Text>
-    </Text>
-    <Text>
-      <GUID>1500010107</GUID>
-      <Text>果园: 橄榄</Text> <!-- orchard olives: building -->
-    </Text>
-    <Text>
-      <GUID>1500010108</GUID>
-      <Text>橄榄皂工厂</Text> <!-- olive soap factory: building -->
-    </Text>
-    <Text>
-      <GUID>1500010109</GUID>
-      <Text>[AssetData(1500010106) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010110</GUID>
-      <Text>橄榄树</Text> <!-- olive tree: module -->
     </Text>
     <Text>
       <GUID>1500010111</GUID>
@@ -153,11 +126,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010114</GUID>
-      <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
+      <Text>[AssetData(1500010831) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010830</GUID>
       <Text>蔬菜农场</Text>
+    </Text>
+    <Text>
+      <GUID>1500010831</GUID>
+      <Text>腌制蔬菜</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
@@ -169,8 +146,8 @@
     </Text>
     <Text>
       <GUID>1500010946</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>  
+      <Text>[AssetData(269193) Text]</Text>
+    </Text>
   </ModOp>
 
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
@@ -211,6 +188,30 @@
     <Text>
       <GUID>1500011162</GUID>
       <Text>制茶商</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Olives / Olive Soap -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010105</GUID>
+      <Text>橄榄</Text>
+    </Text>
+    <Text>
+      <GUID>1500010106</GUID>
+      <Text>橄榄皂</Text>
+    </Text>
+    <Text>
+      <GUID>1500010107</GUID>
+      <Text>果园: 橄榄</Text>
+    </Text>
+    <Text>
+      <GUID>1500010108</GUID>
+      <Text>橄榄皂工厂</Text>
+    </Text>
+    <Text>
+      <GUID>1500010110</GUID>
+      <Text>橄榄树</Text>
     </Text>
   </ModOp>
 </ModOps>

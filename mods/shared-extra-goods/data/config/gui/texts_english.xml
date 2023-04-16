@@ -1,17 +1,10 @@
 <ModOps>
-  <!-- # Shared Goods -->
-  <Include File="/products/texts/texts_english.include.xml" />
-
   <!-- # Maritime and Trade Resource -->
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
     <Text>Maritime and Trade Resource</Text>
   </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1440005</GUID>
-      <Text>Milk</Text> <!-- milk: product -->
-    </Text>
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
       <Text>Hemp</Text>
@@ -23,26 +16,6 @@
     <Text>
       <GUID>1500010104</GUID> <!-- milk farm: building -->
       <Text>Dairy Farm</Text>
-    </Text>
-    <Text>
-      <GUID>1500010105</GUID> <!-- olives: product -->
-      <Text>Olives</Text>
-    </Text>
-    <Text>
-      <GUID>1500010107</GUID>
-      <Text>Orchard: Olives</Text> <!-- orchard olives: building -->
-    </Text>
-    <Text>
-      <GUID>1500010108</GUID>
-      <Text>Olive Soap Factory</Text> <!-- olive soap factory: building -->
-    </Text>
-    <Text>
-      <GUID>1500010109</GUID>
-      <Text>[AssetData(1500010106) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010110</GUID>
-      <Text>Olive Tree</Text> <!-- olive tree: module -->
     </Text>
     <Text>
       <GUID>1500010111</GUID>
@@ -158,11 +131,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010114</GUID>
-      <Text>[AssetData(1500010831) Text]</Text> <!-- menu: Pickled Vegetables -->
+      <Text>[AssetData(1500010831) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010830</GUID>
       <Text>Vegetable Farm</Text>
+    </Text>
+    <Text>
+      <GUID>1500010831</GUID>
+      <Text>Pickled Vegetables</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
@@ -175,7 +152,7 @@
     <Text>
       <GUID>1500010946</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>  
+    </Text>
   </ModOp>
 
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
@@ -216,6 +193,30 @@
     <Text>
       <GUID>1500011162</GUID>
       <Text>Tea Factory</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Olives / Olive Soap -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010105</GUID>
+      <Text>Olives</Text>
+    </Text>
+    <Text>
+      <GUID>1500010106</GUID>
+      <Text>Olive Soap</Text>
+    </Text>
+    <Text>
+      <GUID>1500010107</GUID>
+      <Text>Orchard: Olives</Text>
+    </Text>
+    <Text>
+      <GUID>1500010108</GUID>
+      <Text>Olive Soap Factory</Text>
+    </Text>
+    <Text>
+      <GUID>1500010110</GUID>
+      <Text>Olive Tree</Text>
     </Text>
   </ModOp>
 </ModOps>
