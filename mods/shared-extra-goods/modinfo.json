@@ -1,0 +1,23 @@
+{
+  "Version": "2.6",
+  "ModID": "jakob_extra_goods",
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-ground-textures-industry-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip"
+  ],
+  "LoadAfterIds": [ "*" ],
+  "Category": {
+    "English": "Shared"
+  },
+  "ModName": {
+    "English": "Extra Goods (Jakob)"
+  },
+  "DLCDependencies": [
+    {
+      "DLC": "Docklands",
+      "Dependant": "partly"
+    }
+  ],
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}

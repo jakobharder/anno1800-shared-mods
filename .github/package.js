@@ -1,42 +1,41 @@
 const child_process = require('child_process');
-const path = require('path');
-const glob = require('glob');
 const fs = require('fs');
+const glob = require('glob');
+const path = require('path');
 
-let bundles = {
-  'jakob_extra_goods': { 
-    name: 'Shared-Extra-Goods',
-    glob: [ '[Shared]*' ],
-    version: '0'
-  }
-};
+const extraGoods = '[Shared] Extra Goods (Jakob)';
 
-const versions = [];
-const mods = glob.sync("./out/*/").map(e => e.substr(0, e.length - 1));
+const mods = glob.sync("./out/*/modinfo.json")
+  .map(modinfoPath => path.basename(path.dirname(modinfoPath)))
+  .filter(mod => mod !== extraGoods);
 
+// package individual mods
 mods.forEach(mod => {
-  const modinfo = JSON.parse(fs.readFileSync(path.join(mod, 'modinfo.json')));
-  versions.push(`${path.basename(mod).replace(/\[.+\] /, '')} ${modinfo.Version}`);
+  const zipName = mod
+    .replace(/\s/g, '-')
+    .replace(/\[|\]|\(|\)/g, '')
+    .toLowerCase();
 
-  if (bundles[modinfo.ModID]) {
-    bundles[modinfo.ModID].version = modinfo.Version;
-  }
+  child_process.execFileSync('tar', [
+    '-c', '-a',
+    '-f', `out/${zipName}.zip`,
+    '-C', 'out/', `${mod}`
+  ]);
+});
 
-  // allow without [] for bugfixes of legacy mods
-  if (path.basename(mod).startsWith('[] ')) {
-    fs.rmSync(mod.replace(/\[\] /, ''), { recursive: true, force: true });
-    fs.renameSync(mod, mod.replace(/\[\] /, ''));
+//  move mods
+mods.forEach(mod => {
+  if (fs.existsSync(path.join('out', mod))) {
+    fs.rmSync(path.join('out', extraGoods, mod), { recursive: true });
+    fs.renameSync(path.join('out', mod), path.join('out', extraGoods, mod));
   }
 });
 
-fs.writeFileSync('./out/versions.md', versions.join('\n'));
-
-for (const [modid, bundle] of Object.entries(bundles)) {
-  const version = bundle.version ? `-${bundle.version}` : ``;
-
-  child_process.execFileSync('tar', [
-      '-c', '-a',
-      '-f', `out/${bundle.name}${version}.zip`,
-      '-C', 'out/', ...bundle.glob
-    ]);
-}
+// package collection
+const modinfo = JSON.parse(fs.readFileSync(path.join('./out', extraGoods, 'modinfo.json')));
+child_process.execFileSync('tar', [
+  '-c', '-a',
+  '-f', `out/Shared-Extra-Goods-${modinfo.Version}.zip`,
+  '-C', 'out/', `${extraGoods}`,
+  ...mods.map(mod => `${path.join(extraGoods, mod)}`)
+]);

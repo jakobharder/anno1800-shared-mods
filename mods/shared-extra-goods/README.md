@@ -49,9 +49,12 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.6
+
+- Updated Chinese translations
+
 ## 2.5
 
-- 2.5.1: Update Chinese translations
 - Replaced tea production chain with new tea factory, tea docks
 - Added Spanish translation
 
