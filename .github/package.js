@@ -25,9 +25,13 @@ mods.forEach(mod => {
 
 //  move mods
 mods.forEach(mod => {
-  if (fs.existsSync(path.join('out', mod))) {
-    fs.rmSync(path.join('out', extraGoods, mod), { recursive: true });
-    fs.renameSync(path.join('out', mod), path.join('out', extraGoods, mod));
+  const modBuildFolder = path.join('out', mod);
+  const modTargetFolder = path.join('out', extraGoods, mod);
+  if (fs.existsSync(modBuildFolder)) {
+    if (fs.existsSync(modTargetFolder)) {
+      fs.rmSync(modTargetFolder, { recursive: true });
+    }
+    fs.renameSync(modBuildFolder, modTargetFolder);
   }
 });
 
