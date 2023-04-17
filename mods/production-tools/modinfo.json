@@ -3,7 +3,7 @@
   "ModID": "production-tools-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
-    "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-products-jakob.zip"
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip"
   ],
   "Category": {
     "English": "Production"
