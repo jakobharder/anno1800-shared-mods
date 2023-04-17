@@ -1,10 +1,9 @@
 {
-  "bundle": [
-    "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-products-jakob.zip"
-  ],
   "Version": "1.0",
   "ModID": "production-pickles-jakob",
-  "ModDependencies": [ "shared-products-jakob" ],
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-products-jakob.zip"
+  ],
   "Category": {
     "English": "Production"
   },

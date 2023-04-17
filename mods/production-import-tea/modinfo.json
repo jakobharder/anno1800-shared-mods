@@ -1,14 +1,15 @@
 {
   "Version": "1.0",
-  "ModID": "production-olive-soap-jakob",
+  "ModID": "production-import-tea-jakob",
   "ModDependencies": [
+    "shared-ground-textures-industry-jakob",
     "https://github.com/anno-mods/shared-resources/releases/download/v3/shared-products-jakob.zip"
   ],
   "Category": {
     "English": "Production"
   },
   "ModName": {
-    "English": "Olive Soap (Jakob)"
+    "English": "Import Tea (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
