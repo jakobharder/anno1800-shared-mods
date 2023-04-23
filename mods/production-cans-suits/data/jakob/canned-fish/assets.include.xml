@@ -564,7 +564,7 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011160</GUID>
+          <GUID>1500010190</GUID>
           <Name>Creative Mode</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
