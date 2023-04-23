@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Canned Fish Production
 -->
 <ModOps>
@@ -272,27 +272,25 @@
     </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: append -->
-  <ModOp Type="add" GUID="120055">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="add" GUID="120055,120057"
-    Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010105')] | //ignore[1]">
+    Condition="!~/Values/ProductStorageList/ProductList[Item/Product='1500010105']"
+    Path="/Values/ProductStorageList/ProductList">
     <Item>
       <Product>1500010105</Product>
     </Item>
   </ModOp>
   <!-- goods: after soap -->
   <ModOp Type="addNextSibling" GUID="502018,502005"
-    Path="/Values/ProductList/List/Item[Product='1010203' and not(../Item/Product='1500010105')] | //ignore/Item[1]">
+    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
+    Path="/Values/ProductList/List/Item[Product='1010203']">
     <Item>
       <Product>1500010105</Product>
     </Item>
   </ModOp>
   <!-- agriculture: after grain -->
   <ModOp Type="addNextSibling" GUID="502037"
-    Path="/Values/ProductList/List/Item[Product='1010192' and not(../Item/Product='1500010105')] | //ignore/Item[1]">
+    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
+    Path="/Values/ProductList/List/Item[Product='1010192']">
     <Item>
       <Product>1500010105</Product>
     </Item>
@@ -520,11 +518,11 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010197</GUID>
-          <Name>Unlock @ 900 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -562,11 +560,50 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011160</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010164</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
 
   <!-- # Construction Menu: after canned food -->
   <ModOp Type="addNextSibling" GUID="25000191,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500008' and not(//ForceIcon[.='1500010951']) and (//PopulationInputs/Item/Product='1500010120')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500008']">
     <Item>
       <Building>1500010122</Building>
     </Item>
@@ -686,7 +723,4 @@
       <Factory>1500010107</Factory>
     </Item>
   </ModOp>
-
-  <!-- # cleanup -->
-  <ModOp Type="remove" Path="//ignore" />
 </ModOps>
