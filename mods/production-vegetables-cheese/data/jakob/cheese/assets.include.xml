@@ -390,7 +390,7 @@
       <Factory>1500010103</Factory>
     </Item>
   </ModOp>
-  
+
   <!-- # Construction Menu: after Sausages -->
   <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
@@ -413,18 +413,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="1010263">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244' and not(//ForceIcon[.='1500010952']) and (//PopulationInputs/Item/Product='1500010102')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244']">
     <Item>
       <Building>1500010111</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # Restaurant recipes: hot chocolate -->
   <ModOp Type="addNextSibling" GUID="132753">
