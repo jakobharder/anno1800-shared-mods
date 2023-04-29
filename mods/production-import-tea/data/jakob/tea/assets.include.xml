@@ -974,7 +974,7 @@
     </Item>
   </ModOp>
 
-  <!-- # Construction Menu: after Sausages -->
+  <!-- # Construction Menu: after Coffee -->
   <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
       <Template>ProductionChain</Template>

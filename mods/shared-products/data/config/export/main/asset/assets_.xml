@@ -1,0 +1,10 @@
+<ModOps>
+  <Include File="/data/products/canned-fish/assets.include.xml" />
+  <Include File="/data/products/cheese/assets.include.xml" />
+  <Include File="/data/products/suits/assets.include.xml" />
+  <Include File="/data/products/hemp/assets.include.xml" />
+  <Include File="/data/products/olives/assets.include.xml" />
+  <Include File="/data/products/tea/assets.include.xml" />
+  <Include File="/data/products/vegetables/assets.include.xml" />
+  <Include File="/data/products/tools/assets.include.xml" />
+</ModOps>
