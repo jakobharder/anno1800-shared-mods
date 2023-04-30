@@ -16,8 +16,8 @@ Contains 1x1 CFG tiles to use instead of decals.
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v5/shared-ground-textures-city-jakob.zip",
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v5/shared-ground-textures-industry-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3/shared-ground-textures-city-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3/shared-ground-textures-industry-jakob.zip"
 ]
 ```
 
@@ -40,7 +40,7 @@ Icon | GUID | Name | Production Unlock
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v5/shared-products-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3/shared-products-jakob.zip"
 ]
 ```
 
