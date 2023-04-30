@@ -1,8 +1,8 @@
-# Shared Extra Goods
+# Shared Anno 1800 Mods
 
-Shared mods from by Jakob's Collection.
+Shared mods from Jakob's Collection.
 
-You are free to include ground textures and shared products.
+You are free to include ground textures and shared products, as long as you don't modify the mods themselves.
 
 ## Ground Textures
 
@@ -55,7 +55,7 @@ The mods are made with the [Modding Tools for Anno](https://marketplace.visualst
 
 Make sure to set `annoMods` settings.
 
-Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`.
+Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod` or right click on a `modinfo.json` file.
 
 ### Build with Node.js
 

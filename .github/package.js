@@ -23,23 +23,23 @@ mods.forEach(mod => {
   ]);
 });
 
-//  move mods
-mods.forEach(mod => {
-  const modBuildFolder = path.join('out', mod);
-  const modTargetFolder = path.join('out', extraGoods, mod);
-  if (fs.existsSync(modBuildFolder)) {
-    if (fs.existsSync(modTargetFolder)) {
-      fs.rmSync(modTargetFolder, { recursive: true });
-    }
-    fs.renameSync(modBuildFolder, modTargetFolder);
-  }
-});
+// //  move mods
+// mods.forEach(mod => {
+//   const modBuildFolder = path.join('out', mod);
+//   const modTargetFolder = path.join('out', extraGoods, mod);
+//   if (fs.existsSync(modBuildFolder)) {
+//     if (fs.existsSync(modTargetFolder)) {
+//       fs.rmSync(modTargetFolder, { recursive: true });
+//     }
+//     fs.renameSync(modBuildFolder, modTargetFolder);
+//   }
+// });
 
-// package collection
-const modinfo = JSON.parse(fs.readFileSync(path.join('./out', extraGoods, 'modinfo.json')));
-child_process.execFileSync('tar', [
-  '-c', '-a',
-  '-f', `out/Shared-Extra-Goods-${modinfo.Version}.zip`,
-  '-C', 'out/', `${extraGoods}`,
-  ...mods.map(mod => `${path.join(extraGoods, mod)}`)
-]);
+// // package collection
+// const modinfo = JSON.parse(fs.readFileSync(path.join('./out', extraGoods, 'modinfo.json')));
+// child_process.execFileSync('tar', [
+//   '-c', '-a',
+//   '-f', `out/Shared-Extra-Goods-${modinfo.Version}.zip`,
+//   '-C', 'out/', `${extraGoods}`,
+//   ...mods.map(mod => `${path.join(extraGoods, mod)}`)
+// ]);
