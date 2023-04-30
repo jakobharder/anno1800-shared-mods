@@ -256,7 +256,7 @@
       <Values>
         <Standard>
           <GUID>1500010167</GUID>
-          <Name>asset pool cheese</Name>
+          <Name>Cheese Asset Pool</Name>
         </Standard>
         <AssetPool>
           <AssetList>
@@ -322,6 +322,45 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011169</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010167</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- feedback -->
   <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
@@ -351,7 +390,7 @@
       <Factory>1500010103</Factory>
     </Item>
   </ModOp>
-  
+
   <!-- # Construction Menu: after Sausages -->
   <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
@@ -374,18 +413,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="1010263">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244' and not(//ForceIcon[.='1500010952']) and (//PopulationInputs/Item/Product='1500010102')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244']">
     <Item>
       <Building>1500010111</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # Restaurant recipes: hot chocolate -->
   <ModOp Type="addNextSibling" GUID="132753">

@@ -114,6 +114,9 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
+                        <Asset>1500010836</Asset>
+                      </Item>
+                      <Item>
                         <Asset>1500010830</Asset>
                       </Item>
                     </UnlockAssets>
@@ -156,6 +159,48 @@
                         <Asset>1500010830</Asset>
                       </Item>
                     </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011168</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010836</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
+                      </Item>
+                    </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>
@@ -296,18 +341,12 @@
   </ModOp>
 
   <!-- # Construction Menu: after Fish -->
-  <ModOp Type="add" GUID="1010278">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000189,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[(Building='1010278' or position()=1) and not(//ForceIcon[.='1500010957']) and (//PopulationInputs/Item/Product='1500010836')][last()] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[(Building='1010278' or position()=1)][last()]">
     <Item>
       <Building>1500010830</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # General -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">

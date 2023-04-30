@@ -4,7 +4,7 @@
   1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
 -->
 <ModOps>
-  <!-- # Triggers -->
+  <!-- # Unlocks -->
   <ModOp Type="addNextSibling" GUID="502019">
     <Asset>
       <Template>FeatureUnlock</Template>
@@ -53,7 +53,6 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500010179</GUID> -->
           <GUID>1500011153</GUID>
           <Name>@ 1 Engineer</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
@@ -91,28 +90,20 @@
         <TriggerSetup />
       </Values>
     </Asset>
-    <!-- <Asset>
-      <!- -
-        Unlock Pescatarian only goods with community center.
-        TODO move this to Pescatarians.
-      - ->
-      <Template>Trigger</Template>
+    <Asset>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010190</GUID>
-          <Name>unlock_goods</Name>
+          <GUID>1500010179</GUID>
+          <Name>Creative Mode</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
+            <Template>ConditionIsCreativeMode</Template>
             <Values>
               <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010100</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
+              <ConditionIsCreativeMode />
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -123,6 +114,9 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
+                      <Item>
+                        <Asset>1500010165</Asset>
+                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -130,9 +124,11 @@
             </Item>
           </TriggerActions>
         </Trigger>
-        <TriggerSetup />
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
-    </Asset> -->
+    </Asset>
   </ModOp>
 
   <!-- # Hemp Farm -->
@@ -914,18 +910,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="1010263">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000191,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019' and not(//ForceIcon[.='1500010952']) and (//PopulationInputs/Item/Product='1500010127')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
     <Item>
       <Building>1500010129</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # buff targets -->
   <!-- all cloth productions -->

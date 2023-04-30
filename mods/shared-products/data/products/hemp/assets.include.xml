@@ -1,0 +1,143 @@
+<ModOps>
+  <!-- # Product: Hemp -->
+  <ModOp Type="addNextSibling" GUID="1010217">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1440224</GUID> <!-- New Horizon GUID/product; bundled with permission -->
+          <Name>Hemp</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\plants\icon_hemp.png</IconFilename>
+          <InfoDescription>1500010017</InfoDescription>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11702</ProductCategory> <!-- natural products -->
+          <BasePrice>140</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate;Meta</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+            <Item>
+              <RegionType>Meta</RegionType> <!-- New Horizon: Asia -->
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>40</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>12862</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Lists -->
+  <Group>
+    <!-- After Coats -->
+    <Group>
+      <ModOp Type="add" GUID="120055,120057"
+        Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1440224']"
+        Path="/Values/ProductStorageList/ProductList">
+        <Item>
+          <Product>1440224</Product>
+        </Item>
+      </ModOp>
+      <ModOp Type="addNextSibling" GUID="502019,502006"
+        Condition="!~/Values/ProductList/List/Item[Product='1440224']"
+        Path="/Values/ProductList/List/Item[Product='1010247']">
+        <Item>
+          <Product>1440224</Product>
+        </Item>
+      </ModOp>
+    </Group>
+    <!-- After Furs -->
+    <Group>
+      <ModOp Type="addNextSibling" GUID="502037"
+        Condition="!~/Values/ProductList/List/Item[Product='1440224']"
+        Path="/Values/ProductList/List/Item[Product='1010209']">
+        <Item>
+          <Product>1440224</Product>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Docklands: Tattershire -->
+  <Group Condition="!//TradeLevels/Item/Trades[Item/Good='1440224']">
+    <ModOp Type="addNextSibling" GUID="1010217"
+      Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500301134']/IsMainFactory[text()='1']">
+      <Asset>
+        <Template>FarmBuilding</Template>
+        <Values>
+          <Standard>
+            <GUID>1500301134</GUID>
+            <Name>IsMainFactory_Fake: Hemp</Name>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+          </Building>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\graphics\buildings\production\agriculture_03\agriculture_03.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Locked />
+          <FactoryBase>
+            <FactoryOutputs>
+              <Item>
+                <Product>1440224</Product>
+                <Amount>1</Amount>
+                <StorageAmount>2</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>60</CycleTime>
+            <IsMainFactory>1</IsMainFactory>
+          </FactoryBase>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010052</Product>
+                <Amount>16</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <ModuleOwner>
+            <ModuleLimits>
+              <Main>
+                <Limit>0</Limit>
+              </Main>
+            </ModuleLimits>
+            <ConstructionOptions>
+              <Item>
+                <ModuleGUID>1010270</ModuleGUID>
+              </Item>
+            </ConstructionOptions>
+          </ModuleOwner>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131819']/TradeLevels/Item/Trades/Item[Good='1010194']">
+      <Item>
+        <Good>1440224</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="502233" Path="/Values/ProductList">
+      <Item>
+        <Product>1440224</Product>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

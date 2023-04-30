@@ -610,6 +610,34 @@
       </Values>
     </Asset>
     <Asset>
+      <Template>AssetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011164</GUID>
+          <Name>Tea Asset Pool</Name>
+        </Standard>
+        <AssetPool>
+          <AssetList>
+            <Item>
+              <Asset>1500010847</Asset>
+            </Item>
+            <Item>
+              <Asset>1500011161</Asset>
+            </Item>
+            <Item>
+              <Asset>1500011160</Asset>
+            </Item>
+            <Item>
+              <Asset>1500011162</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010959</Asset>
+            </Item>
+          </AssetList>
+        </AssetPool>
+      </Values>
+    </Asset>
+    <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
@@ -638,13 +666,46 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500011160</Asset>
+                        <Asset>1500011164</Asset>
                       </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011165</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
                       <Item>
-                        <Asset>1500011162</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010959</Asset>
+                        <Asset>1500011164</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -913,7 +974,7 @@
     </Item>
   </ModOp>
 
-  <!-- # Construction Menu: after Sausages -->
+  <!-- # Construction Menu: after Coffee -->
   <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
       <Template>ProductionChain</Template>

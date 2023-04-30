@@ -312,7 +312,7 @@
       <Values>
         <Standard>
           <GUID>1500010163</GUID>
-          <Name>asset pool tools</Name>
+          <Name>Tools Asset Pool</Name>
         </Standard>
         <AssetPool>
           <AssetList>
@@ -339,7 +339,7 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010195</GUID>
@@ -356,6 +356,45 @@
                 <Context>15000002</Context>
                 <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010163</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011167</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -416,18 +455,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="1500010155">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000191,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' and not(//ForceIcon[.='1500010957']) and (//PopulationInputs/Item/Product='1500010153')] | //ignore/Item[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003']">
     <Item>
       <Building>1500010155</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # Feedback -->
   <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
