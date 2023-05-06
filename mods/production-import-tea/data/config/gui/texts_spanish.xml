@@ -1,9 +1,14 @@
 <ModOps>
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <Text>Recursos marítimos y comerciales</Text>
+  </ModOp>
+
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010940</GUID>
-      <Text>Fabricante de Té</Text> <!-- Building: Tea Maker -->
+      <Text>Tetera</Text> <!-- Building: Tea Maker -->
     </Text>
     <Text>
       <GUID>1500010848</GUID>
@@ -28,7 +33,7 @@
 
     <Text>
       <GUID>1500011160</GUID>
-      <Text>Muelles de Té</Text>
+      <Text>Muelles de té</Text>
     </Text>
     <Text>
       <GUID>1500011161</GUID>
@@ -36,7 +41,7 @@
     </Text>
     <Text>
       <GUID>1500011162</GUID>
-      <Text>Fabricante de Té</Text>
+      <Text>Fábrica de té</Text>
     </Text>
   </ModOp>
 </ModOps>
