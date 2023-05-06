@@ -47,6 +47,13 @@ Add the following dependencies to your `modinfo.json`:
 Products are not unlocked automatically, but with their production mods - mainly provided by `[Addon] Industrial Cities` and `[Addon] Pescatarians`.
 You need to unlock them yourself, if you use the products without those.
 
+## Changes
+
+### [Unreleased]
+
+- Added Tea Docks to Harbor construction menu
+- Updated Spanish Translations
+
 ## How to Build
 
 ### Build with Visual Studio Code plugin

@@ -974,32 +974,44 @@
     </Item>
   </ModOp>
 
-  <!-- # Construction Menu: after Coffee -->
-  <ModOp Type="addNextSibling" GUID="1010263">
-    <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010959</GUID>
-          <Name>Tea</Name>
-          <IconFilename>data/products/tea/icon_tea.png</IconFilename>
-        </Standard>
-        <ProductionChain>
-          <Building>1500011162</Building>
-          <Tier1>
-            <Item>
-              <Building>1500011160</Building>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="25000192,500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500902']">
-    <Item>
-      <Building>1500010959</Building>
-    </Item>
-  </ModOp>
+  <!-- # Construction Menu -->
+  <!-- After Coffee -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010263">
+      <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010959</GUID>
+            <Name>Tea</Name>
+            <IconFilename>data/products/tea/icon_tea.png</IconFilename>
+          </Standard>
+          <ProductionChain>
+            <Building>1500011162</Building>
+            <Tier1>
+              <Item>
+                <Building>1500011160</Building>
+              </Item>
+            </Tier1>
+          </ProductionChain>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000192,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500902']">
+      <Item>
+        <Building>1500010959</Building>
+      </Item>
+    </ModOp>
+  </Group>
+  <!-- Harbor: After Docklands -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500111"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='7291']">
+      <Item>
+        <Building>1500010959</Building>
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>
