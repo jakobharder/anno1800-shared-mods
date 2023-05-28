@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010830</GUID>
           <Name>Vegetable Farm</Name>
-          <IconFilename>data/products/vegetables/icon_vegetables.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>

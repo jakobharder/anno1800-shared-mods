@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010847</GUID>
           <Name>Tea</Name>
-          <IconFilename>data/products/tea/icon_tea.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tea.png</IconFilename>
         </Standard>
         <Locked />
         <Product>

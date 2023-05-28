@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010105</GUID>
           <Name>Olives</Name>
-          <IconFilename>data/products/olives/icon_olives.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_olives.png</IconFilename>
           <InfoDescription>1500010017</InfoDescription>
         </Standard>
         <Locked />

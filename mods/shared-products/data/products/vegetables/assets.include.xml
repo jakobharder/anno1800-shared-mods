@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010836</GUID>
           <Name>Vegetables</Name>
-          <IconFilename>data/products/vegetables/icon_vegetables.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
         </Standard>
         <Locked />
         <Product>
