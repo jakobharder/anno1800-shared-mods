@@ -3,7 +3,7 @@
   "ModID": "production-cans-and-suits-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
-    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip"
+    "../shared-products-jakob"
   ],
   "LoadAfterIds": [
     "[Gameplay] Cattle needs to be butchered",
