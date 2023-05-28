@@ -51,8 +51,12 @@ You need to unlock them yourself, if you use the products without those.
 
 ### [Unreleased]
 
+- Fix compatibility with Taludas' Free Farmfield Placement
+- Fix missing Fish Cannery (compatibility with Cattle needs to be butchered)
 - Added Tea Docks to Harbor construction menu
-- Updated Spanish Translations
+- Unlock Cheese earlier (1 Artisan)
+- Updated Russian (thanks DrD_AVEL)
+- Updated Spanish (thanks mfuegar)
 
 ## How to Build
 
