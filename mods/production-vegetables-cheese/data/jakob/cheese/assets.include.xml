@@ -284,7 +284,7 @@
       <Values>
         <Standard>
           <GUID>1500010196</GUID>
-          <Name>@ 900 Artisans</Name>
+          <Name>@ Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -295,7 +295,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>900</CounterAmount>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
