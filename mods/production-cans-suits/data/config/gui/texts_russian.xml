@@ -7,10 +7,9 @@
     </Text>
     <Text>
       <GUID>1500010110</GUID>
-      <Text>Оливковое дерево</Text>
+      <Text>Оливковые посадки</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010123</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
     </Text>
@@ -40,7 +39,7 @@
     </Text>
     <Text>
       <GUID>1500010128</GUID>
-      <Text>Фабрика костюмов</Text> <!-- suits factory: building -->
+      <Text>Фабрика фраков</Text> <!-- suits factory: building -->
     </Text>
     <Text>
       <GUID>1500010129</GUID>

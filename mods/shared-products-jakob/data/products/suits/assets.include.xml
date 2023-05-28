@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010127</GUID>
           <Name>Suits</Name>
-          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
         </Standard>
         <Locked />
         <Product>

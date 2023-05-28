@@ -1,9 +1,9 @@
 {
-  "Version": "1.1.2",
+  "Version": "1.1.3",
   "ModID": "production-import-tea-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
-    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip"
+    "../shared-products-jakob"
   ],
   "Category": {
     "English": "Production"

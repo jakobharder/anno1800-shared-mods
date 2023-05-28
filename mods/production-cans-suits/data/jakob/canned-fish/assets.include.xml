@@ -10,7 +10,7 @@
         <Standard>
           <GUID>1500010107</GUID>
           <Name>olive_tree_farm</Name>
-          <IconFilename>data\jakob\canned-fish\olive_treeplanter\icon_olives.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_olives.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -122,7 +122,8 @@
           </ConstructionOptions>
           <ModuleBuildRadius>27</ModuleBuildRadius>
           <AdditionalModuleMustBeMainBuildingAdjacent>0</AdditionalModuleMustBeMainBuildingAdjacent>
-          <AdditionalModule>269837</AdditionalModule> <!-- same as non-grain farms -->
+          <AdditionalModule>269837</AdditionalModule>
+          <FarmType>PlantFarm</FarmType>
         </ModuleOwner>
         <AmbientMoodProvider>
           <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
@@ -189,7 +190,7 @@
         <Standard>
           <GUID>1500010110</GUID>
           <Name>olive_tree_field</Name>
-          <IconFilename>data\jakob\canned-fish\olive_treeplanter\icon_olive_tree.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_olive_field.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>

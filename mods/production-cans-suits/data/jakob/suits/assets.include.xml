@@ -500,7 +500,7 @@
         <Standard>
           <GUID>1500010128</GUID>
           <Name>Land of Lions Suits Maker</Name>
-          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -632,7 +632,7 @@
         <Standard>
           <GUID>1500011150</GUID>
           <Name>New Suits Maker</Name>
-          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -807,7 +807,7 @@
         <Standard>
           <GUID>1500010184</GUID>
           <Name>suits_maker_reduced_needs</Name>
-          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -888,7 +888,7 @@
         <Standard>
           <GUID>1500010129</GUID>
           <Name>suits_chain</Name>
-          <IconFilename>data/products/suits/icon_suits.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500011150</Building>
