@@ -122,7 +122,8 @@
           </ConstructionOptions>
           <ModuleBuildRadius>27</ModuleBuildRadius>
           <AdditionalModuleMustBeMainBuildingAdjacent>0</AdditionalModuleMustBeMainBuildingAdjacent>
-          <AdditionalModule>269837</AdditionalModule> <!-- same as non-grain farms -->
+          <AdditionalModule>269837</AdditionalModule>
+          <FarmType>PlantFarm</FarmType>
         </ModuleOwner>
         <AmbientMoodProvider>
           <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
