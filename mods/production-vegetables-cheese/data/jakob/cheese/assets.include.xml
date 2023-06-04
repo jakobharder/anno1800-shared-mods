@@ -1,11 +1,9 @@
-<!-- 
-  Cheese Production
-
+<!--
   Deprecated GUIDs: 1500010112
 -->
 <ModOps>
   <!-- # Milk Farm -->
-  <ModOp Type="addNextSibling" GUID="1010263">
+  <ModOp Type="addNextSibling" GUID="190011">
     <Asset>
       <BaseAssetGUID>1010263</BaseAssetGUID>
       <Values>
@@ -82,14 +80,14 @@
     </Item>
   </ModOp>
   <!-- specific items -->
-  <ModOp Type="add" GUID="136827,190894" Path="/Values/ItemEffect/EffectTargets">
+  <ModOp Type="add" GUID="190894" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010104</GUID>
     </Item>
   </ModOp>
 
   <!-- # Cheese Dairy -->
-  <ModOp Type="addNextSibling" GUID="1010263">
+  <ModOp Type="addNextSibling" GUID="190011">
     <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
@@ -250,7 +248,7 @@
   </ModOp>
 
   <!-- # Cheese Production -->
-  <ModOp Type="addNextSibling" GUID="1010263">
+  <ModOp Type="addNextSibling" GUID="190011">
     <Asset>
       <Template>AssetPool</Template>
       <Values>
@@ -362,15 +360,6 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- feedback -->
-  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500010103</Building>
-    </Item>
-    <Item>
-      <Building>1500010104</Building>
-    </Item>
-  </ModOp>
   <!-- general production targets -->
   <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
@@ -380,19 +369,8 @@
       <GUID>1500010103</GUID>
     </Item>
   </ModOp>
-
-  <!-- boostable buildings -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
-    <Item>
-      <Factory>1500010104</Factory>
-    </Item>
-    <Item>
-      <Factory>1500010103</Factory>
-    </Item>
-  </ModOp>
-
   <!-- # Construction Menu: after Sausages -->
-  <ModOp Type="addNextSibling" GUID="1010263">
+  <ModOp Type="addNextSibling" GUID="190011">
     <Asset>
       <Template>ProductionChain</Template>
       <Values>
@@ -417,6 +395,33 @@
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244']">
     <Item>
       <Building>1500010111</Building>
+    </Item>
+  </ModOp>
+
+  <!-- boostable buildings -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010104</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010103</Factory>
+    </Item>
+  </ModOp>
+
+  <!-- Building feedback -->
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010103</Building>
+    </Item>
+    <Item>
+      <Building>1500010104</Building>
+    </Item>
+  </ModOp>
+
+  <!-- Out of order specific items -->
+  <ModOp Type="add" GUID="136827" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010104</GUID>
     </Item>
   </ModOp>
 
