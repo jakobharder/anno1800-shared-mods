@@ -4,8 +4,9 @@
   1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
 -->
 <ModOps>
-  <!-- # Unlocks -->
-  <ModOp Type="addNextSibling" GUID="502019">
+  <!-- # Assets -->
+  <ModOp Type="addNextSibling" GUID="1010315">
+    <!-- Unlocks -->
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
@@ -129,10 +130,8 @@
         </TriggerSetup>
       </Values>
     </Asset>
-  </ModOp>
 
-  <!-- # Hemp Farm -->
-  <ModOp Type="addNextSibling" GUID="1010315">
+    <!-- Hemp -->
     <Asset>
       <Template>FarmBuilding</Template>
       <Values>
@@ -368,50 +367,6 @@
         <ModuleIrrigation />
       </Values>
     </Asset>
-  </ModOp>
-  <!-- feedback -->
-  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500010124</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
-    <Item>
-      <Building>1500010124</Building>
-      <PersonSpawners>
-        <Item>
-          <UnitClass>141674</UnitClass>
-        </Item>
-      </PersonSpawners>
-      <VehicleSpawners>
-        <Item>
-          <UnitClass>269771</UnitClass>
-          <ShrinksFieldsOnTouch>1</ShrinksFieldsOnTouch>
-          <VehicleType>Harvester</VehicleType>
-        </Item>
-        <Item>
-          <UnitClass>25272</UnitClass>
-          <VehicleType>Fertilizer</VehicleType>
-        </Item>
-      </VehicleSpawners>
-    </Item>
-  </ModOp>
-  <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
-  <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  <!-- all farms, including cattle farm -->
-  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  
-
-  <!-- # Hemp Cloth Weaver -->
-  <ModOp Type="addNextSibling" GUID="1010315">
     <Asset>
       <BaseAssetGUID>1010315</BaseAssetGUID>
       <Values>
@@ -490,10 +445,8 @@
         </Locked>
       </Values>
     </Asset>
-  </ModOp>
 
-  <!-- # OW Suits Maker -->
-  <ModOp Type="addNextSibling" GUID="1010315">
+    <!-- Suits Maker -->
     <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
@@ -801,47 +754,6 @@
         </AssetPool>
       </Values>
     </Asset>
-    <!-- <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010184</GUID>
-          <Name>suits_maker_reduced_needs</Name>
-          <IconFilename>data/ui/jakob/icon_suits.png</IconFilename>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010144</GUID> <!- - Pescatarian workers - ->
-            </Item>
-            <Item>
-              <GUID>1500010145</GUID> <!- - Pescatarian artisans - ->
-            </Item>
-            <Item>
-              <GUID>1500010201</GUID> <!- - upgraded worker level 2 - ->
-            </Item>
-          </EffectTargets>
-          <AllowStacking>0</AllowStacking>
-        </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1500010127</ProvidedNeed>
-              <AmountInPercent>-30</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset> -->
     <Asset>
       <Template>GuildhouseBuff</Template>
       <Values>
@@ -870,13 +782,17 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- feedback -->
-  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+
+  <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
+  <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <Building>1500010128</Building>
+      <GUID>1500010124</GUID>
     </Item>
+  </ModOp>
+  <!-- all farms, including cattle farm -->
+  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <Building>1500011150</Building>
+      <GUID>1500010124</GUID>
     </Item>
   </ModOp>
 
@@ -917,6 +833,42 @@
     </Item>
   </ModOp>
 
+  <!-- # Feedback -->
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010128</Building>
+    </Item>
+    <Item>
+      <Building>1500011150</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010124</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
+    <Item>
+      <Building>1500010124</Building>
+      <PersonSpawners>
+        <Item>
+          <UnitClass>141674</UnitClass>
+        </Item>
+      </PersonSpawners>
+      <VehicleSpawners>
+        <Item>
+          <UnitClass>269771</UnitClass>
+          <ShrinksFieldsOnTouch>1</ShrinksFieldsOnTouch>
+          <VehicleType>Harvester</VehicleType>
+        </Item>
+        <Item>
+          <UnitClass>25272</UnitClass>
+          <VehicleType>Fertilizer</VehicleType>
+        </Item>
+      </VehicleSpawners>
+    </Item>
+  </ModOp>
+
   <!-- # buff targets -->
   <!-- all cloth productions -->
   <ModOp Type="add" GUID="190890" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -933,20 +885,14 @@
       <GUID>1500010126</GUID>
     </Item>
   </ModOp>
-  <!-- land reform act -->
-  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
-    <Item>
-      <Effect>1500010184</Effect>
-    </Item>
-  </ModOp>
-  
+
   <!-- specific items -->
   <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010124</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="125067,191328,125138,191347,191329,191327" Path="/Values/ItemEffect/EffectTargets">
+  <ModOp Type="add" GUID="191328,191347,191329,191327" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010128</GUID>
     </Item>
@@ -986,16 +932,14 @@
       <GUID>1500011150</GUID>
     </Item>
   </ModOp>
-  <!-- boostable buildings -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+
+  <!-- DLC Effect Targets -->
+  <ModOp Type="add" GUID="125067,125138" Path="/Values/ItemEffect/EffectTargets">
     <Item>
-      <Factory>1500010126</Factory>
+      <GUID>1500010128</GUID>
     </Item>
     <Item>
-      <Factory>1500010124</Factory>
-    </Item>
-    <Item>
-      <Factory>1500011150</Factory>
+      <GUID>1500011150</GUID>
     </Item>
   </ModOp>
 </ModOps>

@@ -3,7 +3,7 @@
 -->
 <ModOps>
   <!-- # Intermediate Production: Olives -->
-  <ModOp Type="addNextSibling" GUID="1010281">
+  <ModOp Type="addNextSibling" GUID="120055">
     <Asset>
       <Template>FarmBuilding</Template>
       <Values>
@@ -298,7 +298,7 @@
   </ModOp>
 
   <!-- # Need: Canned Fish -->
-  <ModOp GUID='1010200' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="502037">
     <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
@@ -616,7 +616,7 @@
       <Building>1500010121</Building>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500010107</Building>
     </Item>
@@ -667,13 +667,7 @@
       <GUID>1500010121</GUID>
     </Item>
   </ModOp>
-  <!-- land reform act -->
-  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
-    <Item>
-      <Effect>1500010123</Effect>
-    </Item>
-  </ModOp>
-  
+
   <!-- specific items -->
   <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
     <Item>
@@ -685,7 +679,7 @@
       <GUID>1500010121</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="136823,190751,190749" Path="/Values/ItemEffect/EffectTargets">
+  <ModOp Type="add" GUID="190751,190749" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010107</GUID>
     </Item>
@@ -715,13 +709,11 @@
       <GUID>1500010121</GUID>
     </Item>
   </ModOp>
-  <!-- boostable buildings -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+
+  <!-- DLC Effect Targets -->
+  <ModOp Type="add" GUID="136823" Path="/Values/ItemEffect/EffectTargets">
     <Item>
-      <Factory>1500010121</Factory>
-    </Item>
-    <Item>
-      <Factory>1500010107</Factory>
+      <GUID>1500010107</GUID>
     </Item>
   </ModOp>
 </ModOps>
