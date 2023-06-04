@@ -59,8 +59,14 @@
   </ModOp>
 
   <!-- # Docklands: Tattershire -->
-  <Group Condition="!//TradeLevels/Item/Trades[Item/Good='1500010105']">
-    <ModOp Type="addNextSibling" GUID="1010192"
+  <Group Condition="!@131764/.//TradeLevels/Item/Trades[Item/Good='1500010105']">
+    <ModOp Type="addNextSibling" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131819']/TradeLevels/Item/Trades/Item[Good='1010198']">
+      <Item>
+        <Good>1500010105</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="131764"
       Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500301136']/IsMainFactory[text()='1']">
       <Asset>
         <Template>FarmBuilding</Template>
@@ -114,12 +120,6 @@
           </ModuleOwner>
         </Values>
       </Asset>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="131764"
-      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131819']/TradeLevels/Item/Trades/Item[Good='1010198']">
-      <Item>
-        <Good>1500010105</Good>
-      </Item>
     </ModOp>
     <ModOp Type="add" GUID="502233" Path="/Values/ProductList/List">
       <Item>

@@ -55,8 +55,15 @@
   </Group>
 
   <!-- # Docklands: Chanteuse -->
-  <Group Condition="!//TradeLevels/Item/Trades[Item/Good='1500010127']">
-    <ModOp Type="addNextSibling" GUID="1010206"
+  <Group Condition="!@131764/.//TradeLevels/Item/Trades[Item/Good='1500010127']">
+    <ModOp Type="addNextSibling" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item/Trades/Item[Good='1010247']">
+      <Item>
+        <Level>Uncommon</Level>
+        <Good>1500010127</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="131764"
       Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010127']/IsMainFactory[text()='1']">
       <Asset>
         <Template>FactoryBuilding7</Template>
@@ -113,13 +120,6 @@
           </Maintenance>
         </Values>
       </Asset>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="131764"
-      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item/Trades/Item[Good='1010247']">
-      <Item>
-        <Level>Uncommon</Level>
-        <Good>1500010127</Good>
-      </Item>
     </ModOp>
     <ModOp Type="add" GUID="502235" Path="/Values/ProductList/List">
       <Item>

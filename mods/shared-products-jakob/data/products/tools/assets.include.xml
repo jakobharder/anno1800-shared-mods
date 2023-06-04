@@ -55,8 +55,15 @@
   </Group>
 
   <!-- # Docklands: Kitea -->
-  <Group Condition="!//TradeLevels/Item/Trades[Item/Good='1500010153']">
-    <ModOp Type="addNextSibling" GUID="1010206"
+  <Group Condition="!@131764/.//TradeLevels/Item/Trades[Item/Good='1500010153']">
+    <ModOp Type="add" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131811']/TradeLevels/Item[Trades/Item/Good='1010240']/Trades">
+      <Item>
+        <Level>Rare</Level>
+        <Good>1500010153</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="131764"
       Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010948']/IsMainFactory[text()='1']">
       <Asset>
         <Template>FactoryBuilding7</Template>
@@ -112,13 +119,6 @@
           </Maintenance>
         </Values>
       </Asset>
-    </ModOp>
-    <ModOp Type="add" GUID="131764"
-      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131811']/TradeLevels/Item[Trades/Item/Good='1010240']/Trades">
-      <Item>
-        <Level>Rare</Level>
-        <Good>1500010153</Good>
-      </Item>
     </ModOp>
     <ModOp Type="add" GUID="502238" Path="/Values/ProductList/List">
       <Item>

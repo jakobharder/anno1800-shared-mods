@@ -72,8 +72,14 @@
   </ModOp>
 
   <!-- # Docklands: Feedl -->
-  <Group Condition="!//TradeLevels/Item/Trades[Item/Good='1500010102']">
-    <ModOp Type="addNextSibling" GUID="1010213"
+  <Group Condition="!@131764/.//TradeLevels/Item/Trades[Item/Good='1500010102']">
+    <ModOp Type="addNextSibling" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item/Trades/Item[Good='1010238'][last()]">
+      <Item>
+        <Good>1500010102</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="131764"
       Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010130']/IsMainFactory[text()='1']">
       <Asset>
         <Template>FactoryBuilding7</Template>
@@ -122,11 +128,6 @@
           </Maintenance>
         </Values>
       </Asset>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item/Trades/Item[Good='1010238'][last()]">
-      <Item>
-        <Good>1500010102</Good>
-      </Item>
     </ModOp>
     <ModOp Type="add" GUID="502234" Path="/Values/ProductList/List">
       <Item>
