@@ -16,8 +16,8 @@ Contains 1x1 CFG tiles to use instead of decals.
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2/shared-ground-textures-city-jakob.zip",
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2/shared-ground-textures-industry-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.1/shared-ground-textures-city-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.1/shared-ground-textures-industry-jakob.zip"
 ]
 ```
 
@@ -40,7 +40,7 @@ Icon | GUID | Name | Production Unlock
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2/shared-products-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.1/shared-products-jakob.zip"
 ]
 ```
 
@@ -51,8 +51,10 @@ You need to unlock them yourself, if you use the products without those.
 
 ### 3.2
 
-- Fix compatibility with Taludas' Free Farmfield Placement
-- Fix missing Fish Cannery (compatibility with Cattle needs to be butchered)
+- 3.2.1: Fixed missing stone 1x1 CFG
+- 3.2.1: Optimized ModOp performance
+- Fixed compatibility with Taludas' Free Farmfield Placement
+- Fixed missing Fish Cannery (compatibility with Cattle needs to be butchered)
 - Added Tea Docks to Harbor construction menu
 - Unlock Cheese earlier (1 Artisan)
 - Updated Russian (thanks DrD_AVEL)
