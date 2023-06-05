@@ -456,7 +456,7 @@
       </Item>
     </ModOp>
     <ModOp Type="addNextSibling" GUID="131764"
-      Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010948']/IsMainFactory[text()='1']">
+      Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010836']/IsMainFactory[text()='1']">
       <Asset>
       <BaseAssetGUID>1010265</BaseAssetGUID>
       <Values>
