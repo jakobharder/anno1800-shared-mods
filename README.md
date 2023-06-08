@@ -51,6 +51,7 @@ You need to unlock them yourself, if you use the products without those.
 
 ### 3.2
 
+- 3.2.3: Make tea icon more distinguishable
 - 3.2.2: Fixed missing Vegetable farm
 - 3.2.1: Fixed missing stone 1x1 CFG
 - 3.2.1: Optimized ModOp performance
