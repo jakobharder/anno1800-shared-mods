@@ -1,6 +1,9 @@
 {
   "Version": "1.0.1",
-  "ModID": "shared-ground-textures-industry-jakob",
+  "ModID": "shared-decals-industry-jakob",
+  "DeprecateIds": [
+    "shared-ground-textures-industry-jakob"
+  ],
   "Category": {
     "English": "Shared"
   },
