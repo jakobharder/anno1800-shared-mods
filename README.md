@@ -16,8 +16,8 @@ Contains 1x1 CFG tiles to use instead of decals.
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.2/shared-ground-textures-city-jakob.zip",
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.2/shared-ground-textures-industry-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.3/shared-decals-city-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.3/shared-decals-industry-jakob.zip"
 ]
 ```
 
@@ -40,7 +40,7 @@ Icon | GUID | Name | Production Unlock
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.2/shared-products-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.3/shared-products-jakob.zip"
 ]
 ```
 
@@ -51,6 +51,7 @@ You need to unlock them yourself, if you use the products without those.
 
 ### 3.2
 
+- 3.2.3: Make tea icon more distinguishable
 - 3.2.2: Fixed missing Vegetable farm
 - 3.2.1: Fixed missing stone 1x1 CFG
 - 3.2.1: Optimized ModOp performance
