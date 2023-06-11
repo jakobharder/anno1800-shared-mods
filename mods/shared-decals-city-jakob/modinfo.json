@@ -2,7 +2,7 @@
   "Version": "1.0",
   "ModID": "shared-decals-city-jakob",
   "DeprecateIds": [
-    "shared-decals-industry-jakob"
+    "shared-ground-textures-city-jakob"
   ],
   "Category": {
     "English": "Shared"
