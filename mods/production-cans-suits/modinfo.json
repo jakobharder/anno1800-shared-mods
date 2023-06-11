@@ -1,8 +1,8 @@
 {
-  "Version": "1.1.3",
+  "Version": "1.1.4",
   "ModID": "production-cans-and-suits-jakob",
   "ModDependencies": [
-    "shared-ground-textures-industry-jakob",
+    "shared-decals-industry-jakob",
     "../shared-products-jakob"
   ],
   "LoadAfterIds": [

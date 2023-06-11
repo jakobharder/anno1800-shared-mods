@@ -2,13 +2,13 @@
   "Version": "1.0",
   "ModID": "shared-decals-city-jakob",
   "DeprecateIds": [
-    "shared-ground-textures-city-jakob"
+    "shared-decals-industry-jakob"
   ],
   "Category": {
     "English": "Shared"
   },
   "ModName": {
-    "English": "Ground Textures City (Jakob)"
+    "English": "Decals City (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
