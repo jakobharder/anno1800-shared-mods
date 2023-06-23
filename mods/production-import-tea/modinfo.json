@@ -1,8 +1,8 @@
 {
-  "Version": "1.1.6",
+  "Version": "1.1.7",
   "ModID": "production-import-tea-jakob",
   "ModDependencies": [
-    "shared-decals-industry-jakob",
+    "shared-ground-textures-industry-jakob",
     "../shared-products-jakob"
   ],
   "Category": {

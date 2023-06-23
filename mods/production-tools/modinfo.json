@@ -1,8 +1,8 @@
 {
-  "Version": "1.1.3",
+  "Version": "1.1.4",
   "ModID": "production-tools-jakob",
   "ModDependencies": [
-    "shared-decals-industry-jakob",
+    "shared-ground-textures-industry-jakob",
     "../shared-products-jakob"
   ],
   "Category": {
