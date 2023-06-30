@@ -392,15 +392,6 @@
               <Ingredient>1010205</Ingredient>
               <Amount>8</Amount>
             </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
           </Costs>
         </Cost>
         <Object>
@@ -410,6 +401,12 @@
             </Item>
           </Variations>
         </Object>
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
         <FactoryBase>
           <FactoryInputs>
             <Item>
