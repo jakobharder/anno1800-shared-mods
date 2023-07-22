@@ -1,9 +1,8 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1440224</GUID>
-      <Text>Hemp</Text>
+      <Text>Hanf</Text>
     </Text>
     <Text>
       <GUID>1500010102</GUID>
