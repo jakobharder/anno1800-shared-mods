@@ -30,4 +30,32 @@
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
     </Text>
   </ModOp>
+
+  <!-- # Hot Chocolate -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010250</GUID>
+      <Text>热可可</Text>
+    </Text>
+    <Text>
+      <GUID>1500010251</GUID>
+      <Text>它不一定是咖啡。热牛奶、可可粉和一些肉桂......这就是你需要的不含咖啡因的好热饮。</Text>
+    </Text>
+    <Text>
+      <GUID>1500010252</GUID>
+      <Text>Cafe: [AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010253</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010254</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010255</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+  </ModOp>
 </ModOps>
