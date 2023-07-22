@@ -51,7 +51,7 @@
     </Text>
     <Text>
       <GUID>1500011150</GUID>
-      <Text>[AssetData(1500010128) Text]</Text> <!-- building: Suits Factory -->
+      <Text>Fabbrica di abiti</Text> <!-- building: Suits Factory -->
     </Text>
   </ModOp>
 </ModOps>
