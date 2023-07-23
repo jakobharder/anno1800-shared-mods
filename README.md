@@ -51,6 +51,9 @@ You need to unlock them yourself, if you use the products without those.
 
 ### 3.2
 
+- 3.2.5: Fixed hot chocolate, suits factory, hemp texts
+- 3.2.5: Removed IsMainFactory from milk farm
+- 3.2.4: Fixed mod dependencies
 - 3.2.3: Make tea icon more distinguishable
 - 3.2.2: Fixed missing Vegetable farm
 - 3.2.1: Fixed missing stone 1x1 CFG
