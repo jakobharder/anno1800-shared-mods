@@ -10,7 +10,6 @@
       <Text>Olivenbaum</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500010123</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
     </Text>
@@ -52,7 +51,7 @@
     </Text>
     <Text>
       <GUID>1500011150</GUID>
-      <Text>[AssetData(1500010128) Text]</Text> <!-- building: Suits Factory -->
+      <Text>Anzugfabrik</Text> <!-- building: Suits Factory -->
     </Text>
   </ModOp>
 </ModOps>

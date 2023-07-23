@@ -44,13 +44,13 @@
             </Item>
           </FactoryOutputs>
           <CycleTime>30</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <ModuleOwner>
           <FertilizerModuleData>
             <Module>0</Module>
           </FertilizerModuleData>
-        </ModuleOwner>        
+        </ModuleOwner>
         <Maintenance>
           <Maintenances>
             <Item>

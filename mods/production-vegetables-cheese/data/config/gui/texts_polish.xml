@@ -30,4 +30,32 @@
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
     </Text>
   </ModOp>
+
+  <!-- # Hot Chocolate -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010250</GUID>
+      <Text>Gorąca czekolada</Text>
+    </Text>
+    <Text>
+      <GUID>1500010251</GUID>
+      <Text>To wcale nie musi być kawa. Gorące mleko, kakao rozpuszczalne i szczypta cynamonu... to wszystko czego ci trzeba do dobrego bezkofeinowego gorącego napoju.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010252</GUID>
+      <Text>Kawiarnia: [AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010253</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010254</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010255</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+  </ModOp>
 </ModOps>
