@@ -455,81 +455,81 @@
         <Good>1500010836</Good>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="131764"
+    <ModOp Type="addNextSibling" GUID="1010265"
       Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010836']/IsMainFactory[text()='1']">
       <Asset>
-      <BaseAssetGUID>1010265</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010949</GUID>
-          <Name>IsMainfactory_Fake: Vegetables</Name>
-          <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
-        </Standard>
-        <Building>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\graphics\buildings\public\logistic_01\logistic_01.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked />
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>400</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>4</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>1500010836</Product>
-              <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>30</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
-        </FactoryBase>
-        <ModuleOwner>
-          <ModuleLimits>
-            <Main>
-              <Limit>72</Limit>
-            </Main>
-          </ModuleLimits>
-          <ConstructionOptions>
-            <Item>
-              <ModuleGUID>1500010944</ModuleGUID>
-            </Item>
-          </ConstructionOptions>
-          <AdditionalModule>269837</AdditionalModule>
-          <ModuleBuildRadius>26</ModuleBuildRadius>
-          <FarmType>PlantFarm</FarmType>
-        </ModuleOwner>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>50</Amount>
-              <InactiveAmount>25</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>40</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-      </Values>
-    </Asset>
+        <BaseAssetGUID>1010265</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500010949</GUID>
+            <Name>IsMainfactory_Fake: Vegetables</Name>
+            <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+          </Building>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\graphics\buildings\public\logistic_01\logistic_01.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Locked />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>400</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>4</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <FactoryBase>
+            <FactoryOutputs>
+              <Item>
+                <Product>1500010836</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>30</CycleTime>
+            <IsMainFactory>1</IsMainFactory>
+          </FactoryBase>
+          <ModuleOwner>
+            <ModuleLimits>
+              <Main>
+                <Limit>72</Limit>
+              </Main>
+            </ModuleLimits>
+            <ConstructionOptions>
+              <Item>
+                <ModuleGUID>1500010944</ModuleGUID>
+              </Item>
+            </ConstructionOptions>
+            <AdditionalModule>269837</AdditionalModule>
+            <ModuleBuildRadius>26</ModuleBuildRadius>
+            <FarmType>PlantFarm</FarmType>
+          </ModuleOwner>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>50</Amount>
+                <InactiveAmount>25</InactiveAmount>
+              </Item>
+              <Item>
+                <Product>1010052</Product>
+                <Amount>40</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+        </Values>
+      </Asset>
     </ModOp>
   </Group>
 
