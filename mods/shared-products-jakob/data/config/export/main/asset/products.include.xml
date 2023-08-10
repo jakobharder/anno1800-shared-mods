@@ -255,6 +255,42 @@
         </ExpeditionAttribute>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010825</GUID>
+          <Name>Ropes</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_rope.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11707</ProductCategory>
+          <BasePrice>200</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>40</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Crafting</Attribute>
+              <Amount>35</Amount>
+            </Item>
+            <Item>
+              <Attribute>Melee</Attribute>
+              <Amount>5</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
   </ModOp>
 
   <!-- # Storage Lists -->
@@ -273,6 +309,14 @@
       Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
       <Item>
         <Product>1500010102</Product>
+      </Item>
+    </ModOp>
+    <!-- Ropes: After Coats/Hemp -->
+    <ModOp Type="addNextSibling" GUID="120055,120057"
+      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010825']"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
+      <Item>
+        <Product>1500010825</Product>
       </Item>
     </ModOp>
     <!-- Hemp: After Coats -->
@@ -343,6 +387,25 @@
         <Product>1500010102</Product>
       </Item>
     </ModOp>
+    <!-- Ropes -->
+    <Group>
+      <!-- After Coats / Hemp -->
+      <ModOp Type="addNextSibling" GUID="502019,502006"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010825']"
+        Path="/Values/ProductList/List/Item[Product='1010247']">
+        <Item>
+          <Product>1500010825</Product>
+        </Item>
+      </ModOp>
+      <!-- After Goulash -->
+      <ModOp Type="addNextSibling" GUID="502043"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010825']"
+        Path="/Values/ProductList/List/Item[Product='1010215']">
+        <Item>
+          <Product>1500010825</Product>
+        </Item>
+      </ModOp>
+    </Group>
     <!-- Hemp -->
     <Group>
       <!-- After Coats -->
