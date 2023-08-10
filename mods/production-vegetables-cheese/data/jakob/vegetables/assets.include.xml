@@ -88,7 +88,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011191</GUID>
+          <GUID>1500011193</GUID>
+          <!-- <GUID>1500011191</GUID> -->
           <!-- <GUID>1500010844</GUID> -->
           <Name>Unlock @ 400 Workers</Name>
         </Standard>
@@ -174,7 +175,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011190</GUID>
+          <GUID>1500011192</GUID>
+          <!-- <GUID>1500011190</GUID> -->
           <!-- <GUID>1500011168</GUID> -->
           <Name>Creative Mode</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
