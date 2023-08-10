@@ -19,11 +19,11 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010830</GUID>
-      <Text>Vegetable Farm</Text>
+      <Text>Fattoria di verdure</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
-      <Text>Vegetable Field</Text>
+      <Text>Campo di verdure</Text>
     </Text>
     <Text>
       <GUID>1500010946</GUID>
