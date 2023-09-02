@@ -49,6 +49,11 @@ You need to unlock them yourself, if you use the products without those.
 
 ## Changes
 
+### 3.3
+
+- Rebalanced unlocks
+- Renamed canned fish to sardines
+
 ### 3.2
 
 - 3.2.5: Fixed hot chocolate, suits factory, hemp texts
