@@ -154,7 +154,7 @@
       <Values>
         <Standard>
           <GUID>1500010941</GUID>
-          <Name>@ 400 Engineers</Name>
+          <Name>@ 800 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -164,8 +164,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context>
-                <CounterAmount>400</CounterAmount>
+                <Context>15000002</Context>
+                <CounterAmount>800</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -681,8 +681,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011163</GUID>
-          <Name>@ 400 Engineers</Name>
+          <GUID>1500011285</GUID>
+          <Name>@ 800 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -692,8 +692,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context>
-                <CounterAmount>400</CounterAmount>
+                <Context>15000002</Context>
+                <CounterAmount>800</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
