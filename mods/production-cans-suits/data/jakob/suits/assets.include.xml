@@ -265,6 +265,7 @@
           </Maintenances>
         </Maintenance>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>1500</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>
@@ -551,6 +552,7 @@
           </Maintenances>
         </Maintenance>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>5250</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>
@@ -690,6 +692,7 @@
           </Maintenances>
         </Maintenance>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>5250</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>
