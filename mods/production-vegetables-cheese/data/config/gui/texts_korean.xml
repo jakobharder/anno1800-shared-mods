@@ -3,11 +3,11 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010103</GUID>
-      <Text>치즈 공장</Text>
+      <Text>치즈 제조소</Text>
     </Text>
     <Text>
       <GUID>1500010104</GUID>
-      <Text>소 농장</Text>
+      <Text>낙농장</Text>
     </Text>
     <Text>
       <GUID>1500010111</GUID>
@@ -19,11 +19,11 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010830</GUID>
-      <Text>Vegetable Farm</Text>
+      <Text>채소 농장</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
-      <Text>Vegetable Field</Text>
+      <Text>채소밭</Text>
     </Text>
     <Text>
       <GUID>1500010946</GUID>
@@ -35,15 +35,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010250</GUID>
-      <Text>핫 초코</Text>
+      <Text>핫초코</Text>
     </Text>
     <Text>
       <GUID>1500010251</GUID>
-      <Text>It doesn't have to be a coffee. Hot milk, cocoa powder and some cinnamon... that's all you need for a good caffeine free hot beverage.</Text>
+      <Text>꼭 커피일 필요는 없습니다. 따뜻한 우유, 코코아 가루, 그리고 계피 약간... 카페인이 없는 따뜻한 음료를 즐기기 위해 필요한 전부입니다.</Text>
     </Text>
     <Text>
       <GUID>1500010252</GUID>
-      <Text>Cafe: [AssetData(1500010250) Text]</Text>
+      <Text>카페: [AssetData(1500010250) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010253</GUID>
