@@ -16,8 +16,8 @@ Contains 1x1 CFG tiles to use instead of decals.
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.3/shared-ground-textures-city-jakob.zip",
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.3/shared-ground-textures-industry-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-city-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-industry-jakob.zip"
 ]
 ```
 
@@ -40,7 +40,7 @@ Icon | GUID | Name | Production Unlock
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.3/shared-products-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-products-jakob.zip"
 ]
 ```
 
@@ -48,6 +48,11 @@ Products are not unlocked automatically, but with their production mods - mainly
 You need to unlock them yourself, if you use the products without those.
 
 ## Changes
+
+### 3.4
+
+- Added more darken props in Ground Textures Industry
+- Updated Korean translation
 
 ### 3.3
 

@@ -3,19 +3,19 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010940</GUID>
-      <Text>Tea Maker</Text> <!-- Building: Tea Maker -->
+      <Text>차 제조소</Text> <!-- Building: Tea Maker -->
     </Text>
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Herb Farm</Text> <!-- Building: Herb Farm -->
+      <Text>약초 농장</Text> <!-- Building: Herb Farm -->
     </Text>
     <Text>
       <GUID>1500010849</GUID>
-      <Text>Herbs</Text> <!-- Product: Herbs -->
+      <Text>약초</Text> <!-- Product: Herbs -->
     </Text>
     <Text>
       <GUID>1500010943</GUID>
-      <Text>Herbs Field</Text> <!-- Module: Herbs Field -->
+      <Text>약초밭</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
       <GUID>1500010945</GUID>
@@ -27,19 +27,16 @@
     </Text>
 
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011160</GUID>
-      <Text>Tea Docks</Text>
+      <Text>차 부두</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011161</GUID>
-      <Text>Imported Tea</Text>
+      <Text>수입된 차</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011162</GUID>
-      <Text>Tea Factory</Text>
+      <Text>차 공장</Text>
     </Text>
   </ModOp>
 </ModOps>
