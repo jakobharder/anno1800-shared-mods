@@ -242,6 +242,12 @@
       <GUID>1500011160</GUID>
     </Item>
   </ModOp>
+  <!-- all drinks production -->
+  <ModOp Type="add" GUID="190901" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011162</GUID>
+    </Item>
+  </ModOp>
 
   <!-- # Product: Imported Tea -->
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: append -->
