@@ -49,6 +49,10 @@ You need to unlock them yourself, if you use the products without those.
 
 ## Changes
 
+### 3.5
+
+- Added Tea to all drinks production
+
 ### 3.4
 
 - Added more darken props in Ground Textures Industry
