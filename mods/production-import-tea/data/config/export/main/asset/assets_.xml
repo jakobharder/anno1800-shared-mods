@@ -361,10 +361,10 @@
               <Ingredient>1010207</Ingredient>
               <Amount>4</Amount>
             </Item>
-            <Item>
+            <!-- <Item>
               <Ingredient>1010202</Ingredient>
               <Amount>4</Amount>
-            </Item>
+            </Item> -->
           </Costs>
         </Cost>
         <Object>
@@ -536,10 +536,10 @@
               <Ingredient>1010207</Ingredient>
               <Amount>4</Amount>
             </Item>
-            <Item>
+            <!-- <Item>
               <Ingredient>1010202</Ingredient>
               <Amount>4</Amount>
-            </Item>
+            </Item> -->
           </Costs>
         </Cost>
         <Object>
@@ -948,8 +948,14 @@
         </Values>
       </Asset>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="25000192,500945"
+    <ModOp Type="addNextSibling" GUID="500945"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='500902']">
+      <Item>
+        <Building>1500010959</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361']">
       <Item>
         <Building>1500010959</Building>
       </Item>

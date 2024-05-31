@@ -1,4 +1,9 @@
 <ModOps>
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <Text>Морские и торговые ресурсы</Text>
+  </ModOp>
+
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
@@ -11,33 +16,30 @@
     </Text>
     <Text>
       <GUID>1500010849</GUID>
-      <Text>Лечебные травы</Text> <!-- Product: Herbs -->
+      <Text>Травы</Text> <!-- Product: Herbs -->
     </Text>
     <Text>
       <GUID>1500010943</GUID>
-      <Text>Поле лечебных трав</Text> <!-- Module: Herbs Field -->
+      <Text>Поле трав</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
       <GUID>1500010945</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
+      <Text>Акт о земельной реформе</Text> <!-- Land Reform Act: Herbs -->
     </Text>
     <Text>
       <GUID>1500010959</GUID>
-      <Text>[AssetData(1500010847) Text]</Text> <!-- menu: Tea -->
+      <Text>Чай</Text> <!-- menu: Tea -->
     </Text>
 
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011160</GUID>
       <Text>Чайные доки</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011161</GUID>
       <Text>Импортный чай</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011162</GUID>
       <Text>Чайная фабрика</Text>
     </Text>
