@@ -21,6 +21,19 @@ Add the following dependencies to your `modinfo.json`:
 ]
 ```
 
+## Production: Olives, Olive Oil and Soap
+
+ID: `production-olive-oil`
+
+Contains products and production chains.
+Soap is an alternative production chain to produce vanilla soap.
+
+Icon | GUID | Name | Unlock
+---|---|---|---
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" width="20" /> | 1500010105<br/>1500010107 | Olives<br/>Olive Grove | 400 Workers
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" width="20" /> | 1500011326<br/>1500011325 | Olive Oil<br/>Olive Oil Press | 400 Workers
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" width="20" /> | TBD | Olive Soap Factory | 900 Artisans
+
 ## Shared Products
 
 Contains products with definition, icon and Docklands information.

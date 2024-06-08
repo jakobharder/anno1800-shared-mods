@@ -2,302 +2,6 @@
   Canned Fish Production
 -->
 <ModOps>
-  <!-- # Intermediate Production: Olives -->
-  <ModOp Type="addNextSibling" GUID="120055">
-    <Asset>
-      <Template>FarmBuilding</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010107</GUID>
-          <Name>olive_tree_farm</Name>
-          <IconFilename>data/ui/jakob/icon_olives.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>180</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Blocking />
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>4000</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>6</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>2</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_treeplanter.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Mesh />
-        <Selection>
-          <ParticipantMessageArcheType>Resident_tier01_atWork</ParticipantMessageArcheType>
-          <Colors>
-            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-          </Colors>
-        </Selection>
-        <Constructable />
-        <Locked />
-        <SoundEmitter>
-          <ActiveSounds>
-            <Item>
-              <Sound>214800</Sound>
-            </Item>
-            <Item>
-              <Sound>206376</Sound>
-            </Item>
-          </ActiveSounds>
-          <ConstructionSounds>
-            <BuildMoveSuccess>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>FarmBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-                <Sound>214783</Sound>
-              </Item>
-            </BuildMoveSuccess>
-          </ConstructionSounds>
-          <IncidentSounds>
-            <InfectedFire>
-              <Item>
-                <Sound>214659</Sound>
-              </Item>
-            </InfectedFire>
-          </IncidentSounds>
-          <MaterialType>Wood</MaterialType>
-        </SoundEmitter>
-        <FeedbackController />
-        <Infolayer />
-        <UpgradeList />
-        <Factory7 />
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>1500010105</Product>
-              <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>60</CycleTime>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <LogisticNode />
-        <ModuleOwner>
-          <ModuleLimits>
-            <Main>
-              <Limit>75</Limit>
-            </Main>
-          </ModuleLimits>
-          <ConstructionOptions>
-            <Item>
-              <ModuleGUID>1500010110</ModuleGUID>
-            </Item>
-          </ConstructionOptions>
-          <ModuleBuildRadius>27</ModuleBuildRadius>
-          <AdditionalModuleMustBeMainBuildingAdjacent>0</AdditionalModuleMustBeMainBuildingAdjacent>
-          <AdditionalModule>269837</AdditionalModule>
-          <FarmType>PlantFarm</FarmType>
-        </ModuleOwner>
-        <AmbientMoodProvider>
-          <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
-        </AmbientMoodProvider>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>150</Amount>
-              <InactiveAmount>75</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>30</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Attackable>
-          <AttackableType>IslandBuilding</AttackableType>
-          <MaximumHitPoints>1500</MaximumHitPoints>
-          <SelfHealPerHealTick>4</SelfHealPerHealTick>
-        </Attackable>
-        <IncidentInfectable>
-          <Infectable>
-            <Illness>
-              <Escalated>0</Escalated>
-            </Illness>
-            <Explosion>
-              <Base>0</Base>
-              <Escalated>0</Escalated>
-            </Explosion>
-          </Infectable>
-          <Explosion>
-            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          </Explosion>
-          <IncidentInfectionChanceFactors>
-            <Fire>
-              <DensityFactor>0.025</DensityFactor>
-              <DensityDistance>20</DensityDistance>
-              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
-              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
-            </Fire>
-            <Riot>
-              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
-              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
-              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
-              <HappinessThreshold>20</HappinessThreshold>
-            </Riot>
-          </IncidentInfectionChanceFactors>
-        </IncidentInfectable>
-        <Pausable />
-        <Culture>
-          <CultureType>Landscaping</CultureType>
-        </Culture>
-        <QuestObject />
-        <Industrializable />
-        <Motorizable>
-          <MotorizableType>Tractor</MotorizableType>
-        </Motorizable>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Farmfield</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010110</GUID>
-          <Name>olive_tree_field</Name>
-          <IconFilename>data/ui/jakob/icon_olive_field.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-        </Building>
-        <Blocking>
-          <GroundDecalAsset>102510</GroundDecalAsset>
-          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
-        </Blocking>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>5</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_05.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_03.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_04.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_02.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>GuildhouseBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010123</GUID>
-          <Name>Productivity - Decree 1 Buff_01</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
-          <InfoDescription>269415</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010107</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-        <FactoryUpgrade>
-          <AdditionalOutput>
-            <Item>
-              <Product>1500010105</Product>
-              <AdditionalOutputCycle>2</AdditionalOutputCycle>
-              <Amount>1</Amount>
-            </Item>
-          </AdditionalOutput>
-        </FactoryUpgrade>
-      </Values>
-    </Asset>
-  </ModOp>
-  <!-- StandardProductList,StandardMarketplaceModerateStorageList: append -->
-  <ModOp Type="add" GUID="120055,120057"
-    Condition="!~/Values/ProductStorageList/ProductList[Item/Product='1500010105']"
-    Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010105</Product>
-    </Item>
-  </ModOp>
-  <!-- goods: after soap -->
-  <ModOp Type="addNextSibling" GUID="502018,502005"
-    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
-    Path="/Values/ProductList/List/Item[Product='1010203']">
-    <Item>
-      <Product>1500010105</Product>
-    </Item>
-  </ModOp>
-  <!-- agriculture: after grain -->
-  <ModOp Type="addNextSibling" GUID="502037"
-    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
-    Path="/Values/ProductList/List/Item[Product='1010192']">
-    <Item>
-      <Product>1500010105</Product>
-    </Item>
-  </ModOp>
-
   <!-- # Need: Canned Fish -->
   <ModOp Type="addNextSibling" GUID="502037">
     <Asset>
@@ -619,11 +323,6 @@
       <Building>1500010121</Building>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500010107</Building>
-    </Item>
-  </ModOp>
   <!-- tractor feedback -->
   <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
     <Item>
@@ -646,24 +345,6 @@
   </ModOp>
 
   <!-- # buff targets -->
-  <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
-  <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-  </ModOp>
-  <!-- orchards -->
-  <ModOp Type="add" GUID="194008" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-  </ModOp>
-  <!-- all farms, including cattle farm -->
-  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-  </ModOp>
   <!-- all food productions -->
   <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
@@ -672,19 +353,9 @@
   </ModOp>
 
   <!-- specific items -->
-  <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-  </ModOp>
   <ModOp Type="add" GUID="191398" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010121</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="190751,190749" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010107</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" GUID="190841,190840" Path="/Values/ItemEffect/EffectTargets">
@@ -702,21 +373,11 @@
     <Item>
       <GUID>1500010121</GUID>
     </Item>
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
   </ModOp>
   <!-- electricity -->
   <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010121</GUID>
-    </Item>
-  </ModOp>
-
-  <!-- DLC Effect Targets -->
-  <ModOp Type="add" GUID="136823" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010107</GUID>
     </Item>
   </ModOp>
 </ModOps>

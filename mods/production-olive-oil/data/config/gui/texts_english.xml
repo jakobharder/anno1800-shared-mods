@@ -1,0 +1,24 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010107</GUID>
+      <Text>Olive Grove</Text>
+    </Text>
+    <Text>
+      <GUID>1500010110</GUID>
+      <Text>Olive Tree</Text>
+    </Text>
+    <Text>
+      <GUID>1500010123</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives -->
+    </Text>
+    <Text>
+      <GUID>1500011325</GUID>
+      <Text>Olive Oil Press</Text>
+    </Text>
+    <Text>
+      <GUID>1500011326</GUID>
+      <Text>Olive Oil</Text>
+    </Text>
+  </ModOp>
+</ModOps>

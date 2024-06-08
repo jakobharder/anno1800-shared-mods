@@ -1,9 +1,10 @@
 {
-  "Version": "1.1.8",
+  "Version": "1.1.9",
   "ModID": "production-cans-and-suits-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
-    "../shared-products-jakob"
+    "../shared-products-jakob",
+    "production-olive-oil-jakob"
   ],
   "LoadAfterIds": [
     "[Gameplay] Cattle needs to be butchered",
