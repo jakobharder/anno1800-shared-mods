@@ -21,16 +21,16 @@ Contains products with definition, icon and Docklands information.
 
 Icon | GUID | Name | Region | Production Mod
 ---|---|---|---|---
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | 1500010836 | Vegetables | OW | `production-vegetables`
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | 1500010105 | Olives | OW | `production-olive-oil`
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olive_oil2.png" class="icon" /> | 1500011326 | Olive Oil | OW | `production-olive-oil`
-<img src="./doc/icons/icon_milk.png" class="icon" /> | vanilla | Milk | OW | `production-cheese`
-<img src="./doc/icons/icon_cheese_16.png" class="icon" /> | 1500010102 | Cheese | OW<br/>(NW) | `production-cheese`<br/>(`New World Cities`)
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | 1500010836 | Vegetables | OW | `production-vegetables-jakob`
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | 1500010105 | Olives | OW | `production-olive-oil-jakob`
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olive_oil2.png" class="icon" /> | 1500011326 | Olive Oil | OW | `production-olive-oil-jakob`
+<img src="./doc/icons/icon_milk.png" class="icon" /> | vanilla | Milk | OW | `production-cheese-jakob`
+<img src="./doc/icons/icon_cheese_16.png" class="icon" /> | 1500010102 | Cheese | OW<br/>(NW) | `production-cheese-jakob`<br/>(`New World Cities`)
 <img src="./doc/icons/icon_tools_16.png" class="icon" /> | 1500010153 | Tools | OW
 <img src="./doc/icons/icon_fish_16.png" class="icon" /> | 1500010120 | Sardines | OW<br/>NW
-<img src="./doc/icons/icon_hemp_16.png" class="icon" /> | 1440224 | Hemp | OW<br/>(Asia) | `production-hemp`<br/>(`New Horizons`)
+<img src="./doc/icons/icon_hemp.png" class="icon" /> | 1440224 | Hemp | OW<br/>(Asia) | `production-hemp-jakob`<br/>(`New Horizons`)
 <img src="./doc/icons/icon_rope_16.png" class="icon" /> | 1500010825 | Ropes
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127 | Suits | OW | `production-suits`
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127 | Suits | OW | `production-suits-jakob`
 <img src="./doc/icons/icon_herbs.png" class="icon" /> | vanilla | Herbs | OW
 <img src="./mods/shared-products-jakob/data/ui/jakob/icon_tea.png" class="icon" /> | 1500010847 | Tea | OW
 
@@ -62,6 +62,22 @@ Add the following dependencies to your `modinfo.json`:
   "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-industry-jakob.zip"
 ]
 ```
+
+## Production Fertilities
+
+Set | Hard | Medium | Easy
+---|---|---|---
+Any 1 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_niter.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" />
+Any 2 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_niter.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_grapes.png" class="icon" /> <img src="./doc/icons/icon_herbs.png" class="icon" />
+Any 3 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_grapes.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" />
+Any 4 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./doc/icons/icon_herbs.png" class="icon" />
+Any 5 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" />
+Any 6 | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" />
+Non-starter 7 | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./doc/icons/icon_niter.png" class="icon" /> <img src="./doc/icons/icon_herbs.png" class="icon" /> | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" />
+Non-starter 8 | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./doc/icons/icon_grapes.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" />
+Non-starter 9 | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./doc/icons/icon_red_pepper.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_potatoes.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" />
+Non-starter 10 | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./doc/icons/icon_niter.png" class="icon" /> <img src="./doc/icons/icon_herbs.png" class="icon" /> | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./doc/icons/icon_hemp.png" class="icon" /> | <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" />
+Non-starter 11 | <img src="./doc/icons/icon_fur.png" class="icon" /> <img src="./doc/icons/icon_grapes.png" class="icon" /> <img src="./doc/icons/icon_herbs.png" class="icon" /> | <img src="./doc/icons/icon_grain.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | <img src="./doc/icons/icon_hops.png" class="icon" /> <img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" />
 
 ## Production: Vegetables
 
@@ -99,7 +115,7 @@ ID: `production-hemp`
 
 Icon | GUID | Name | Unlock
 ---|---|---|---
-<img src="./doc/icons/icon_hemp_16.png" class="icon" /> | 1500010105<br/>1500010107 | Hemp<br/>Hemp Farm | 800 <img src="./doc/icons/icon_artisan.png" class="icon" />
+<img src="./doc/icons/icon_hemp.png" class="icon" /> | 1500010105<br/>1500010107 | Hemp<br/>Hemp Farm | 800 <img src="./doc/icons/icon_artisan.png" class="icon" />
 <img src="./doc/icons/icon_linen.png" class="icon" /> | vanilla<br/>1500011325 | Linen<br/>Linen Cloth Maker | 800 <img src="./doc/icons/icon_artisan.png" class="icon" />
 <img src="./doc/icons/icon_rope_16.png" class="icon" /> | 1500010825 | Ropes
 
@@ -110,7 +126,7 @@ Requires: `production-hemp`
 
 Icon | GUID | Name | Unlock | Chain
 ---|---|---|---|---
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127<br/>1500011150 | Suits<br/>Suits Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./doc/icons/icon_hemp_16.png" class="icon" /> → <img src="./doc/icons/icon_linen.png" class="icon" /> → <img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" />
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127<br/>1500011150 | Suits<br/>Suits Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./doc/icons/icon_hemp.png" class="icon" /> → <img src="./doc/icons/icon_linen.png" class="icon" /> → <img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" />
 
 ## Changes
 

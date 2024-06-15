@@ -13,5 +13,10 @@
       <GUID>1500010946</GUID>
       <Text>Акт о земельной реформе</Text> <!-- Land Reform Act: Vegetables -->
     </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011342</GUID>
+      <Text>Vegetable Fertility</Text>
+    </Text>
   </ModOp>
 </ModOps>

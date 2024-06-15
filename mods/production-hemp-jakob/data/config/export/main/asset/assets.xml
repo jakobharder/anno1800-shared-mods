@@ -1,0 +1,446 @@
+<ModOps>
+  <!-- # Includes -->
+  <Include File="./fertility.include.xml" />
+
+  <!-- # Assets -->
+  <ModOp Type="addNextSibling" GUID="1010315">
+    <!-- Hemp -->
+    <Asset>
+      <Template>FarmBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010124</GUID>
+          <Name>hemp_farm</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\plants\icon_hemp.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\graphics\buildings\production\agriculture_03\agriculture_03.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier01_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <!-- unlock by default. makes life easier and is hidden by menus anyways -->
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>214800</Sound>
+            </Item>
+            <Item>
+              <Sound>206372</Sound>
+            </Item>
+          </ActiveSounds>
+          <ConstructionSounds>
+            <BuildMoveSuccess>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>FarmBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+                <Sound>214783</Sound>
+              </Item>
+            </BuildMoveSuccess>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <MaterialType>Wood</MaterialType>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7>
+          <NeededFertility>1500011340</NeededFertility>
+        </Factory7>
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>1440224</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <ModuleOwner>
+          <ModuleLimits>
+            <Main>
+              <Limit>128</Limit>
+            </Main>
+          </ModuleLimits>
+          <ConstructionOptions>
+            <Item>
+              <ModuleGUID>1500010125</ModuleGUID>
+            </Item>
+          </ConstructionOptions>
+          <AdditionalModule>269839</AdditionalModule> <!-- same as grain farm -->
+          <AdjustModuleOrientationOnceSpecialModuleWasPlaced>0</AdjustModuleOrientationOnceSpecialModuleWasPlaced>
+          <ModuleBuildRadius>37</ModuleBuildRadius>
+          <FertilizerModuleData>
+            <Module>25240</Module>
+          </FertilizerModuleData>
+          <HardFarmsConfig>2</HardFarmsConfig>
+          <FarmType>PlantFarm</FarmType>
+        </ModuleOwner>
+        <AmbientMoodProvider>
+          <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>30</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>1500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <IncidentInfectable>
+          <Infectable>
+            <Illness>
+              <Escalated>0</Escalated>
+            </Illness>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Pausable />
+        <Culture>
+          <CultureType>Landscaping</CultureType>
+        </Culture>
+        <Industrializable />
+        <Motorizable>
+          <MotorizableType>Tractor</MotorizableType>
+        </Motorizable>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Farmfield</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010125</GUID>
+          <Name>hemp_field</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_farmfield_module.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>101058</GroundDecalAsset>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_5.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\suits\hemp_farm\hemp_field_6.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection />
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <BuildingModule />
+        <AmbientMoodProvider />
+        <ModuleIrrigation />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>1010315</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010126</GUID>
+          <Name>cloth_maker</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png</IconFilename>
+        </Standard>
+        <Building>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/suits/worker_multifactory/worker_multifactory.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1440224</Product>
+              <Amount>1</Amount>
+              <StorageAmount>6</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>114391</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>100</Amount>
+              <InactiveAmount>50</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>35</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010184</GUID>
+          <Name>Productivity - Decree 1 Buff_01</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
+          <InfoDescription>269415</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010124</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1440224</Product>
+              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
+  <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <!-- all farms, including cattle farm -->
+  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Feedback -->
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010128</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010124</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
+    <Item>
+      <Building>1500010124</Building>
+      <PersonSpawners>
+        <Item>
+          <UnitClass>141674</UnitClass>
+        </Item>
+      </PersonSpawners>
+      <VehicleSpawners>
+        <Item>
+          <UnitClass>269771</UnitClass>
+          <ShrinksFieldsOnTouch>1</ShrinksFieldsOnTouch>
+          <VehicleType>Harvester</VehicleType>
+        </Item>
+        <Item>
+          <UnitClass>25272</UnitClass>
+          <VehicleType>Fertilizer</VehicleType>
+        </Item>
+      </VehicleSpawners>
+    </Item>
+  </ModOp>
+
+  <!-- # buff targets -->
+  <!-- all cloth productions -->
+  <ModOp Type="add" GUID="190890" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- specific items -->
+  <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="190748" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <!-- general production targets -->
+  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <!-- electricity -->
+  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+  </ModOp>
+  <!-- boostable buildings -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010126</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010124</Factory>
+    </Item>
+  </ModOp>
+  <!-- land reform act -->
+  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
+    <Item>
+      <Effect>1500010184</Effect>
+    </Item>
+  </ModOp>
+</ModOps>

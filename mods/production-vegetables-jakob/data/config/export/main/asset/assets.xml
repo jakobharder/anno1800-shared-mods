@@ -1,4 +1,6 @@
 <ModOps>
+  <Include File="./fertility.include.xml" />
+
   <!-- # Vegetables -->
   <ModOp GUID="500945" Type="addNextSibling">
     <Asset>
@@ -35,7 +37,7 @@
           </Costs>
         </Cost>
         <Factory7>
-          <NeededFertility>0</NeededFertility>
+          <NeededFertility>1500011342</NeededFertility>
         </Factory7>
         <FactoryBase>
           <FactoryOutputs>

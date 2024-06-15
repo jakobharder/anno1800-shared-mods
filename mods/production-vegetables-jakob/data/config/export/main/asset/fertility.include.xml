@@ -1,0 +1,40 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="120019">
+    <Asset>
+      <Template>Fertility</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011342</GUID>
+          <Name>Vegetable Fertility</Name>
+          <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
+        </Standard>
+        <Fertility />
+      </Values>
+    </Asset>
+  </ModOp>
+  <Group>
+    <ModOp Type="add" GUID="141508,141514,141515,141519,141511,141520,141521,141523,141524,141525"
+      Path="/Values/FertilitySet/Fertilities">
+      <Item>
+        <Fertility>1500011342</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="142440,142445,142436,142441,142446,142448"
+      Path="/Values/FertilitySet/Fertilities">
+      <Item>
+        <Fertility>1500011342</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="5000000"
+      Path="/Values/Region/AllowedFertilities">
+      <Item>
+        <Fertility>1500011342</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500204" Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010569']">
+      <Item>
+        <GUID>1500011342</GUID>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

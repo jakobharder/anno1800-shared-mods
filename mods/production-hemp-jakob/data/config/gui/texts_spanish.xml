@@ -1,0 +1,25 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010124</GUID>
+      <Text>Granja de cáñamo</Text>
+    </Text>
+    <Text>
+      <GUID>1500010125</GUID>
+      <Text>campo de cáñamo</Text>
+    </Text>
+    <Text>
+      <GUID>1500010126</GUID>
+      <Text>Fabricante de telas de lino</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011340</GUID>
+      <Text>Hemp Fertility</Text>
+    </Text>
+    <Text>
+      <GUID>1500010184</GUID>
+      <Text>[AssetData(1500010183) Text]</Text>
+    </Text>
+  </ModOp>
+</ModOps>

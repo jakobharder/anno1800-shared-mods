@@ -1,0 +1,15 @@
+{
+  "Version": "1.0.0",
+  "ModID": "production-hemp-jakob",
+  "ModDependencies": [
+    "../shared-products-jakob"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "Hemp (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}

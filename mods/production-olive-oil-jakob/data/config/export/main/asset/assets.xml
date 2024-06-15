@@ -1,5 +1,6 @@
 <ModOps>
   <Include File="./unlocks.include.xml" />
+  <Include File="./fertility.include.xml" />
 
   <!-- # Agriculture: Olives -->
   <Group>
@@ -10,7 +11,7 @@
           <Standard>
             <GUID>1500010107</GUID>
             <Name>Olive Grove</Name>
-            <IconFilename>data/ui/jakob/icon_olives2.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_olives3.png</IconFilename>
           </Standard>
           <Building>
             <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -96,7 +97,9 @@
           <FeedbackController />
           <Infolayer />
           <UpgradeList />
-          <Factory7 />
+          <Factory7>
+            <NeededFertility>1500011341</NeededFertility>
+          </Factory7>
           <FactoryBase>
             <FactoryOutputs>
               <Item>
@@ -307,7 +310,7 @@
           <Standard>
             <GUID>1500011325</GUID>
             <Name>Olive Oil Press</Name>
-            <IconFilename>data/ui/jakob/icon_olive_oil2.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_olive_oil3.png</IconFilename>
           </Standard>
           <Building>
             <BuildModeRandomRotation>180</BuildModeRandomRotation>

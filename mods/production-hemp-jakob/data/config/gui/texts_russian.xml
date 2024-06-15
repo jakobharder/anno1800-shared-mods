@@ -1,0 +1,25 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010124</GUID>
+      <Text>Конопляная ферма</Text>
+    </Text>
+    <Text>
+      <GUID>1500010125</GUID>
+      <Text>Конопляное поле</Text>
+    </Text>
+    <Text>
+      <GUID>1500010126</GUID>
+      <Text>Производство льняной ткани</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011340</GUID>
+      <Text>Hemp Fertility</Text>
+    </Text>
+    <Text>
+      <GUID>1500010184</GUID>
+      <Text>Акт о земельной реформе</Text>
+    </Text>
+  </ModOp>
+</ModOps>
