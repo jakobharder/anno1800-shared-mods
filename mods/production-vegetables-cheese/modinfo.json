@@ -1,14 +1,12 @@
 {
-  "Version": "1.1.9",
+  "Version": "1.2.0",
   "ModID": "production-vegetables-and-cheese-jakob",
   "ModDependencies": [
-    "shared-ground-textures-industry-jakob",
     "../production-vegetables",
-    "../production-cheese",
-    "../shared-products-jakob"
+    "../production-cheese"
   ],
   "Category": {
-    "English": "Production"
+    "English": "Deprecated"
   },
   "ModName": {
     "English": "Vegetables and Cheese (Jakob)"

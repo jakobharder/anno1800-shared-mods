@@ -80,9 +80,9 @@ Soap is an alternative production chain to produce vanilla soap.
 
 Icon | GUID | Name | Unlock | Chain
 ---|---|---|---|---
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> | 1500010105<br/>1500010107 | Olives<br/>Olive Grove | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> | 1500011326<br/>1500011325 | Olive Oil<br/>Olive Oil Press | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" class="icon" /> | TBD | Olive Soap Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" class="icon" />
+<img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olives.png" class="icon" /> | 1500010105<br/>1500010107 | Olives<br/>Olive Grove | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
+<img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olive_oil.png" class="icon" /> | 1500011326<br/>1500011325 | Olive Oil<br/>Olive Oil Press | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
+<img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> | TBD | Olive Soap Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olive_oil.png" class="icon" /> → <img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" />
 
 ## Production: Sardines
 
@@ -91,7 +91,7 @@ Requires: `production-olive-oil`
 
 Icon | GUID | Name | Unlock | Chain
 ---|---|---|---|---
-<img src="./doc/icons/icon_fish_16.png" class="icon" /> | 1500010120<br/>1500010121 | Sardines<br/>Fish Cannery | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> + <img src="./doc/icons/icon_fish.png" class="icon" /> + <img src="./doc/icons/icon_iron.png" class="icon" /> → <img src="./doc/icons/icon_fish_16.png" class="icon" />
+<img src="./doc/icons/icon_fish_16.png" class="icon" /> | 1500010120<br/>1500010121 | Sardines<br/>Fish Cannery | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil-jakob/data/ui/jakob/icon_olive_oil.png" class="icon" /> + <img src="./doc/icons/icon_fish.png" class="icon" /> + <img src="./doc/icons/icon_iron.png" class="icon" /> → <img src="./doc/icons/icon_fish_16.png" class="icon" />
 
 ## Production: Hemp
 

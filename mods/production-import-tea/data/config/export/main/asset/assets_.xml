@@ -638,6 +638,9 @@
             <Item>
               <Asset>1500010848</Asset>
             </Item>
+            <Item>
+              <Asset>1500302201</Asset>
+            </Item>
           </AssetList>
         </AssetPool>
       </Values>
@@ -900,7 +903,7 @@
                 <Building>1500011160</Building>
               </Item>
               <Item>
-                <Building>1500010848</Building>
+                <Building>1500302201</Building><!-- Kurila's Herb Garden -->
               </Item>
             </Tier1>
           </ProductionChain>
