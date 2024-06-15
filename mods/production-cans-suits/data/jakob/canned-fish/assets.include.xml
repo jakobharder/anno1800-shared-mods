@@ -171,10 +171,15 @@
               <Building>1010305</Building>
             </Item>
             <Item>
-              <Building>1500010107</Building>
+              <Building>1010278</Building>
             </Item>
             <Item>
-              <Building>1010278</Building>
+              <Building>1500011325</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500010107</Building>
+                </Item>
+              </Tier2>
             </Item>
           </Tier1>
         </ProductionChain>
@@ -230,7 +235,7 @@
         <Standard>
           <GUID>1500011286</GUID>
           <!-- <GUID>1500011285</GUID> -->
-          <Name>@ 900 Artisans</Name>
+          <Name>@ 800 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>

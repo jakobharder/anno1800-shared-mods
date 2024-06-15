@@ -1,0 +1,45 @@
+<ModOps>
+  <!-- # Cheese -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010103</GUID>
+      <Text>Käserei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010104</GUID>
+      <Text>Molkerei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010111</GUID>
+      <Text>[AssetData(1500010102) Text]</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Hot Chocolate -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010250</GUID>
+      <Text>Heiße Schokolade</Text>
+    </Text>
+    <Text>
+      <GUID>1500010251</GUID>
+      <Text>Es muss nicht immer Kaffee sein. Heiße Milch, Kakaopulver und Zimt... das ist alles was du für ein koffeinfreies Getränk brauchst.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010252</GUID>
+      <Text>Cafe: [AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010253</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010254</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010255</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+  </ModOp>
+</ModOps>

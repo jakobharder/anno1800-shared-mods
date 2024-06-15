@@ -1,8 +1,10 @@
 {
-  "Version": "1.1.8",
+  "Version": "1.1.9",
   "ModID": "production-vegetables-and-cheese-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
+    "../production-vegetables",
+    "../production-cheese",
     "../shared-products-jakob"
   ],
   "Category": {

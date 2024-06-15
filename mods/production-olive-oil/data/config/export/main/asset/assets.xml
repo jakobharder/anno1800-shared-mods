@@ -1,5 +1,4 @@
 <ModOps>
-  <Include File="./products.include.xml" />
   <Include File="./unlocks.include.xml" />
 
   <!-- # Agriculture: Olives -->

@@ -1,8 +1,50 @@
 # Shared Anno 1800 Mods
 
+<style>
+  img.icon {
+    vertical-align: text-bottom;
+    width: 18px;
+  }
+</style>
+
 Shared mods from Jakob's Collection.
 
 You are free to include ground textures and shared products, as long as you don't modify the mods themselves.
+
+You may add additional unlocks, but please don't change balancing if that's not the theme of your mod (e.g. rebalance together with vanilla rebalance is OK).
+
+## Shared Products
+
+ID: `shared-products-jakob`
+
+Contains products with definition, icon and Docklands information.
+
+Icon | GUID | Name | Region | Production Mod
+---|---|---|---|---
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | 1500010836 | Vegetables | OW | `production-vegetables`
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olives2.png" class="icon" /> | 1500010105 | Olives | OW | `production-olive-oil`
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_olive_oil2.png" class="icon" /> | 1500011326 | Olive Oil | OW | `production-olive-oil`
+<img src="./doc/icons/icon_milk.png" class="icon" /> | vanilla | Milk | OW | `production-cheese`
+<img src="./doc/icons/icon_cheese_16.png" class="icon" /> | 1500010102 | Cheese | OW<br/>(NW) | `production-cheese`<br/>(`New World Cities`)
+<img src="./doc/icons/icon_tools_16.png" class="icon" /> | 1500010153 | Tools | OW
+<img src="./doc/icons/icon_fish_16.png" class="icon" /> | 1500010120 | Sardines | OW<br/>NW
+<img src="./doc/icons/icon_hemp_16.png" class="icon" /> | 1440224 | Hemp | OW<br/>(Asia) | `production-hemp`<br/>(`New Horizons`)
+<img src="./doc/icons/icon_rope_16.png" class="icon" /> | 1500010825 | Ropes
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127 | Suits | OW | `production-suits`
+<img src="./doc/icons/icon_herbs.png" class="icon" /> | vanilla | Herbs | OW
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_tea.png" class="icon" /> | 1500010847 | Tea | OW
+
+### Use Products in your Mod
+
+Add the following dependencies to your `modinfo.json`:
+```json
+"ModDependencies": [
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5.1/shared-products-jakob.zip"
+]
+```
+
+Products are not unlocked automatically, but with their production mods - mainly provided by `[Addon] Industrial Cities` and `[Addon] Pescatarians`.
+You need to unlock them yourself, if you use the products without those.
 
 ## Ground Textures
 
@@ -21,44 +63,54 @@ Add the following dependencies to your `modinfo.json`:
 ]
 ```
 
-## Production: Olives, Olive Oil and Soap
+## Production: Vegetables
+
+ID: `production-vegetables`
+
+Icon | GUID | Name | Unlock
+---|---|---|---
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" class="icon" /> | 1500010836<br/>1500010830 | Vegetables<br/>Vegetable Farm | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
+
+## Production: Olives and Olive Oil
 
 ID: `production-olive-oil`
 
 Contains products and production chains.
 Soap is an alternative production chain to produce vanilla soap.
 
+Icon | GUID | Name | Unlock | Chain
+---|---|---|---|---
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> | 1500010105<br/>1500010107 | Olives<br/>Olive Grove | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> | 1500011326<br/>1500011325 | Olive Oil<br/>Olive Oil Press | 400 <img src="./doc/icons/icon_worker.png" class="icon" />
+<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" class="icon" /> | TBD | Olive Soap Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" class="icon" />
+
+## Production: Sardines
+
+ID: `production-sardines`
+Requires: `production-olive-oil`
+
+Icon | GUID | Name | Unlock | Chain
+---|---|---|---|---
+<img src="./doc/icons/icon_fish_16.png" class="icon" /> | 1500010120<br/>1500010121 | Sardines<br/>Fish Cannery | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" class="icon" /> → <img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" class="icon" /> + <img src="./doc/icons/icon_fish.png" class="icon" /> + <img src="./doc/icons/icon_iron.png" class="icon" /> → <img src="./doc/icons/icon_fish_16.png" class="icon" />
+
+## Production: Hemp
+
+ID: `production-hemp`
+
 Icon | GUID | Name | Unlock
 ---|---|---|---
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olives.png" width="20" /> | 1500010105<br/>1500010107 | Olives<br/>Olive Grove | 400 Workers
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_oil.png" width="20" /> | 1500011326<br/>1500011325 | Olive Oil<br/>Olive Oil Press | 400 Workers
-<img src="./mods/production-olive-oil/data/ui/jakob/icon_olive_soap.png" width="20" /> | TBD | Olive Soap Factory | 900 Artisans
+<img src="./doc/icons/icon_hemp_16.png" class="icon" /> | 1500010105<br/>1500010107 | Hemp<br/>Hemp Farm | 800 <img src="./doc/icons/icon_artisan.png" class="icon" />
+<img src="./doc/icons/icon_linen.png" class="icon" /> | vanilla<br/>1500011325 | Linen<br/>Linen Cloth Maker | 800 <img src="./doc/icons/icon_artisan.png" class="icon" />
+<img src="./doc/icons/icon_rope_16.png" class="icon" /> | 1500010825 | Ropes
 
-## Shared Products
+## Production: Suits
 
-Contains products with definition, icon and Docklands information.
+ID: `production-suits`
+Requires: `production-hemp`
 
-Icon | GUID | Name | Production Unlock
----|---|---|---
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_vegetables.png" width="20" /> | 1500010836 | Vegetables | 400 Workers
-<img src="./doc/icon_cheese_16.png" width="20" /> | 1500010102 | Cheese | 1 Artisan
-<img src="./doc/icon_tools_16.png" width="20" /> | 1500010153 | Tools | 250 Artisans
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_tea.png" width="20" /> | 1500010847 | Tea | 800 Artisans
-<img src="./doc/icon_fish_16.png" width="20" /> | 1500010120 | Sardines | 900 Artisans
-<img src="./doc/icon_hemp_16.png" width="20" /> | 1440224 | Hemp | 1500 Artisans / 1 Engineer
-<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" width="20" /> | 1500010127 | Suits | 1500 Artisans / 1 Engineer
-
-### Use Products in your Mod
-
-Add the following dependencies to your `modinfo.json`:
-```json
-"ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5.1/shared-products-jakob.zip"
-]
-```
-
-Products are not unlocked automatically, but with their production mods - mainly provided by `[Addon] Industrial Cities` and `[Addon] Pescatarians`.
-You need to unlock them yourself, if you use the products without those.
+Icon | GUID | Name | Unlock | Chain
+---|---|---|---|---
+<img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" /> | 1500010127<br/>1500011150 | Suits<br/>Suits Factory | 800 <img src="./doc/icons/icon_artisan.png" class="icon" /> | <img src="./doc/icons/icon_hemp_16.png" class="icon" /> → <img src="./doc/icons/icon_linen.png" class="icon" /> → <img src="./mods/shared-products-jakob/data/ui/jakob/icon_suits.png" class="icon" />
 
 ## Changes
 

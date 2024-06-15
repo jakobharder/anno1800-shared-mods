@@ -659,19 +659,19 @@
             <Item>
               <Product>114391</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
             <Item>
               <Product>1010197</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>1500010127</Product>
               <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>

@@ -150,56 +150,13 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>FeatureUnlock</Template>
+      <Template>Text</Template> <!-- old Trigger -->
       <Values>
         <Standard>
-          <GUID>1500010941</GUID>
-          <Name>@ 800 Artisans</Name>
+          <!-- <GUID>1500010941</GUID> -->
         </Standard>
-        <Locked />
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010848</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010940</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
-  </ModOp>
-  <ModOp Type="add" GUID="193875,193778,190901" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010940</GUID>
-    </Item>
   </ModOp>
 
   <!-- # All Tea Production Buildings -->
@@ -215,9 +172,6 @@
       <GUID>1500010848</GUID>
     </Item>
     <Item>
-      <GUID>1500010940</GUID>
-    </Item>
-    <Item>
       <GUID>1500011162</GUID>
     </Item>
     <Item>
@@ -226,9 +180,6 @@
   </ModOp>
   <!-- boosted by electricity -->
   <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010940</GUID>
-    </Item>
     <Item>
       <GUID>1500011162</GUID>
     </Item>
@@ -590,6 +541,11 @@
               <Amount>1</Amount>
               <StorageAmount>2</StorageAmount>
             </Item>
+            <Item>
+              <Product>5383</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
@@ -678,6 +634,9 @@
             </Item>
             <Item>
               <Asset>1500010959</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010848</Asset>
             </Item>
           </AssetList>
         </AssetPool>
@@ -800,7 +759,7 @@
               <StorageAmount>1</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>90</CycleTime>
+          <CycleTime>20</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <ModuleOwner>
@@ -820,11 +779,9 @@
           <AdditionalModule>269837</AdditionalModule>
           <AdjustModuleOrientationOnceSpecialModuleWasPlaced>1</AdjustModuleOrientationOnceSpecialModuleWasPlaced>
           <ModuleBuildRadius>30</ModuleBuildRadius>
-          <AdditionalModuleMustBeMainBuildingAdjacent>0</AdditionalModuleMustBeMainBuildingAdjacent>
           <FertilizerModuleData>
             <Module>25240</Module>
           </FertilizerModuleData>
-          <ModuleBuildRadius>0</ModuleBuildRadius>
           <FarmType>PlantFarm</FarmType>
         </ModuleOwner>
         <Maintenance>
@@ -836,7 +793,7 @@
             </Item>
             <Item>
               <Product>1010052</Product>
-              <Amount>40</Amount>
+              <Amount>20</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -941,6 +898,9 @@
             <Tier1>
               <Item>
                 <Building>1500011160</Building>
+              </Item>
+              <Item>
+                <Building>1500010848</Building>
               </Item>
             </Tier1>
           </ProductionChain>

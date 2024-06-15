@@ -1,0 +1,45 @@
+<ModOps>
+  <!-- # Cheese -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010103</GUID>
+      <Text>Lácteos de queso</Text>
+    </Text>
+    <Text>
+      <GUID>1500010104</GUID>
+      <Text>Granja lechera</Text>
+    </Text>
+    <Text>
+      <GUID>1500010111</GUID>
+      <Text>[AssetData(1500010102) Text]</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Hot Chocolate -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010250</GUID>
+      <Text>Chocolate caliente</Text>
+    </Text>
+    <Text>
+      <GUID>1500010251</GUID>
+      <Text>No tiene por qué ser un café. Leche caliente, cacao en polvo y un poco de canela... eso es todo lo que necesitas para una buena bebida caliente sin cafeína.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010252</GUID>
+      <Text>Café: [AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010253</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010254</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010255</GUID>
+      <Text>[AssetData(1500010250) Text]</Text>
+    </Text>
+  </ModOp>
+</ModOps>
