@@ -9,6 +9,10 @@
       <Text>Pole konopii</Text>
     </Text>
     <Text>
+      <GUID>1500010184</GUID>
+      <Text>[AssetData(269193) Text]</Text>
+    </Text>
+    <Text>
       <GUID>1500010126</GUID>
       <Text>Producent tkanin lnianych</Text>
     </Text>
@@ -18,8 +22,14 @@
       <Text>Hemp Fertility</Text>
     </Text>
     <Text>
-      <GUID>1500010184</GUID>
-      <Text>[AssetData(269193) Text]</Text>
+      <!-- TODO translation -->
+      <GUID>1500011345</GUID>
+      <Text>Old Save Support</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011347</GUID>
+      <Text>Fertility buff to support existing save games without Hemp fertility on islands.</Text>
     </Text>
   </ModOp>
 </ModOps>
