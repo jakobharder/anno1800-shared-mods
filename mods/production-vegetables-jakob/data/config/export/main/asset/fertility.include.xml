@@ -46,10 +46,10 @@
       <Template>GuildhouseBuff</Template>
       <Values>
         <Standard>
-          <GUID>1500011348</GUID>
+          <GUID>1500011390</GUID>
           <Name>Vegetable Fertility</Name>
           <IconFilename>data/ui/jakob/icon_vegetables.png</IconFilename>
-          <InfoDescription>1500011349</InfoDescription>
+          <InfoDescription>1500011391</InfoDescription>
         </Standard>
         <FactoryUpgrade>
           <AddedFertility>1500011342</AddedFertility>
@@ -67,7 +67,7 @@
       <Template>Text</Template>
       <Values>
         <Standard>
-          <GUID>1500011349</GUID>
+          <GUID>1500011391</GUID>
           <Name>Vegetable Fertility Description</Name>
         </Standard>
         <Text />
@@ -77,7 +77,7 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500011350</GUID>
+          <GUID>1500011392</GUID>
           <Name>Fertility on SessionEnter</Name>
         </Standard>
         <Trigger>
@@ -98,7 +98,7 @@
                 <Values>
                   <Action />
                   <ActionBuff>
-                    <BuffAsset>1500011348</BuffAsset>
+                    <BuffAsset>1500011390</BuffAsset>
                     <AddBuff>0</AddBuff>
                     <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
@@ -111,7 +111,7 @@
                 <Values>
                   <Action />
                   <ActionBuff>
-                    <BuffAsset>1500011348</BuffAsset>
+                    <BuffAsset>1500011390</BuffAsset>
                     <AddBuff>1</AddBuff>
                     <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
@@ -146,7 +146,7 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500011351</GUID>
+          <GUID>1500011393</GUID>
           <Name>Enable AreaBuff only if a savegame was loaded (not a new game)</Name>
         </Standard>
         <Trigger>
@@ -182,7 +182,7 @@
                           <Values>
                             <Action />
                             <ActionRegisterTrigger>
-                              <TriggerAsset>1500011350</TriggerAsset>
+                              <TriggerAsset>1500011392</TriggerAsset>
                             </ActionRegisterTrigger>
                           </Values>
                         </TriggerAction>

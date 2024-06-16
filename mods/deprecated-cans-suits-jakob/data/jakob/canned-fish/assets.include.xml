@@ -60,9 +60,7 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
+        <Locked />
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -92,7 +90,7 @@
               <StorageAmount>3</StorageAmount>
             </Item>
             <Item>
-              <Product>1500010105</Product>
+              <Product>1500011326</Product>
               <Amount>1</Amount>
               <StorageAmount>3</StorageAmount>
             </Item>
