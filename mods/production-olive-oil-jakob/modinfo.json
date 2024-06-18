@@ -2,6 +2,7 @@
   "Version": "1.0.0",
   "ModID": "production-olive-oil-jakob",
   "ModDependencies": [
+    "../product-olives-jakob",
     "../shared-products-jakob"
   ],
   "LoadAfterIds": [],

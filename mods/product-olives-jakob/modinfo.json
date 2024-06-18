@@ -1,0 +1,12 @@
+{
+  "Version": "1.0",
+  "ModID": "product-olives",
+  "Category": {
+    "English": "Product"
+  },
+  "ModName": {
+    "English": "Olives (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}
