@@ -1,15 +1,14 @@
 {
-  "Version": "1.1.6",
-  "ModID": "production-tools-jakob",
+  "Version": "1.0.0",
+  "ModID": "production-vegetables-jakob",
   "ModDependencies": [
-    "shared-ground-textures-industry-jakob",
     "../shared-products-jakob"
   ],
   "Category": {
     "English": "Production"
   },
   "ModName": {
-    "English": "Tools (Jakob)"
+    "English": "Vegetables (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"

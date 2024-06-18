@@ -1,0 +1,29 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Vegetable Farm</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>Vegetable Field</Text>
+    </Text>
+    <Text>
+      <GUID>1500010946</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>Vegetable Fertility</Text>
+    </Text>
+    <Text>
+      <GUID>1500011390</GUID>
+      <Text>Old Save Support</Text>
+    </Text>
+    <Text>
+      <GUID>1500011391</GUID>
+      <Text>Fertility buff to support existing save games without Vegetable fertility on islands.</Text>
+    </Text>
+  </ModOp>
+</ModOps>

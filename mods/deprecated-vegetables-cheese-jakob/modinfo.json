@@ -1,0 +1,16 @@
+{
+  "Version": "1.2.0",
+  "ModID": "production-vegetables-and-cheese-jakob",
+  "ModDependencies": [
+    "../production-vegetables-jakob",
+    "../production-cheese-jakob"
+  ],
+  "Category": {
+    "English": "Deprecated"
+  },
+  "ModName": {
+    "English": "Vegetables and Cheese (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}

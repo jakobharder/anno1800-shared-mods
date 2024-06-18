@@ -1,0 +1,204 @@
+<ModOps>
+  <!-- # Fertility -->
+  <ModOp Type="addNextSibling" GUID="120019">
+    <Asset>
+      <Template>Fertility</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011340</GUID>
+          <Name>Hemp Fertility</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/plants/icon_hemp.png</IconFilename>
+        </Standard>
+        <Fertility />
+      </Values>
+    </Asset>
+  </ModOp>
+  <Group>
+    <ModOp Type="add" GUID="141514,141515,141509,141517,141518,141519,141522,141523,141513,141524,141525"
+      Path="/Values/FertilitySet/Fertilities">
+      <Item>
+        <Fertility>1500011340</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="142444,142435,142440,142445,142446,142442,142447"
+      Path="/Values/FertilitySet/Fertilities">
+      <Item>
+        <Fertility>1500011340</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="5000000"
+      Path="/Values/Region/AllowedFertilities">
+      <Item>
+        <Fertility>1500011340</Fertility>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500204" Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010570' or GUID='1500011341'][last()]">
+      <Item>
+        <GUID>1500011340</GUID>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Old Save Support -->
+  <!-- Thanks Serp :) -->
+  <ModOp Type="addNextSibling" GUID="120019">
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011345</GUID>
+          <Name>Hemp Fertility</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/plants/icon_hemp.png</IconFilename>
+          <InfoDescription>1500011347</InfoDescription>
+        </Standard>
+        <FactoryUpgrade>
+          <AddedFertility>1500011340</AddedFertility>
+        </FactoryUpgrade>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010124</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011347</GUID>
+          <Name>Hemp Fertility Description</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011344</GUID>
+          <Name>Fertility on SessionEnter</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionEvent</Template>
+            <Values>
+              <Condition />
+              <ConditionEvent>
+                <ConditionEvent>SessionEnter</ConditionEvent>
+              </ConditionEvent>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500011345</BuffAsset>
+                    <AddBuff>0</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500011345</BuffAsset>
+                    <AddBuff>1</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <ResetTrigger>
+            <Template>AutoCreateTrigger</Template>
+            <Values>
+              <Trigger>
+                <TriggerCondition>
+                  <Template>ConditionTimer</Template>
+                  <Values>
+                    <Condition />
+                    <ConditionTimer>
+                      <TimeLimit>30000</TimeLimit>
+                    </ConditionTimer>
+                  </Values>
+                </TriggerCondition>
+              </Trigger>
+            </Values>
+          </ResetTrigger>
+        </Trigger>
+        <TriggerSetup>
+          <AutoRegisterTrigger>0</AutoRegisterTrigger>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011346</GUID>
+          <Name>Enable AreaBuff only if a savegame was loaded (not a new game)</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionAlwaysTrue</Template>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionUnlocked</Template>
+                      <Values>
+                        <Condition>
+                          <IsOptional>1</IsOptional>
+                        </Condition>
+                        <ConditionUnlocked>
+                          <UnlockNeeded>1010278</UnlockNeeded>
+                        </ConditionUnlocked>
+                        <ConditionPropsNegatable />
+                      </Values>
+                    </TriggerCondition>
+                    <TriggerActions>
+                      <Item>
+                        <TriggerAction>
+                          <Template>ActionRegisterTrigger</Template>
+                          <Values>
+                            <Action />
+                            <ActionRegisterTrigger>
+                              <TriggerAsset>1500011344</TriggerAsset>
+                            </ActionRegisterTrigger>
+                          </Values>
+                        </TriggerAction>
+                      </Item>
+                    </TriggerActions>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+        </Trigger>
+        <TriggerSetup>
+          <AutoRegisterTrigger>1</AutoRegisterTrigger>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

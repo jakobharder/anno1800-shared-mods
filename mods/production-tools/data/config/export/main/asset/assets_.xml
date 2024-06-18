@@ -203,19 +203,19 @@
             <Item>
               <Product>120008</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
             <Item>
               <Product>1010219</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>1500010153</Product>
               <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>

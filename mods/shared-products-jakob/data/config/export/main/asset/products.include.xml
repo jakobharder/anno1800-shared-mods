@@ -6,7 +6,7 @@
       <Values>
         <Standard>
           <GUID>1500010120</GUID>
-          <Name>Canned Fish</Name>
+          <Name>Sardines</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
         </Standard>
         <Locked />
@@ -110,14 +110,40 @@
         <Standard>
           <GUID>1500010105</GUID>
           <Name>Olives</Name>
-          <IconFilename>data/ui/jakob/icon_olives.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_olives3.png</IconFilename>
           <InfoDescription>1500010017</InfoDescription>
         </Standard>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11702</ProductCategory> <!-- natural products -->
+          <ProductCategory>11702</ProductCategory>
           <BasePrice>40</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011326</GUID>
+          <Name>Olive Oil</Name>
+          <IconFilename>data/ui/jakob/icon_olive_oil3.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <BasePrice>60</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
           <ProductionRegions>
@@ -303,52 +329,22 @@
         <Product>1500010120</Product>
       </Item>
     </ModOp>
-    <!-- Cheese: After Sausages -->
-    <ModOp Type="addNextSibling" GUID="120055,120057"
-      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010102']"
-      Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
-      <Item>
-        <Product>1500010102</Product>
-      </Item>
-    </ModOp>
-    <!-- Ropes: After Coats/Hemp -->
-    <ModOp Type="addNextSibling" GUID="120055,120057"
-      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010825']"
-      Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
-      <Item>
-        <Product>1500010825</Product>
-      </Item>
-    </ModOp>
-    <!-- Hemp: After Coats -->
-    <ModOp Type="add" GUID="120055,120057"
-      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1440224']"
-      Path="/Values/ProductStorageList/ProductList">
-      <Item>
-        <Product>1440224</Product>
-      </Item>
-    </ModOp>
-    <!-- Olives: After Grain -->
-    <ModOp Type="addNextSibling" GUID="120055"
-      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010105']"
-      Path="/Values/ProductStorageList/ProductList/Item[Product='1010192']">
-      <Item>
-        <Product>1500010105</Product>
-      </Item>
-    </ModOp>
-    <!-- Suits: After Fur Coats -->
-    <ModOp Type="addNextSibling" GUID="120055,120057"
-      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010127']"
-      Path="/Values/ProductStorageList/ProductList/Item[Product='1010247']">
-      <Item>
-        <Product>1500010127</Product>
-      </Item>
-    </ModOp>
+
     <!-- Tea: After Coffee -->
     <ModOp Type="addNextSibling" GUID="120055,120057"
       Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010847']"
       Path="/Values/ProductStorageList/ProductList/Item[Product='120032']">
       <Item>
         <Product>1500010847</Product>
+      </Item>
+    </ModOp>
+    <!-- Herbs: move to after Coffee -->
+    <ModOp Type="remove" GUID="120055" Path="/Values/ProductStorageList/ProductList/Item[Product='5383']" />
+    <ModOp Type="addNextSibling" GUID="120055"
+      Condition="!~/Values/ProductStorageList/ProductList/Item[Product='5383']"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='120032']">
+      <Item>
+        <Product>5383</Product>
       </Item>
     </ModOp>
     <!-- Tools: After Sewing Machines -->
@@ -369,24 +365,340 @@
     </ModOp>
   </Group>
 
-  <!-- # Tier Goods Lists -->
+  <!-- # Warehouse (internal) -->
   <Group>
-    <!-- Canned Fish: After Canned Food -->
-    <ModOp Type="addNextSibling" GUID="501997,502019,502006"
-      Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
-      Path="/Values/ProductList/List/Item[Product='1010217']">
+    <ModOp Type="remove" GUID="120055" Path="/Values/ProductStorageList/ProductList/Item[Product='5385' or Product='114391']" />
+    <!-- After Sausages -->
+    <ModOp Type="addNextSibling" GUID="120055"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
       <Item>
-        <Product>1500010120</Product>
+        <Product>5385</Product>
       </Item>
-    </ModOp>
-    <!-- Cheese: After Sausages -->
-    <ModOp Type="addNextSibling" GUID="501996,502018,502005"
-      Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
-      Path="/Values/ProductList/List/Item[Product='1010238']">
       <Item>
         <Product>1500010102</Product>
       </Item>
     </ModOp>
+    <!-- After Working Cloth -->
+    <ModOp Type="addNextSibling" GUID="120055,120057"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010237']">
+      <Item>
+        <Product>1500010105</Product>
+      </Item>
+      <Item>
+        <Product>1500011326</Product>
+      </Item>
+    </ModOp>
+    <!-- After Fur Coats -->
+    <ModOp Type="addNextSibling" GUID="120055"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010247']">
+      <Item>
+        <Product>1440224</Product>
+      </Item>
+      <Item>
+        <Product>1500010825</Product>
+      </Item>
+      <Item>
+        <Product>114391</Product>
+      </Item>
+      <Item>
+        <Product>1500010127</Product>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Marketplace -->
+  <Group>
+    <!-- After Sausages -->
+    <ModOp Type="addNextSibling" GUID="120057"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
+      <Item>
+        <Product>1500010102</Product>
+      </Item>
+    </ModOp>
+    <!-- After Working Cloth -->
+    <ModOp Type="addNextSibling" GUID="120057"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010237']">
+      <Item>
+        <Product>1500011326</Product>
+      </Item>
+    </ModOp>
+    <!-- After Fur Coats -->
+    <ModOp Type="addNextSibling" GUID="120057"
+      Path="/Values/ProductStorageList/ProductList/Item[Product='1010247']">
+      <Item>
+        <Product>1500010127</Product>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Agriculture Europe -->
+  <Group>
+    <!-- After Potatoes -->
+    <ModOp Type="addNextSibling" GUID="502037"
+      Path="/Values/ProductList/List/Item[Product='1010195']">
+      <Item>
+        <Product>1500010836</Product>
+      </Item>
+    </ModOp>
+    <!-- After Wool -->
+    <ModOp Type="addNextSibling" GUID="502037"
+      Condition="!~/Values/ProductList/List/Item[Product='1500011326']"
+      Path="/Values/ProductList/List/Item[Product='1010197']">
+      <Item>
+        <Product>1500010105</Product>
+      </Item>
+    </ModOp>
+    <!-- After Pigs -->
+    <ModOp Type="addNextSibling" GUID="502037"
+      Path="/Values/ProductList/List/Item[Product='1010199']">
+      <Item>
+        <Product>5385</Product>
+      </Item>
+    </ModOp>
+    <!-- After Furs -->
+    <ModOp Type="addNextSibling" GUID="502037"
+      Path="/Values/ProductList/List/Item[Product='1010209']">
+      <Item>
+        <Product>1440224</Product>
+      </Item>
+      <Item>
+        <Product>5383</Product>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Intermediate Europe -->
+  <Group>
+    <!-- First -->
+    <ModOp Type="addPrevSibling" GUID="502043"
+      Path="/Values/ProductList/List/Item[1]">
+      <Item>
+        <Product>1500011326</Product>
+      </Item>
+    </ModOp>
+    <!-- After Goulash -->
+    <ModOp Type="addNextSibling" GUID="502043"
+      Path="/Values/ProductList/List/Item[Product='1010215']">
+      <Item>
+        <Product>114391</Product>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Consumer Europe -->
+  <Group>
+    <!-- Farmer Consumer Goods -->
+    <Group>
+      <!-- After Fish -->
+      <ModOp Type="addNextSibling" GUID="501995"
+        Path="/Values/ProductList/List/Item[Product='1010200']">
+        <Item>
+          <Product>1500010836</Product>
+        </Item>
+      </ModOp>
+      <!-- After Worker Cloth -->
+      <ModOp Type="addNextSibling" GUID="501995"
+        Path="/Values/ProductList/List/Item[Product='1010237']">
+        <Item>
+          <Product>1500011326</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Worker Consumer Goods -->
+    <Group>
+      <!-- After Sausages -->
+      <ModOp Type="addNextSibling" GUID="501996"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+        Path="/Values/ProductList/List/Item[Product='1010238']">
+        <Item>
+          <Product>1500010102</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Artisan Consumer Goods -->
+    <Group>
+      <!-- After Canned Food -->
+      <ModOp Type="addNextSibling" GUID="501997"
+        Path="/Values/ProductList/List/Item[Product='1010217']">
+        <Item>
+          <Product>1500010120</Product>
+        </Item>
+      </ModOp>
+      <!-- After Fur Coats -->
+      <ModOp Type="addNextSibling" GUID="501997"
+        Path="/Values/ProductList/List/Item[Product='1010247']">
+        <Item>
+          <Product>1500010127</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Engineer Consumer Goods -->
+    <Group>
+      <!-- After Coffee -->
+      <ModOp Type="addNextSibling" GUID="501998"
+        Path="/Values/ProductList/List/Item[Product='120032']">
+        <Item>
+          <Product>1500010847</Product>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # All Europe -->
+  <Group>
+    <!-- Farmer Unlock Goods -->
+    <Group>
+      <!-- After Fish -->
+      <Group>
+        <ModOp Type="addNextSibling" GUID="502017"
+          Path="/Values/ProductList/List/Item[Product='1010200']">
+          <Item>
+            <Product>1500010836</Product>
+          </Item>
+        </ModOp>
+        <ModOp Type="addNextSibling" GUID="502017"
+          Path="/Values/ProductList/List/Item[Product='1010237']">
+          <Item>
+            <Product>1500010105</Product>
+          </Item>
+          <Item>
+            <Product>1500011326</Product>
+          </Item>
+        </ModOp>
+      </Group>
+    </Group>
+
+    <!-- Worker Unlock Goods -->
+    <Group>
+      <!-- After Sausages -->
+      <ModOp Type="addNextSibling" GUID="502018"
+        Path="/Values/ProductList/List/Item[Product='1010238']">
+        <Item>
+          <Product>5385</Product>
+        </Item>
+        <Item>
+          <Product>1500010102</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Artisan Unlock Goods -->
+    <Group>
+      <!-- After Canned Food -->
+      <ModOp Type="addNextSibling" GUID="502019"
+        Path="/Values/ProductList/List/Item[Product='1010217']">
+        <Item>
+          <Product>1500010120</Product>
+        </Item>
+      </ModOp>
+      <!-- After Fur Coats -->
+      <ModOp Type="addNextSibling" GUID="502019"
+        Path="/Values/ProductList/List/Item[Product='1010247']">
+        <Item>
+          <Product>1440224</Product>
+        </Item>
+        <Item>
+          <Product>114391</Product>
+        </Item>
+        <Item>
+          <Product>1500010127</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Engineer Unlock Goods -->
+    <Group>
+      <!-- Tea: After Coffee  -->
+      <ModOp Type="addNextSibling" GUID="502020,502066"
+        Path="/Values/ProductList/List/Item[Product='120032']">
+        <Item>
+          <Product>5383</Product>
+        </Item>
+        <Item>
+          <Product>1500010847</Product>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Workforce Goods -->
+  <Group>
+    <!-- Farmer Workforce Goods -->
+    <Group>
+      <!-- After Potatoes -->
+      <Group>
+        <ModOp Type="addNextSibling" GUID="502004"
+          Path="/Values/ProductList/List/Item[Product='1010195']">
+          <Item>
+            <Product>1500010836</Product>
+          </Item>
+        </ModOp>
+      </Group>
+      <!-- After Wool -->
+      <ModOp Type="addNextSibling" GUID="502004"
+        Path="/Values/ProductList/List/Item[Product='1010197']">
+        <Item>
+          <Product>1500010105</Product>
+        </Item>
+      </ModOp>
+      <!-- After Fur -->
+      <Group>
+        <ModOp Type="addNextSibling" GUID="502004"
+          Path="/Values/ProductList/List/Item[Product='1010209']">
+          <Item>
+            <Product>5383</Product>
+          </Item>
+        </ModOp>
+      </Group>
+    </Group>
+
+    <!-- Worker Worforce Goods -->
+    <Group>
+      <!-- After Sausages -->
+      <ModOp Type="addNextSibling" GUID="502005"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+        Path="/Values/ProductList/List/Item[Product='1010238']">
+        <Item>
+          <Product>1500010102</Product>
+        </Item>
+      </ModOp>
+      <!-- End -->
+      <ModOp Type="add" GUID="502005"
+        Path="/Values/ProductList/List">
+        <Item>
+          <Product>1500011326</Product>
+        </Item>
+      </ModOp>
+    </Group>
+
+    <!-- Artisan Workforce Goods -->
+    <Group>
+      <!-- After Canned Food -->
+      <ModOp Type="addNextSibling" GUID="502006"
+        Path="/Values/ProductList/List/Item[Product='1010217']">
+        <Item>
+          <Product>1500010120</Product>
+        </Item>
+      </ModOp>
+      <!-- After Fur Coats -->
+      <ModOp Type="addNextSibling" GUID="502006"
+        Path="/Values/ProductList/List/Item[Product='1010247']">
+        <Item>
+          <Product>1440224</Product> <!-- TODO: isn't that worker workforce? -->
+        </Item>
+        <Item>
+          <Product>1500010127</Product>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Tier Goods Lists -->
+  <Group>
+
     <!-- Ropes -->
     <Group>
       <!-- After Coats / Hemp -->
@@ -406,25 +718,7 @@
         </Item>
       </ModOp>
     </Group>
-    <!-- Hemp -->
-    <Group>
-      <!-- After Coats -->
-      <ModOp Type="addNextSibling" GUID="502019,502006"
-        Condition="!~/Values/ProductList/List/Item[Product='1440224']"
-        Path="/Values/ProductList/List/Item[Product='1010247']">
-        <Item>
-          <Product>1440224</Product>
-        </Item>
-      </ModOp>
-      <!-- After Furs -->
-      <ModOp Type="addNextSibling" GUID="502037"
-        Condition="!~/Values/ProductList/List/Item[Product='1440224']"
-        Path="/Values/ProductList/List/Item[Product='1010209']">
-        <Item>
-          <Product>1440224</Product>
-        </Item>
-      </ModOp>
-    </Group>
+
     <!-- Olives: After Grain -->
     <ModOp Type="addNextSibling" GUID="502018,502004,502037"
       Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
@@ -433,22 +727,7 @@
         <Product>1500010105</Product>
       </Item>
     </ModOp>
-    <!-- Suits: After Fur Coats -->
-    <ModOp Type="addNextSibling" GUID="501997,502019,502006"
-      Condition="!~/Values/ProductList/List/Item[Product='1500010127']"
-      Path="/Values/ProductList/List/Item[Product='1010247']">
-      <Item>
-        <Product>1500010127</Product>
-      </Item>
-    </ModOp>
-    <!-- Tea: After Coffee -->
-    <ModOp Type="addNextSibling" GUID="501998,502020,502066"
-      Condition="!~/Values/ProductList/List/Item[Product='1500010847']"
-      Path="/Values/ProductList/List/Item[Product='120032']">
-      <Item>
-        <Product>1500010847</Product>
-      </Item>
-    </ModOp>
+
     <!-- Tools: After Sewing Machines -->
     <ModOp Type="addNextSibling" GUID="501997,502019,502006"
       Condition="!~/Values/ProductList/List/Item[Product='1500010153']"
@@ -457,28 +736,5 @@
         <Product>1500010153</Product>
       </Item>
     </ModOp>
-    <!-- Vegetables -->
-    <Group>
-      <!-- After Fish -->
-      <Group>
-        <ModOp Type="addNextSibling" GUID="502017,501995"
-          Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
-          Path="/Values/ProductList/List/Item[Product='1010200']">
-          <Item>
-            <Product>1500010836</Product>
-          </Item>
-        </ModOp>
-      </Group>
-      <!-- Before Potatoes -->
-      <Group>
-        <ModOp Type="addPrevSibling" GUID="502004,502037"
-          Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
-          Path="/Values/ProductList/List/Item[Product='1010195']">
-          <Item>
-            <Product>1500010836</Product>
-          </Item>
-        </ModOp>
-      </Group>
-    </Group>
   </Group>
 </ModOps>
