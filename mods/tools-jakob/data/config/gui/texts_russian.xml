@@ -1,0 +1,8 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010153</GUID>
+      <Text>Инструменты</Text>
+    </Text>
+  </ModOp>
+</ModOps>

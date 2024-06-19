@@ -1,0 +1,19 @@
+{
+  "Version": "1.2",
+  "ModID": "production-tools-jakob",
+  "ModDependencies": [
+    "../tools-jakob",
+    "../ow-tools-jakob"
+  ],
+  "LoadAfterIds": [
+    "ow-tools-jakob"
+  ],
+  "Category": {
+    "English": "Deprecated"
+  },
+  "ModName": {
+    "English": "Tools (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}

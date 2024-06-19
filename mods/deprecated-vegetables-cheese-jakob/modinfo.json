@@ -2,8 +2,14 @@
   "Version": "1.2.0",
   "ModID": "production-vegetables-and-cheese-jakob",
   "ModDependencies": [
-    "../production-vegetables-jakob",
-    "../production-cheese-jakob"
+    "../ow-vegetables-jakob",
+    "../vegetables-jakob",
+    "../ow-cheese-jakob",
+    "../cheese-jakob"
+  ],
+  "LoadAfterIds": [
+    "ow-vegetables-jakob",
+    "ow-cheese-jakob"
   ],
   "Category": {
     "English": "Deprecated"

@@ -1,0 +1,51 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- Vegetables: After Fish -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010836']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Fish -->
+  <ModOp Type="addNextSibling" GUID="502017"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
+    Path="/Values/ProductList/List/Item[Product='1010200']">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Fish -->
+  <ModOp Type="addNextSibling" GUID="501995"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
+    Path="/Values/ProductList/List/Item[Product='1010200']">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Agriculture Europe -->
+  <!-- After Potatoes -->
+  <ModOp Type="addNextSibling" GUID="502037"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
+    Path="/Values/ProductList/List/Item[Product='1010195']">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Potatoes -->
+  <ModOp Type="addNextSibling" GUID="502004"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
+    Path="/Values/ProductList/List/Item[Product='1010195']">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+</ModOps>

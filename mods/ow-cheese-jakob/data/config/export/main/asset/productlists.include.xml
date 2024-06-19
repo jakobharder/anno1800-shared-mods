@@ -1,0 +1,54 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Sausages -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Sausages -->
+  <ModOp Type="addNextSibling" GUID="502018"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+    Path="/Values/ProductList/List/Item[Product='1010238']">
+    <Item>
+      <Product>5385</Product>
+    </Item>
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Sausages -->
+  <ModOp Type="addNextSibling" GUID="501996"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+    Path="/Values/ProductList/List/Item[Product='1010238']">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Agriculture Europe -->
+  <!-- After Pigs -->
+  <ModOp Type="addNextSibling" GUID="502037"
+    Condition="!~/Values/ProductList/List/Item[Product='5385']"
+    Path="/Values/ProductList/List/Item[Product='1010199']">
+    <Item>
+      <Product>5385</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Sausages -->
+  <ModOp Type="addNextSibling" GUID="502005"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010102']"
+    Path="/Values/ProductList/List/Item[Product='1010238']">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+</ModOps>

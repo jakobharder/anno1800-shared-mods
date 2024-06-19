@@ -1,0 +1,16 @@
+{
+  "Version": "1.0",
+  "ModID": "ow-tools-jakob",
+  "ModDependencies": [
+    "shared-ground-textures-industry-jakob",
+    "tools-jakob"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Tools (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}
