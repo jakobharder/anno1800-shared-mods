@@ -3,7 +3,7 @@
   "ModID": "production-olive-oil-jakob",
   "ModDependencies": [
     "../product-olives-jakob",
-    "../shared-products-jakob"
+    "../product-olive-oil-jakob"
   ],
   "LoadAfterIds": [],
   "Category": {
