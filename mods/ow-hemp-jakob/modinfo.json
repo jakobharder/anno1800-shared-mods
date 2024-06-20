@@ -1,0 +1,15 @@
+{
+  "Version": "1.0",
+  "ModID": "ow-hemp-jakob",
+  "ModDependencies": [
+    "hemp-jakob"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Hemp (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

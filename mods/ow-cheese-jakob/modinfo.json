@@ -1,0 +1,16 @@
+{
+  "Version": "1.0",
+  "ModID": "ow-cheese-jakob",
+  "ModDependencies": [
+    "shared-ground-textures-industry-jakob",
+    "cheese-jakob"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Cheese (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

@@ -1,11 +1,11 @@
 {
-  "Version": "1.1",
-  "ModID": "shared-ground-textures-industry-jakob",
+  "Version": "1.1.12",
+  "ModID": "shared-products-jakob",
   "Category": {
     "English": "Shared"
   },
   "ModName": {
-    "English": "Ground Textures Industry (Jakob)"
+    "English": "Products (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"

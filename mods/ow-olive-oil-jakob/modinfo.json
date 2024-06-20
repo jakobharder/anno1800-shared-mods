@@ -1,0 +1,17 @@
+{
+  "Version": "1.0.0",
+  "ModID": "ow-olive-oil-jakob",
+  "ModDependencies": [
+    "olives-jakob",
+    "olive-oil-jakob"
+  ],
+  "LoadAfterIds": [],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Olive Oil (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

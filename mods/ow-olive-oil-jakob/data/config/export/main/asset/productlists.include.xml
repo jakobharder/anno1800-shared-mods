@@ -1,0 +1,75 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Working Cloth -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductList/List/Item[Product='1500011326']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010237']">
+    <Item>
+      <Product>1500011326</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Work Cloth -->
+  <ModOp Type="addNextSibling" GUID="502017"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
+    Path="/Values/ProductList/List/Item[Product='1010237']">
+    <Item>
+      <Product>1500010105</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="502017"
+    Condition="!~/Values/ProductList/List/Item[Product='1500011326']"
+    Path="/Values/ProductList/List/Item[Product='1010237' or Product='1500010105'][last()]">
+    <Item>
+      <Product>1500011326</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Worker Cloth -->
+  <ModOp Type="addNextSibling" GUID="501995"
+    Path="/Values/ProductList/List/Item[Product='1010237']">
+    <Item>
+      <Product>1500011326</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Agriculture Europe -->
+  <!-- After Wool -->
+  <ModOp Type="addNextSibling" GUID="502037"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
+    Path="/Values/ProductList/List/Item[Product='1010197']">
+    <Item>
+      <Product>1500010105</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Intermediate Europe -->
+  <!-- First -->
+  <ModOp Type="addPrevSibling" GUID="502043"
+    Condition="!~/Values/ProductList/List/Item[Product='1500011326']"
+    Path="/Values/ProductList/List/Item[1]">
+    <Item>
+      <Product>1500011326</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Wool -->
+  <ModOp Type="addNextSibling" GUID="502004"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010105']"
+    Path="/Values/ProductList/List/Item[Product='1010197']">
+    <Item>
+      <Product>1500010105</Product>
+    </Item>
+  </ModOp>
+  <!-- End -->
+  <ModOp Type="add" GUID="502005"
+    Condition="!~/Values/ProductList/List/Item[Product='1500011326']"
+    Path="/Values/ProductList/List">
+    <Item>
+      <Product>1500011326</Product>
+    </Item>
+  </ModOp>
+</ModOps>

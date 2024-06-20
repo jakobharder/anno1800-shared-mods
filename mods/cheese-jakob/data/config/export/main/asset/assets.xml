@@ -1,0 +1,132 @@
+<ModOps>
+  <!-- # Product -->
+  <ModOp Type="addNextSibling" GUID="1010217">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010102</GUID>
+          <Name>Cheese</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <BasePrice>80</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>30</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Attribute>Faith</Attribute>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Attribute>Medicine</Attribute>
+              <Amount>10</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Storage Lists -->
+  <ModOp Type="addNextSibling" GUID="120055"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010102']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Expeditions -->
+  <ModOp Type="add" GUID="800111"
+    Condition="!~/Values/ExpeditionFeature/FeedOption/FeedOptions[Item/Product='1500010102']"
+    Path="/Values/ExpeditionFeature/FeedOption/FeedOptions">
+    <Item>
+      <MoraleFactor>0.3</MoraleFactor>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Cheese: Feedl -->
+  <Group Condition="!@131764/.//TradeLevels/Item/Trades[Item/Good='1500010102']">
+    <ModOp Type="addNextSibling" GUID="131764"
+      Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item/Trades/Item[Good='1010238'][last()]">
+      <Item>
+        <Good>1500010102</Good>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="131764"
+      Condition="!//FactoryBase[FactoryOutputs/Item/Product='1500010130']/IsMainFactory[text()='1']">
+      <Asset>
+        <Template>FactoryBuilding7</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010130</GUID>
+            <Name>IsMainFactory_Fake: Cheese</Name>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+          </Building>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\graphics\buildings\public\logistic_01\logistic_01.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Locked />
+          <FactoryBase>
+            <FactoryInputs>
+              <Item>
+                <Product>5385</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+            </FactoryInputs>
+            <FactoryOutputs>
+              <Item>
+                <Product>1500010102</Product>
+                <Amount>1</Amount>
+                <StorageAmount>6</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>30</CycleTime>
+            <IsMainFactory>1</IsMainFactory>
+          </FactoryBase>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010115</Product>
+                <Amount>130</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+
+  <ModOp Type="add" GUID="502234"
+    Condition="!/Values/ProductList/List/Item[Product='1500010102']"
+    Path="/Values/ProductList/List">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+</ModOps>
