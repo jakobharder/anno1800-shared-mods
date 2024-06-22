@@ -32,7 +32,7 @@
   <!-- # Storage Lists -->
   <ModOp Type="add" GUID="120055"
     Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010836']"
-    Path="/Values/ProductStorageList/ProductList/Item">
+    Path="/Values/ProductStorageList/ProductList">
     <Item>
       <Product>1500010836</Product>
     </Item>
