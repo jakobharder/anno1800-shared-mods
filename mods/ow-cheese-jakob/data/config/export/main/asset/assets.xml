@@ -284,8 +284,52 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010196</GUID>
-          <Name>@ Artisans</Name>
+          <GUID>1500011451</GUID>
+          <Name>Unhide @ 1 Worker</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010167</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011452</GUID>
+          <!-- <GUID>1500010196</GUID> -->
+          <Name>@ 400 Workers</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -295,8 +339,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context>
-                <CounterAmount>1</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -394,19 +438,11 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- before trade union, or after sausages -->
-  <ModOp Type="addPrevSibling" GUID="25000190"
-    Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010516']"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010516']">
-    <Item>
-      <Building>1500010111</Building>
-    </Item>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190"
-    Condition="!/Values/ConstructionCategory/BuildingList/Item[Building='1010516']"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244']">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=400][last()]">
     <Item>
       <Building>1500010111</Building>
+      <Worker>400</Worker>
     </Item>
   </ModOp>
   <ModOp Type="addPrevSibling" GUID="500945"
