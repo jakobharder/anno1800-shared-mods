@@ -1,0 +1,22 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010848</GUID>
+      <Text>Kräuterhof</Text> <!-- Building: Herb Farm -->
+    </Text>
+    <Text>
+      <GUID>1500010943</GUID>
+      <Text>Kräuterfeld</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011398</GUID>
+      <Text>Old Save Support</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011399</GUID>
+      <Text>Fertility buff to support existing save games without Herbs fertility on islands.</Text>
+    </Text>
+  </ModOp>
+</ModOps>

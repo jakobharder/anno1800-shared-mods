@@ -1,0 +1,436 @@
+<ModOps>
+  <!-- # Includes -->
+  <Include File="./productlists.include.xml" />
+  <Include File="./fertility.include.xml" />
+
+  <ModOp Type="add" GUID="114365"
+    Condition="!/Values/Product/ProductionRegions[Item/RegionType='Moderate']"
+    Path="/Values/Product/ProductionRegions">
+    <Item>
+      <RegionType>Moderate</RegionType>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="114365"
+    Condition="!/Values/Product/AssociatedRegion[contains(text(), 'Moderate')]"
+    Path="/Values/Product/AssociatedRegion">;Moderate</ModOp>
+
+  <!-- # Linseed -> Flax -->
+  <Group Skip="1">
+    <ModOp GUID="500945" Type="addNextSibling">
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011473</GUID>
+            <Name>Flax</Name>
+          </Standard>
+          <Text />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011474</GUID>
+            <Name>Flax Fertility</Name>
+          </Standard>
+          <Text />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp GUID="114448" Type="merge"
+      Path="/Values/Text">
+      <Text>
+        <TextOverride>1500011458</TextOverride>
+      </Text>
+    </ModOp>
+    <ModOp GUID="114365" Type="merge"
+      Path="/Values/Text">
+      <Text>
+        <TextOverride>1500011473</TextOverride>
+      </Text>
+    </ModOp>
+    <ModOp GUID="114343" Type="merge"
+      Path="/Values/Text">
+      <Text>
+        <TextOverride>1500011474</TextOverride>
+      </Text>
+    </ModOp>
+  </Group>
+
+  <!-- # Farm  -->
+  <ModOp GUID="500945" Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010265</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011458</GUID>
+          <Name>Flax Farm</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_linen_farm.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\flax-farm\cabbage.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>400</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Factory7>
+          <NeededFertility>114343</NeededFertility>
+        </Factory7>
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>114365</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>30</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <ModuleOwner>
+          <ModuleLimits>
+            <Main>
+              <Limit>72</Limit>
+            </Main>
+          </ModuleLimits>
+          <ConstructionOptions>
+            <Item>
+              <ModuleGUID>1500011459</ModuleGUID>
+            </Item>
+          </ConstructionOptions>
+          <AdditionalModule>269837</AdditionalModule>
+          <AdjustModuleOrientationOnceSpecialModuleWasPlaced>1</AdjustModuleOrientationOnceSpecialModuleWasPlaced>
+          <ModuleBuildRadius>26</ModuleBuildRadius>
+          <FertilizerModuleData>
+            <Module>25240</Module>
+          </FertilizerModuleData>
+          <FarmType>PlantFarm</FarmType>
+        </ModuleOwner>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>20</Amount>
+              <InactiveAmount>10</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>10</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <LogisticNode />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011466</GUID>
+          <Name>Unlock @ 400 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011458</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>114365</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011467</GUID>
+          <Name>Unhide @ 1 Worker</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011458</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>114365</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011468</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011458</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>114365</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Farmfield</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011459</GUID>
+          <Name>Flax Field</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_farmfield_module.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>102507</GroundDecalAsset>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/flax-farm/field_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/flax-farm/field_02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/flax-farm/field_03.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection />
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <BuildingModule />
+        <AmbientMoodProvider>
+          <AmbientMood>PotatoField</AmbientMood>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011469</GUID>
+          <Name>Productivity - Decree 1 Buff_01</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
+          <InfoDescription>269415</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500011458</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>114365</Product>
+              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+        <EcoSystemProviderUpgrade />
+        <ResourceUpgrade />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # General -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500011458</Factory>
+    </Item>
+  </ModOp>
+  <!-- all cloth productions -->
+  <ModOp Type="add" GUID="190890" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011458</GUID>
+    </Item>
+  </ModOp>
+  <!-- specific items -->
+  <ModOp Type="add" GUID="190745,190747,190749,190751,190748" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500011458</GUID>
+    </Item>
+  </ModOp>
+  <!-- general production pools -->
+  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011458</GUID>
+    </Item>
+  </ModOp>
+  <!-- farm specialist and item pools -->
+  <ModOp Type="add" GUID="194006,191471,190865,190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010830</GUID>
+    </Item>
+  </ModOp>
+  <!-- land reform act -->
+  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
+    <Item>
+      <Effect>1500011469</Effect>
+    </Item>
+  </ModOp>
+
+  <!-- Feedback -->
+  <Group>
+    <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+      <Item>
+        <Building>1500011458</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
+      <Item>
+        <Building>1500011458</Building>
+        <PersonSpawners>
+          <Item>
+            <UnitClass>141674</UnitClass>
+          </Item>
+        </PersonSpawners>
+        <VehicleSpawners>
+          <Item>
+            <UnitClass>269771</UnitClass>
+            <ShrinksFieldsOnTouch>1</ShrinksFieldsOnTouch>
+            <VehicleType>Harvester</VehicleType>
+          </Item>
+          <Item>
+            <UnitClass>25272</UnitClass>
+            <VehicleType>Fertilizer</VehicleType>
+          </Item>
+        </VehicleSpawners>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

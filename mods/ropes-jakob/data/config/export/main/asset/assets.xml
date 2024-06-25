@@ -1,0 +1,56 @@
+<ModOps>
+  <!-- # Product -->
+  <ModOp Type="addNextSibling" GUID="1010217">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010825</GUID>
+          <Name>Ropes</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_rope.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11707</ProductCategory>
+          <BasePrice>200</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>40</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Crafting</Attribute>
+              <Amount>35</Amount>
+            </Item>
+            <Item>
+              <Attribute>Melee</Attribute>
+              <Amount>5</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Storage Lists -->
+  <ModOp Type="add" GUID="120055"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010825']"
+    Path="/Values/ProductStorageList/ProductList">
+    <Item>
+      <Product>1500010825</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Expeditions -->
+  <!-- nope -->
+
+  <!-- # Docklands -->
+  <!-- nope -->
+</ModOps>

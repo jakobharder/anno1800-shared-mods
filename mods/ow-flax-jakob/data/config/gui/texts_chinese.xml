@@ -1,0 +1,34 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011458</GUID>
+      <Text>Flax Farm</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011459</GUID>
+      <Text>Flax Field</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011461</GUID>
+      <Text>Old Save Support</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011462</GUID>
+      <Text>Fertility buff to support existing save games without Flax fertility on islands.</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011473</GUID>
+      <Text>Flax Farm</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011474</GUID>
+      <Text>Flax Farm</Text>
+    </Text>
+  </ModOp>
+</ModOps>

@@ -3,6 +3,14 @@
   <Include File="./productlists.include.xml" />
   <Include File="./fertility.include.xml" />
 
+  <ModOp Type="add" GUID="114391"
+    Condition="!/Values/Product/ProductionRegions[Item/RegionType='Moderate']"
+    Path="/Values/Product/ProductionRegions">
+    <Item>
+      <RegionType>Moderate</RegionType>
+    </Item>
+  </ModOp>
+
   <!-- # Assets -->
   <ModOp Type="addNextSibling" GUID="1010315">
     <!-- Hemp -->
@@ -436,6 +444,12 @@
     </Item>
     <Item>
       <Factory>1500010124</Factory>
+    </Item>
+  </ModOp>
+  <!-- farm specialist and item pools -->
+  <ModOp Type="add" GUID="194006,191471,190865,190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010830</GUID>
     </Item>
   </ModOp>
   <!-- land reform act -->
