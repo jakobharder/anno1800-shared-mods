@@ -113,22 +113,22 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_1.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_2.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_3.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_1.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_04.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_2.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_05.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\herb_farm\herb_field_3.cfg</Filename>
+              <Filename>data\jakob\herb_farm\herb_field_06.cfg</Filename>
             </Item>
           </Variations>
         </Object>

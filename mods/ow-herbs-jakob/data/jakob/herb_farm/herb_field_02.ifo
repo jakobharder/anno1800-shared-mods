@@ -2,9 +2,9 @@
   <BoundingBox>
     <Name>BoundingBox</Name>
     <Position>
-      <xf>0.05290899</xf>
-      <yf>0.05468459</yf>
-      <zf>-0.09791565</zf>
+      <xf>-0.006808519</xf>
+      <yf>0.05936079</yf>
+      <zf>0</zf>
     </Position>
     <Rotation>
       <xf>0</xf>
@@ -13,17 +13,17 @@
       <wf>1</wf>
     </Rotation>
     <Extents>
-      <xf>0.8223797</xf>
-      <yf>0.3046846</yf>
-      <zf>1.049926</zf>
+      <xf>0.6872643</xf>
+      <yf>0.3093608</yf>
+      <zf>0.6000001</zf>
     </Extents>
   </BoundingBox>
   <MeshBoundingBox>
     <Name>MeshBoundingBox</Name>
     <Position>
-      <xf>0.05290899</xf>
-      <yf>0.1519802</yf>
-      <zf>-0.09791565</zf>
+      <xf>-0.006808519</xf>
+      <yf>0.1293951</yf>
+      <zf>-0.02737251</zf>
     </Position>
     <Rotation>
       <xf>0</xf>
@@ -32,65 +32,46 @@
       <wf>1</wf>
     </Rotation>
     <Extents>
-      <xf>0.8223797</xf>
-      <yf>0.207389</yf>
-      <zf>1.049926</zf>
+      <xf>0.6872643</xf>
+      <yf>0.2393265</yf>
+      <zf>0.5080266</zf>
     </Extents>
   </MeshBoundingBox>
   <DisableFeedbackArea>0</DisableFeedbackArea>
-  <IntersectBox>
-    <Name>Hitbox2007</Name>
-    <Position>
-      <xf>0</xf>
-      <yf>0.06364131</yf>
-      <zf>0</zf>
-    </Position>
-    <Rotation>
-      <xf>0</xf>
-      <yf>0</yf>
-      <zf>0</zf>
-      <wf>1</wf>
-    </Rotation>
-    <Extents>
-      <xf>0.5</xf>
-      <yf>0.06364131</yf>
-      <zf>0.5</zf>
-    </Extents>
-  </IntersectBox>
   <BuildBlocker>
     <Position>
       <xf>-0.5</xf>
       <zf>0.5</zf>
     </Position>
     <Position>
-      <xf>-0.5</xf>
-      <zf>-0.5</zf>
-    </Position>
-    <Position>
-      <xf>0.5</xf>
-      <zf>-0.5</zf>
-    </Position>
-    <Position>
       <xf>0.5</xf>
       <zf>0.5</zf>
+    </Position>
+    <Position>
+      <xf>0.5</xf>
+      <zf>-0.5</zf>
+    </Position>
+    <Position>
+      <xf>-0.5</xf>
+      <zf>-0.5</zf>
     </Position>
   </BuildBlocker>
   <FeedbackBlocker>
     <Position>
       <xf>-0.5</xf>
-      <zf>0.5</zf>
-    </Position>
-    <Position>
-      <xf>0.5</xf>
-      <zf>0.5</zf>
+      <zf>-0.5</zf>
     </Position>
     <Position>
       <xf>0.5</xf>
       <zf>-0.5</zf>
+    </Position>
+    <Position>
+      <xf>0.5</xf>
+      <zf>0.5</zf>
     </Position>
     <Position>
       <xf>-0.5</xf>
-      <zf>-0.5</zf>
+      <zf>0.5</zf>
     </Position>
   </FeedbackBlocker>
 </Info>
