@@ -1,9 +1,13 @@
 {
-  "Version": "1.0",
+  "Version": "1.0.1",
   "ModID": "ow-cheese-jakob",
   "ModDependencies": [
+    "shared-pools-and-definitions",
     "shared-ground-textures-industry-jakob",
     "cheese-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
   ],
   "Category": {
     "English": "Production"

@@ -14,7 +14,9 @@ mods.forEach(mod => {
   const zipName = mod
     .replace(/\s/g, '-')
     .replace(/\[|\]|\(|\)/g, '')
-    .toLowerCase();
+    .toLowerCase()
+    .replace('product-', '')
+    .replace('production-', '');
 
   child_process.execFileSync('tar', [
     '-c', '-a',

@@ -1,0 +1,34 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- nope -->
+
+  <!-- # All Europe -->
+  <!-- After Work Clothes -->
+  <ModOp Type="addNextSibling" GUID="502017"
+    Condition="!~/Values/ProductList/List/Item[Product='114365']"
+    Path="/Values/ProductList/List/Item[Product='1010237']">
+    <Item>
+      <Product>114365</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Agriculture Europe -->
+  <!-- After Wool -->
+  <ModOp Type="addNextSibling" GUID="502037"
+    Condition="!~/Values/ProductList/List/Item[Product='114365']"
+    Path="/Values/ProductList/List/Item[Product='1010197']">
+    <Item>
+      <Product>114365</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Potatoes -->
+  <ModOp Type="addNextSibling" GUID="502004"
+    Condition="!~/Values/ProductList/List/Item[Product='114365']"
+    Path="/Values/ProductList/List/Item[Product='1010197']">
+    <Item>
+      <Product>114365</Product>
+    </Item>
+  </ModOp>
+</ModOps>

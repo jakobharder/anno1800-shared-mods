@@ -1,9 +1,16 @@
 {
-  "Version": "1.0",
+  "Version": "1.0.1",
   "ModID": "ow-tools-jakob",
   "ModDependencies": [
+    "shared-pools-and-definitions",
     "shared-ground-textures-industry-jakob",
     "tools-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
+  ],
+  "DeprecateIds": [
+    "production-tools-jakob"
   ],
   "Category": {
     "English": "Production"

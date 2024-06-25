@@ -1,0 +1,8 @@
+<ModOps>
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010825</GUID>
+      <Text>밧줄</Text>
+    </Text>
+  </ModOp>
+</ModOps>

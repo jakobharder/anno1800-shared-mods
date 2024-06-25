@@ -1,0 +1,19 @@
+{
+  "Version": "1.0",
+  "ModID": "ow-ropes-jakob",
+  "ModDependencies": [
+    "shared-pools-and-definitions",
+    "ropes-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Ropes (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

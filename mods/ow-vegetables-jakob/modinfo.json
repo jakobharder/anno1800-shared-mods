@@ -1,8 +1,12 @@
 {
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "ModID": "ow-vegetables-jakob",
   "ModDependencies": [
+    "shared-pools-and-definitions",
     "vegetables-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
   ],
   "Category": {
     "English": "Production"
