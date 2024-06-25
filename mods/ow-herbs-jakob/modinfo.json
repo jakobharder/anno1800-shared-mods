@@ -1,18 +1,18 @@
 {
-  "Version": "1.0.1",
-  "ModID": "ow-vegetables-jakob",
+  "Version": "1.0.0",
+  "ModID": "ow-herbs-jakob",
   "ModDependencies": [
-    "shared-pools-and-definitions",
-    "vegetables-jakob"
+    "shared-pools-and-definitions"
   ],
   "LoadAfterIds": [
-    "shared-pools-and-definitions"
+    "shared-pools-and-definitions",
+    "shared_herb_garden_kurila"
   ],
   "Category": {
     "English": "Production"
   },
   "ModName": {
-    "English": "OW Vegetables (Jakob)"
+    "English": "OW Herbs (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"

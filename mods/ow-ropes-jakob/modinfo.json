@@ -1,22 +1,18 @@
 {
-  "Version": "1.0.1",
-  "ModID": "ow-tools-jakob",
+  "Version": "1.0",
+  "ModID": "ow-ropes-jakob",
   "ModDependencies": [
     "shared-pools-and-definitions",
-    "shared-ground-textures-industry-jakob",
-    "tools-jakob"
+    "ropes-jakob"
   ],
   "LoadAfterIds": [
     "shared-pools-and-definitions"
-  ],
-  "DeprecateIds": [
-    "production-tools-jakob"
   ],
   "Category": {
     "English": "Production"
   },
   "ModName": {
-    "English": "OW Tools (Jakob)"
+    "English": "OW Ropes (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
