@@ -140,7 +140,7 @@
         <Standard>
           <GUID>1500011450</GUID>
           <!-- <GUID>1500010947</GUID> -->
-          <Name>Unhide @ 1 Worker</Name>
+          <Name>Unhide @ 150 Farmer</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -150,8 +150,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
-                <CounterAmount>1</CounterAmount>
+                <Context>15000000</Context>
+                <CounterAmount>150</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
