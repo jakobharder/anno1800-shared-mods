@@ -93,7 +93,7 @@
           <GUID>1500011193</GUID>
           <!-- <GUID>1500011191</GUID> -->
           <!-- <GUID>1500010844</GUID> -->
-          <Name>Unlock @ 400 Workers</Name>
+          <Name>Unlock @ 1 Worker</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -104,7 +104,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000001</Context>
-                <CounterAmount>400</CounterAmount>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -358,10 +358,10 @@
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000189"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=400][last()]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
     <Item>
       <Building>1500010830</Building>
-      <Worker>400</Worker>
+      <Worker>1</Worker>
     </Item>
   </ModOp>
 

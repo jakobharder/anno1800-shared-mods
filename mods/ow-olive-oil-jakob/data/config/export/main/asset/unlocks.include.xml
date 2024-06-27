@@ -28,7 +28,7 @@
         </AssetPool>
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
@@ -107,6 +107,6 @@
           <UsedBySecondParties>0</UsedBySecondParties>
         </TriggerSetup>
       </Values>
-    </Asset>
+    </Asset> -->
   </ModOp>
 </ModOps>

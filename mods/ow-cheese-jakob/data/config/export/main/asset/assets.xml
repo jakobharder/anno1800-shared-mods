@@ -329,7 +329,7 @@
         <Standard>
           <GUID>1500011452</GUID>
           <!-- <GUID>1500010196</GUID> -->
-          <Name>@ 400 Workers</Name>
+          <Name>@ 1 Worker</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -340,7 +340,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000001</Context>
-                <CounterAmount>400</CounterAmount>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -439,10 +439,10 @@
     </Asset>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=400][last()]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
     <Item>
       <Building>1500010111</Building>
-      <Worker>400</Worker>
+      <Worker>1</Worker>
     </Item>
   </ModOp>
   <ModOp Type="addPrevSibling" GUID="500945"

@@ -386,14 +386,14 @@
               <Item>
                 <Product>1500010105</Product>
                 <Amount>1</Amount>
-                <StorageAmount>3</StorageAmount>
+                <StorageAmount>4</StorageAmount>
               </Item>
             </FactoryInputs>
             <FactoryOutputs>
               <Item>
                 <Product>1500011326</Product>
                 <Amount>1</Amount>
-                <StorageAmount>2</StorageAmount>
+                <StorageAmount>4</StorageAmount>
               </Item>
             </FactoryOutputs>
             <CycleTime>30</CycleTime>
