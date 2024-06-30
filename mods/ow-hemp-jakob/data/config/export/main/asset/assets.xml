@@ -251,81 +251,6 @@
       </Values>
     </Asset>
     <Asset>
-      <BaseAssetGUID>1010315</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010126</GUID>
-          <Name>cloth_maker</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png</IconFilename>
-        </Standard>
-        <Building>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>500</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>20</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>8</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data/jakob/suits/worker_multifactory/worker_multifactory.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Selection>
-          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
-          <Colors>
-            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-          </Colors>
-        </Selection>
-        <FactoryBase>
-          <FactoryInputs>
-            <Item>
-              <Product>1440224</Product>
-              <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
-            </Item>
-          </FactoryInputs>
-          <FactoryOutputs>
-            <Item>
-              <Product>114391</Product>
-              <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>100</Amount>
-              <InactiveAmount>50</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010115</Product>
-              <Amount>35</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>GuildhouseBuff</Template>
       <Values>
         <Standard>
@@ -334,6 +259,9 @@
           <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
           <InfoDescription>269415</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>269193</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -370,11 +298,6 @@
   <!-- # Feedback -->
   <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
-      <Building>1500010128</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
       <Building>1500010124</Building>
     </Item>
   </ModOp>
@@ -406,9 +329,6 @@
     <Item>
       <GUID>1500010124</GUID>
     </Item>
-    <Item>
-      <GUID>1500010126</GUID>
-    </Item>
   </ModOp>
 
   <!-- specific items -->
@@ -425,23 +345,11 @@
   <!-- general production targets -->
   <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010126</GUID>
-    </Item>
-    <Item>
       <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  <!-- electricity -->
-  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010126</GUID>
     </Item>
   </ModOp>
   <!-- boostable buildings -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
-    <Item>
-      <Factory>1500010126</Factory>
-    </Item>
     <Item>
       <Factory>1500010124</Factory>
     </Item>
@@ -449,7 +357,7 @@
   <!-- farm specialist and item pools -->
   <ModOp Type="add" GUID="194006,191471,190865,190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010830</GUID>
+      <GUID>1500010124</GUID>
     </Item>
   </ModOp>
   <!-- land reform act -->
