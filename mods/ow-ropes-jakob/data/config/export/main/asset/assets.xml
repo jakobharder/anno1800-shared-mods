@@ -180,8 +180,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010843</GUID>
-          <Name>Unlock @ 400 Artisans</Name>
+          <GUID>1500011481</GUID>
+          <!-- <GUID>1500010843</GUID> -->
+          <Name>@ 500 Workers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -191,8 +192,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context>
-                <CounterAmount>400</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>500</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -210,7 +211,71 @@
                       <Item>
                         <Asset>1500010824</Asset>
                       </Item>
+                      <Item>
+                        <Asset>1500010124</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010125</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440224</Asset>
+                      </Item>
                     </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011499</GUID>
+          <Name>Unhide @ 300 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010822</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010824</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010124</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010125</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440224</Asset>
+                      </Item>
+                    </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>
@@ -229,13 +294,14 @@
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='500009']">
     <Item>
       <Building>1500010824</Building>
+      <Worker>500</Worker>
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=500][last()]">
     <Item>
       <Building>1500010824</Building>
-      <Artisan>800</Artisan>
+      <Worker>500</Worker>
     </Item>
   </ModOp>
 
