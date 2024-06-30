@@ -1,0 +1,15 @@
+{
+  "Version": "1.3",
+  "ModID": "production-tools-jakob",
+  "Category": {
+    "English": "Deprecated"
+  },
+  "ModName": {
+    "English": "Tools (Jakob)"
+  },
+  "Description": {
+    "English": "Please use `ow-tools-jakob` instead."
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

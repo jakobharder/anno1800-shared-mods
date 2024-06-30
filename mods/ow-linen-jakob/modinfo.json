@@ -1,14 +1,19 @@
 {
-  "Version": "1.0.1",
-  "ModID": "ow-hemp-jakob",
+  "Version": "1.0",
+  "ModID": "ow-linen-jakob",
   "ModDependencies": [
-    "hemp-jakob"
+    "hemp-jakob",
+    "ow-hemp-jakob",
+    "ow-flax-jakob"
+  ],
+  "LoadAfterIds": [
+    "ow-hemp-jakob"
   ],
   "Category": {
     "English": "Production"
   },
   "ModName": {
-    "English": "OW Hemp (Jakob)"
+    "English": "OW Linen (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
