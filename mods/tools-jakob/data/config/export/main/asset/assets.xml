@@ -9,6 +9,9 @@
           <Name>Tools</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>984</TextOverride>
+        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
