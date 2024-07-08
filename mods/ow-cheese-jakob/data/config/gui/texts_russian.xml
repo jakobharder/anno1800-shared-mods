@@ -10,8 +10,9 @@
       <Text>Молочная ферма</Text>
     </Text>
     <Text>
-      <GUID>1500010111</GUID>
-      <Text>Сыр</Text>
+      <GUID>1500011514</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 
@@ -28,18 +29,6 @@
     <Text>
       <GUID>1500010252</GUID>
       <Text>Кафе: Горячий шоколад</Text>
-    </Text>
-    <Text>
-      <GUID>1500010253</GUID>
-      <Text>Горячий шоколад</Text>
-    </Text>
-    <Text>
-      <GUID>1500010254</GUID>
-      <Text>Горячий шоколад</Text>
-    </Text>
-    <Text>
-      <GUID>1500010255</GUID>
-      <Text>Горячий шоколад</Text>
     </Text>
   </ModOp>
 </ModOps>

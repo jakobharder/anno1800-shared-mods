@@ -1,34 +1,33 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011458</GUID>
-      <Text>Flax Farm</Text>
+      <Text>Granja de Lino</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011459</GUID>
-      <Text>Flax Field</Text>
+      <Text>Campo de Lino</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011461</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Compatibilidad de la partida guardada</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011462</GUID>
-      <Text>Fertility buff to support existing save games without Flax fertility on islands.</Text>
+      <Text>Buff para apoyar partidas guardadas existentes sin las fertilidades requeridas.</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011473</GUID>
-      <Text>Flax Farm</Text>
+      <Text>Lino</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011474</GUID>
-      <Text>Flax Farm</Text>
+      <Text>Fertilidad de Lino</Text>
+    </Text>
+    <Text>
+      <GUID>1500011515</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

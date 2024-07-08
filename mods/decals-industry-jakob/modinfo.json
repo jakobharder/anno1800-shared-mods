@@ -1,11 +1,14 @@
 {
   "Version": "1.1",
-  "ModID": "shared-ground-textures-industry-jakob",
+  "ModID": "decals-industry-jakob",
+  "bundle": [
+    "../sub/shared-ground-textures-industry-jakob"
+  ],
   "Category": {
     "English": "Shared"
   },
   "ModName": {
-    "English": "Ground Textures Industry (Jakob)"
+    "English": "Decals Industry (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"

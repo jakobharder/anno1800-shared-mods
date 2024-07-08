@@ -1,34 +1,33 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011458</GUID>
-      <Text>Flax Farm</Text>
+      <Text>亜麻農場</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011459</GUID>
-      <Text>Flax Field</Text>
+      <Text>亜麻畑</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011461</GUID>
-      <Text>Old Save Support</Text>
+      <Text>セーブデータの互換性</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011462</GUID>
-      <Text>Fertility buff to support existing save games without Flax fertility on islands.</Text>
+      <Text>既存のセーブデータに必要な肥沃度がない場合のバフサポート</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011473</GUID>
-      <Text>Flax Farm</Text>
+      <Text>亜麻</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011474</GUID>
-      <Text>Flax Farm</Text>
+      <Text>亜麻の肥沃度</Text>
+    </Text>
+    <Text>
+      <GUID>1500011515</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

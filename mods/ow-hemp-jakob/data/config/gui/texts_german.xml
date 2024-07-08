@@ -9,19 +9,21 @@
       <Text>Hanffeld</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011340</GUID>
-      <Text>Hemp Fertility</Text>
+      <Text>Hanf-Fruchtbarkeit</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011345</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Spielstand-Kompatibilität</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011347</GUID>
-      <Text>Fertility buff to support existing save games without Hemp fertility on islands.</Text>
+      <Text>Buff für Spielstände ohne benötigte Fruchtbarkeiten.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011516</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

@@ -9,14 +9,17 @@
       <Text>Campo de hierbas</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011398</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Compatibilidad de la partida guardada</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011399</GUID>
-      <Text>Fertility buff to support existing save games without Herbs fertility on islands.</Text>
+      <Text>Buff para apoyar partidas guardadas existentes sin las fertilidades requeridas.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011517</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

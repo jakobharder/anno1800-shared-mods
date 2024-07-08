@@ -2,6 +2,7 @@
   Deprecated GUIDs: 1500010112
 -->
 <ModOps>
+  <!-- <Include File="./legacy.include.xml" /> -->
   <Include File="./productlists.include.xml" />
 
   <!-- # Milk Farm -->
@@ -16,6 +17,7 @@
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011514</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -104,6 +106,7 @@
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <!-- enable asphalt -->
           <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
+          <BuildingCategoryName>1500011514</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -425,7 +428,11 @@
           <GUID>1500010111</GUID>
           <Name>Cheese</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+          <InfoDescription>1500011514</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1500010102</TextOverride>
+        </Text>
         <ProductionChain>
           <Building>1500010103</Building>
           <Tier1>
@@ -580,6 +587,9 @@
           <Name>buff_hot_chocolate_100</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1500010250</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -624,6 +634,9 @@
           <Name>buff_hot_chocolate_70</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1500010250</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -659,6 +672,9 @@
           <Name>buff_hot_chocolate_30</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1500010250</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -691,4 +707,6 @@
       <Recipe>1500010250</Recipe>
     </Item>
   </ModOp>
+
+  <Include File="./legacy.include.xml" />
 </ModOps>

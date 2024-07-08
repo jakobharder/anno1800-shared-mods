@@ -2,21 +2,24 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Herb Farm</Text> <!-- Building: Herb Farm -->
+      <Text>Fattoria delle erbe</Text> <!-- Building: Herb Farm -->
     </Text>
     <Text>
       <GUID>1500010943</GUID>
-      <Text>Herbs Field</Text> <!-- Module: Herbs Field -->
+      <Text>Campo delle erbe</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011398</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Compatibilità del salvataggio</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011399</GUID>
-      <Text>Fertility buff to support existing save games without Herbs fertility on islands.</Text>
+      <Text>Potenziamento per supportare i salvataggi esistenti senza fertilità richieste.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011517</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

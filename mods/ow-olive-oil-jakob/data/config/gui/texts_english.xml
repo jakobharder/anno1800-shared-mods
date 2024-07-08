@@ -9,10 +9,6 @@
       <Text>Olive Tree</Text>
     </Text>
     <Text>
-      <GUID>1500010123</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives -->
-    </Text>
-    <Text>
       <GUID>1500011325</GUID>
       <Text>Olive Oil Press</Text>
     </Text>
@@ -26,11 +22,16 @@
     </Text>
     <Text>
       <GUID>1500011394</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Save game compatibility</Text>
     </Text>
     <Text>
       <GUID>1500011395</GUID>
-      <Text>Fertility buff to support existing save games without Olive fertility on islands.</Text>
+      <Text>Buff to support existing save games without required fertilities.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011519</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

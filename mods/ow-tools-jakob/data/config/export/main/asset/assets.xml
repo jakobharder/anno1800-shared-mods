@@ -17,6 +17,7 @@
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <BuildModeStartVariation>0</BuildModeStartVariation>
+          <BuildingCategoryName>1500011521</BuildingCategoryName>
           <InfluencedByNeighbors>
             <Item>
               <Building>1500010154</Building>
@@ -278,36 +279,6 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010155</GUID>
-          <Name>tools_chain</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-        </Standard>
-        <ProductionChain>
-          <Building>1500010154</Building>
-          <Tier1>
-            <Item>
-              <Building>1010266</Building>
-            </Item>
-            <Item>
-              <Building>1010297</Building>
-              <Tier2>
-                <Item>
-                  <Building>1010305</Building>
-                </Item>
-                <Item>
-                  <Building>1010304</Building>
-                </Item>
-              </Tier2>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
       <Template>AssetPool</Template>
       <Values>
         <Standard>
@@ -475,7 +446,11 @@
           <GUID>1500010155</GUID>
           <Name>tools_chain</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
+          <InfoDescription>1500011521</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1500010153</TextOverride>
+        </Text>
         <ProductionChain>
           <Building>1500010154</Building>
           <Tier1>

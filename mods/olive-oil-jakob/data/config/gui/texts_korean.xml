@@ -1,9 +1,8 @@
 <ModOps>
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011326</GUID>
-      <Text>Olive Oil</Text>
+      <Text>올리브 오일</Text>
     </Text>
   </ModOp>
 </ModOps>

@@ -5,8 +5,9 @@
       <Text>Werkzeugwerkstatt</Text>
     </Text>
     <Text>
-      <GUID>1500010155</GUID>
-      <Text>[AssetData(1500010153) Text]</Text>
+      <GUID>1500011521</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

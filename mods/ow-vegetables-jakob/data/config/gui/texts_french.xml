@@ -10,23 +10,21 @@
       <Text>Champ de légumes</Text>
     </Text>
     <Text>
-      <GUID>1500010946</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011342</GUID>
-      <Text>Vegetable Fertility</Text>
+      <Text>Fertilité des légumes</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011390</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Compatibilité des sauvegardes</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011391</GUID>
-      <Text>Fertility buff to support existing save games without Vegetable fertility on islands.</Text>
+      <Text>Amélioration pour soutenir les sauvegardes existantes sans les fertilités nécessaires.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011522</GUID>
+      <!-- Mod origin/name -->
+      <Text>Mod Name (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

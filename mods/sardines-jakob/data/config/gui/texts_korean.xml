@@ -2,7 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010120</GUID>
-      <Text>생선 통조림</Text>
+      <Text>정어리</Text>
     </Text>
   </ModOp>
 </ModOps>

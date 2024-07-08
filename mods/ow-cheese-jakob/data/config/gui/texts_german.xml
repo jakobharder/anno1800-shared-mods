@@ -10,8 +10,9 @@
       <Text>Molkerei</Text>
     </Text>
     <Text>
-      <GUID>1500010111</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
+      <GUID>1500011514</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 
@@ -27,19 +28,7 @@
     </Text>
     <Text>
       <GUID>1500010252</GUID>
-      <Text>Cafe: [AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010253</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010254</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010255</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
+      <Text>Café: [AssetData(1500010250) Text]</Text>
     </Text>
   </ModOp>
 </ModOps>

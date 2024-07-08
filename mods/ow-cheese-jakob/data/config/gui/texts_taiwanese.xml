@@ -3,15 +3,16 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010103</GUID>
-      <Text>Cheese Dairy</Text>
+      <Text>乳酪場</Text>
     </Text>
     <Text>
       <GUID>1500010104</GUID>
-      <Text>Milk Farm</Text>
+      <Text>牛奶農場</Text>
     </Text>
     <Text>
-      <GUID>1500010111</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
+      <GUID>1500011514</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 
@@ -19,27 +20,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010250</GUID>
-      <Text>Hot Chocolate</Text>
+      <Text>熱巧克力</Text>
     </Text>
     <Text>
       <GUID>1500010251</GUID>
-      <Text>It doesn't have to be a coffee. Hot milk, cocoa powder and some cinnamon... that's all you need for a good caffeine free hot beverage.</Text>
+      <Text>不一定要是咖啡。熱牛奶、可可粉和一些肉桂...這就是你所需要的美味無咖啡因熱飲。</Text>
     </Text>
     <Text>
       <GUID>1500010252</GUID>
-      <Text>Cafe: [AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010253</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010254</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010255</GUID>
-      <Text>[AssetData(1500010250) Text]</Text>
+      <Text>咖啡廳：[AssetData(1500010250) Text]</Text>
     </Text>
   </ModOp>
 </ModOps>
