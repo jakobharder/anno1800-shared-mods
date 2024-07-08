@@ -11,7 +11,7 @@ You may add additional unlocks, but please don't change balancing if that's not 
 Easily add shared mods by adding the following URL pattern to the dependencies in `modinfo.json` with `ModID` as the name for the zip file:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4/cheese-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/cheese-jakob.zip"
 ]
 ```
 
@@ -38,20 +38,22 @@ Production mods contain production buildings in one region and sometimes a chain
 <img src="./doc/icons/icon_herbs.png" style="vertical-align: text-bottom;18px" width="18" /> | Herbs | 5383 | vanilla | `ow-herbs-jakob`<br/>(`shared_herb_garden_kurila`)<br>*compatible, differ in fertility*
 <img src="./mods/tea-jakob/data/ui/jakob/icon_tea.png" style="vertical-align: text-bottom;18px" width="18" /> | Tea | 1500010847 | `tea-jakob` | (`ow-tea-jakob`) | 900 <img src="./doc/icons/icon_artisan.png" style="vertical-align: text-bottom;18px" width="18" />
 
-## Modular Decals
+## Shared Decals and Models
 
-Contains 1x1 CFG tiles to use instead of decals.
+Shared decals and models mods contain mostly CFGs to use in your own buildings.
 
-- City: Engineer/Investor like pavements.
-- Industry: Concrete/stone pavement for industries.
+- `decals-city-jakob`: 1x1 CFGs with Engineer/Investor like pavement decals
+- `decals-industry-jakob`: 1x1 CFGs with concrete/stone pavement decals for industries
+- `models-railway-jakob`: 1x1 CFGs with platform pieces
 
 ### Use Textures in your Mod
 
 Add the following dependencies to your `modinfo.json`:
 ```json
 "ModDependencies": [
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-city-jakob.zip",
-  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-industry-jakob.zip"
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/decals-city-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/decals-industry-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/models-railway-jakob.zip"
 ]
 ```
 
@@ -76,11 +78,12 @@ Non-starter 11 | <img src="./doc/icons/icon_fur.png" style="vertical-align: text
 
 ## Changes
 
-### [Unreleased]
+### 4.1
 
 - Split products, productions into individual mods
 - Added olive oil to olive related productions
 - Added fertilities to vegetables, olives and hemp including existing save fallback with buffs
+- Shortened ModIDs of `shared-ground-texture-industry-jakob` and `.. city-jakob` to `decals-industry-jakob` and `decals-city-jakob`.
 
 ## How to Build
 

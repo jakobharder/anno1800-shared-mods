@@ -18,6 +18,7 @@
             <BuildModeRandomRotation>180</BuildModeRandomRotation>
             <AssociatedRegions>Moderate</AssociatedRegions>
             <SecondPartyRelevant>0</SecondPartyRelevant>
+            <BuildingCategoryName>1500011519</BuildingCategoryName>
           </Building>
           <Blocking />
           <Cost>
@@ -257,6 +258,9 @@
             <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
             <InfoDescription>269415</InfoDescription>
           </Standard>
+          <Text>
+            <TextOverride>269193</TextOverride>
+          </Text>
           <ItemEffect>
             <EffectTargets>
               <Item>
@@ -317,6 +321,7 @@
             <BuildModeRandomRotation>180</BuildModeRandomRotation>
             <AssociatedRegions>Moderate</AssociatedRegions>
             <SecondPartyRelevant>0</SecondPartyRelevant>
+            <BuildingCategoryName>1500011519</BuildingCategoryName>
           </Building>
           <Blocking />
           <Cost>

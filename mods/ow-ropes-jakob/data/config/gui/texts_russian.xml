@@ -4,5 +4,10 @@
       <GUID>1500010822</GUID>
       <Text>Производство верёвок</Text>
     </Text>
+    <Text>
+      <GUID>1500011520</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
+    </Text>
   </ModOp>
 </ModOps>

@@ -2,26 +2,28 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010124</GUID>
-      <Text>Hemp Farm</Text>
+      <Text>Fattoria della canapa</Text>
     </Text>
     <Text>
       <GUID>1500010125</GUID>
-      <Text>Hemp Field</Text>
+      <Text>Campo di canapa</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011340</GUID>
-      <Text>Hemp Fertility</Text>
+      <Text>Fertilità della canapa</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011345</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Compatibilità del salvataggio</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011347</GUID>
-      <Text>Fertility buff to support existing save games without Hemp fertility on islands.</Text>
+      <Text>Potenziamento per supportare i salvataggi esistenti senza fertilità richieste.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011516</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

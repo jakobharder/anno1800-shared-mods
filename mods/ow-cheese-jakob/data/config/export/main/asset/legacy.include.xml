@@ -1,0 +1,16 @@
+<ModOps>
+  <!--
+    Compatibility with #production-vegetables-and-cheese-jakob
+
+    Mods using only Cheese cannot deprecate above mod, hence need to remove the content manually.
+  -->
+  <Group Condition="#production-vegetables-and-cheese-jakob">
+    <ModOp Type="remove" GUID="1500010111,1500010104,1500010103,1500010250,1500010252,1500010253,1500010254,1500010255,1500010167" />
+    <ModOp Type="remove" GUID="25000190,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010111']" />
+    <ModOp Type="remove" GUID="133556"
+      Path="/Values/RecipeList/Recipes/Item[Recipe='1500010250']" />
+    <ModOp Type="remove" GUID='190011,190872,193958,190894,190897,193875,368,6000018,193856,25000087,142311,136827'
+      Path="/Values//Item[GUID='1500010104' or GUID='1500010103' or Building='1500010104' or Building='1500010103' or Factory='1500010104' or Factory='1500010103']" />
+  </Group>
+</ModOps>

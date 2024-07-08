@@ -10,23 +10,21 @@
       <Text>채소밭</Text>
     </Text>
     <Text>
-      <GUID>1500010946</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011342</GUID>
-      <Text>Vegetable Fertility</Text>
+      <Text>채소의 비옥도</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011390</GUID>
-      <Text>Old Save Support</Text>
+      <Text>저장 게임 호환성</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011391</GUID>
-      <Text>Fertility buff to support existing save games without Vegetable fertility on islands.</Text>
+      <Text>필수 비료 없이 기존 저장 게임을 지원하는 버프</Text>
+    </Text>
+    <Text>
+      <GUID>1500011522</GUID>
+      <!-- Mod origin/name -->
+      <Text>Mod Name (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>

@@ -16,6 +16,7 @@
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011520</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -161,6 +162,7 @@
           <GUID>1500010824</GUID>
           <Name>Ropes Chain</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_rope.png</IconFilename>
+          <InfoDescription>1500011520</InfoDescription>
         </Standard>
         <Text>
           <TextOverride>1500010825</TextOverride>

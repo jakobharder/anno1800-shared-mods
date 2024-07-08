@@ -2,40 +2,36 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010107</GUID>
-      <Text>Sad: Oliwki</Text>
+      <Text>Gaj oliwny</Text>
     </Text>
     <Text>
       <GUID>1500010110</GUID>
-      <Text>Drzewo oliwkowe</Text>
+      <Text>Drzewo oliwne</Text>
     </Text>
     <Text>
-      <GUID>1500010123</GUID>
-      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives -->
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011325</GUID>
-      <Text>Olive Oil Press</Text>
+      <Text>Fabryka oleju oliwnego</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011326</GUID>
-      <Text>Olive Oil</Text>
+      <Text>Olej oliwny</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011341</GUID>
-      <Text>Olive Fertility</Text>
+      <Text>Płodność oliwek</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011394</GUID>
-      <Text>Old Save Support</Text>
+      <Text>Zgodność zapisu gry</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011395</GUID>
-      <Text>Fertility buff to support existing save games without Olive fertility on islands.</Text>
+      <Text>Wzmocnienie wsparcia istniejących zapisów gry bez wymaganych płodności.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011519</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
     </Text>
   </ModOp>
 </ModOps>
