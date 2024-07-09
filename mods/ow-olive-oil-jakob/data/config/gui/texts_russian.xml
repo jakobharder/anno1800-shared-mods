@@ -9,10 +9,6 @@
       <Text>Оливковое дерево</Text>
     </Text>
     <Text>
-      <GUID>1500010123</GUID>
-      <Text>Акт о земельной реформе</Text> <!-- Land Reform Act: Olives -->
-    </Text>
-    <Text>
       <GUID>1500011325</GUID>
       <Text>Завод оливкового масла</Text>
     </Text>
@@ -36,6 +32,7 @@
       <GUID>1500011519</GUID>
       <!-- Mod origin/name -->
       <Text>Shared Mod (Jakob)</Text>
+      <IndustrialCities />
     </Text>
   </ModOp>
 </ModOps>

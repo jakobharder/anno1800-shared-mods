@@ -32,6 +32,7 @@
       <GUID>1500011519</GUID>
       <!-- Mod origin/name -->
       <Text>Shared Mod (Jakob)</Text>
+      <IndustrialCities />
     </Text>
   </ModOp>
 </ModOps>
