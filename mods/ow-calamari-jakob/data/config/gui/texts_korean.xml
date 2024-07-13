@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>채소 농장</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>채소밭</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>채소의 비옥도</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>저장 게임 호환성</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>필수 비료 없이 기존 저장 게임을 지원하는 버프</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
+    </Text>
+  </ModOp>
+</ModOps>

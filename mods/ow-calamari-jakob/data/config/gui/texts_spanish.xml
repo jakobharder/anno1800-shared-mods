@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Granja vegetal</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>Campo vegetal</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>Fertilidad de verduras</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>Compatibilidad de la partida guardada</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>Buff para apoyar partidas guardadas existentes sin las fertilidades requeridas.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
+    </Text>
+  </ModOp>
+</ModOps>

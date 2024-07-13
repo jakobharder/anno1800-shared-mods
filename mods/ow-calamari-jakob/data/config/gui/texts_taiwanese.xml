@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>蔬菜農場</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>蔬菜田</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>蔬菜的肥沃度</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>存檔相容性</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>支持現有存檔但不需要肥力的增益效果</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Mod (Jakob)</Text>
+    </Text>
+  </ModOp>
+</ModOps>
