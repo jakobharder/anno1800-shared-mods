@@ -16,7 +16,7 @@
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <BuildingCategoryName>1500011520</BuildingCategoryName>
+          <BuildingCategoryName>1500011530</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -46,7 +46,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\rope_maker\rope_maker.cfg</Filename>
+              <Filename>data/jakob/ropeyard/ropeyard.cfg</Filename>
             </Item>
           </Variations>
         </Object>

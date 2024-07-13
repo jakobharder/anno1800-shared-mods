@@ -1,9 +1,9 @@
 {
-  "Version": "1.0.4",
+  "Version": "1.0.5",
   "ModID": "ow-tools-jakob",
   "ModDependencies": [
     "shared-pools-and-definitions",
-    "shared-ground-textures-industry-jakob",
+    "decals-industry-jakob",
     "tools-jakob"
   ],
   "bundle": [

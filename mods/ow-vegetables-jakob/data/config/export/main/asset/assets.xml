@@ -366,6 +366,7 @@
     <Item>
       <Building>1500010830</Building>
       <Worker>1</Worker>
+      <Secondary />
     </Item>
   </ModOp>
 

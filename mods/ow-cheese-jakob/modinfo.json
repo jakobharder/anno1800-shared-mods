@@ -3,7 +3,7 @@
   "ModID": "ow-cheese-jakob",
   "ModDependencies": [
     "shared-pools-and-definitions",
-    "shared-ground-textures-industry-jakob",
+    "decals-industry-jakob",
     "cheese-jakob"
   ],
   "LoadAfterIds": [

@@ -1,13 +1,13 @@
 <ModOps>
   <!-- # Fertility -->
   <Group>
-    <ModOp Type="add" GUID="141508,141514,141515,141510,141518,141519,141512,141522,141523,141524,141525"
+    <ModOp Type="add" GUID="141508,141514,141515,141510,141518,141519,141512,141522,141523"
       Path="/Values/FertilitySet/Fertilities">
       <Item>
         <Fertility>114343</Fertility>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID="142434,142439,142444,142441,142446"
+    <ModOp Type="add" GUID="142434,142439,142444,142445"
       Path="/Values/FertilitySet/Fertilities">
       <Item>
         <Fertility>114343</Fertility>

@@ -9,16 +9,14 @@
       </Item>
     </ModOp>
   </Group>
-  <Group Condition="#shared_herb_garden_kurila">
-    <!-- add a few more fertilities on high -->
-    <ModOp Type="add" GUID="141517,141521"
-      Condition="!/Values/FertilitySet/Fertilities/Item[Fertility='6250']"
-      Path="/Values/FertilitySet/Fertilities">
-      <Item>
-        <Fertility>6250</Fertility>
-      </Item>
-    </ModOp>
-  </Group>
+  <!-- add a few more fertilities on high -->
+  <ModOp Type="add" GUID="141517,141521,141524,141525,142441,142446"
+    Condition="!/Values/FertilitySet/Fertilities/Item[Fertility='6250']"
+    Path="/Values/FertilitySet/Fertilities">
+    <Item>
+      <Fertility>6250</Fertility>
+    </Item>
+  </ModOp>
 
   <!-- # Old Save Support -->
   <!-- Thanks Serp :) -->
