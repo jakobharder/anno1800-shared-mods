@@ -7,13 +7,12 @@
     <Text>
       <GUID>1500011520</GUID>
       <!-- Mod origin/name -->
-      <Text>Shared Production</Text>
+      <Text>共享生产</Text>
       <IndustrialCities />
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011530</GUID>
-      <Text>Shared Production</Text>
+      <Text>共享生产</Text>
       <IndustrialCities />
     </Text>
   </ModOp>
