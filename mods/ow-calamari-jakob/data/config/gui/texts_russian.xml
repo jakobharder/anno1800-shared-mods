@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Овощная ферма</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>Овощное поле</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>Плодородие овощей</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>Совместимость сохранений</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>Бафф для поддержки существующих сохранений без необходимых плодородий.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Production</Text>
+    </Text>
+  </ModOp>
+</ModOps>

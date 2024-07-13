@@ -1,0 +1,229 @@
+<ModOps>
+  <Include File="./productlists.include.xml" />
+  <Include File="./fertility.include.xml" />
+
+
+  <!-- # Calamari Fishery -->
+  <ModOp Type="addNextSibling" GUID="7919">
+    <Asset>
+      <BaseAssetGUID>7919</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011531</GUID>
+          <Name>Calamari Fishery</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/production_goods/icon_squid.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011540</BuildingCategoryName>
+          <TerrainType>Water_Including_Coast</TerrainType>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>100446</GroundDecalAsset>
+          <GroundDecalInvisible>101008</GroundDecalInvisible>
+          <GroundDecalAssetExtra>100691</GroundDecalAssetExtra>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/calamari/seafood.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Locked />
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>5380</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>90</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>80</Amount>
+              <InactiveAmount>40</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011537</GUID>
+          <Name>@ 500 Worker</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011531</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>5380</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011538</GUID>
+          <Name>Unhide @ 300 Worker</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011531</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>5380</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011539</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011531</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>5380</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Construction Menu: after Fish -->
+  <!-- raw -->
+
+  <!-- # General -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500011531</Factory>
+    </Item>
+  </ModOp>
+  <!-- general/food production pools -->
+  <ModOp Type="add" GUID="368,6000018,193856,190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011531</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- Feedback -->
+  <Group>
+    <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+      <Item>
+        <Building>1500011531</Building>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

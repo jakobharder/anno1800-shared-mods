@@ -23,7 +23,8 @@
     <Text>
       <GUID>1500011516</GUID>
       <!-- Mod origin/name -->
-      <Text>Shared Mod (Jakob)</Text>
+      <Text>Shared Production</Text>
+      <IndustrialCities />
     </Text>
   </ModOp>
 </ModOps>

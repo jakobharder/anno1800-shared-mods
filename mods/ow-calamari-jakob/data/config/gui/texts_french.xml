@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Ferme de légumes</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>Champ de légumes</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>Fertilité des légumes</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>Compatibilité des sauvegardes</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>Amélioration pour soutenir les sauvegardes existantes sans les fertilités nécessaires.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Production</Text>
+    </Text>
+  </ModOp>
+</ModOps>

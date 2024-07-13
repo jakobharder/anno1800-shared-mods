@@ -16,7 +16,8 @@ mods.forEach(mod => {
     .replace(/\[|\]|\(|\)/g, '')
     .toLowerCase()
     .replace('product-', '')
-    .replace('production-', '');
+    .replace('production-', '')
+    .replace('shared-', '');
 
   child_process.execFileSync('tar', [
     '-c', '-a',

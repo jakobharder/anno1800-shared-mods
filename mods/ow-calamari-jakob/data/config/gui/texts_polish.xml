@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Farma warzyw</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>Pole warzyw</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>Płodność warzyw</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>Zgodność zapisu gry</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>Wzmocnienie wsparcia istniejących zapisów gry bez wymaganych płodności.</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Production</Text>
+    </Text>
+  </ModOp>
+</ModOps>

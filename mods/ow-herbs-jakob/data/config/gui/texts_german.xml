@@ -2,11 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Kräuterhof</Text> <!-- Building: Herb Farm -->
-    </Text>
-    <Text>
-      <GUID>1500010943</GUID>
-      <Text>Kräuterfeld</Text> <!-- Module: Herbs Field -->
+      <Text>Kräuterhof</Text>
     </Text>
     <Text>
       <GUID>1500011398</GUID>
@@ -19,7 +15,8 @@
     <Text>
       <GUID>1500011517</GUID>
       <!-- Mod origin/name -->
-      <Text>Shared Mod (Jakob)</Text>
+      <Text>Shared Production</Text>
+      <IndustrialCities />
     </Text>
   </ModOp>
 </ModOps>

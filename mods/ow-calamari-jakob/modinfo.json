@@ -1,0 +1,18 @@
+{
+  "Version": "1.0",
+  "ModID": "ow-calamari-jakob",
+  "ModDependencies": [
+    "shared-pools-and-definitions"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
+  ],
+  "Category": {
+    "English": "Production"
+  },
+  "ModName": {
+    "English": "OW Calamari (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}

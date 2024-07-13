@@ -1,0 +1,30 @@
+<ModOps>
+  <!-- # Vegetables -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>野菜農場</Text>
+    </Text>
+    <Text>
+      <GUID>1500010944</GUID>
+      <Text>野菜畑</Text>
+    </Text>
+    <Text>
+      <GUID>1500011342</GUID>
+      <Text>野菜の肥沃度</Text>
+    </Text>
+    <Text>
+      <GUID>1500011533</GUID>
+      <Text>セーブデータの互換性</Text>
+    </Text>
+    <Text>
+      <GUID>1500011534</GUID>
+      <Text>既存のセーブデータに必要な肥沃度がない場合のバフサポート</Text>
+    </Text>
+    <Text>
+      <GUID>1500011540</GUID>
+      <!-- Mod origin/name -->
+      <Text>Shared Production</Text>
+    </Text>
+  </ModOp>
+</ModOps>
