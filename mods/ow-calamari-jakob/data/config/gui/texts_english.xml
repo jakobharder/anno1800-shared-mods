@@ -1,13 +1,8 @@
 <ModOps>
-  <!-- # Vegetables -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011531</GUID>
-      <Text>Calamari Fishery</Text>
-    </Text>
-    <Text>
       <GUID>1500011532</GUID>
-      <Text>Calamari Fertility</Text>
+      <Text>Calamari Abundance</Text>
     </Text>
     <Text>
       <GUID>1500011533</GUID>

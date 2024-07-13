@@ -1,17 +1,8 @@
 <ModOps>
-  <!-- # Vegetables -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010830</GUID>
-      <Text>Granja vegetal</Text>
-    </Text>
-    <Text>
-      <GUID>1500010944</GUID>
-      <Text>Campo vegetal</Text>
-    </Text>
-    <Text>
-      <GUID>1500011342</GUID>
-      <Text>Fertilidad de verduras</Text>
+      <GUID>1500011532</GUID>
+      <Text>Abundancia de calamares</Text>
     </Text>
     <Text>
       <GUID>1500011533</GUID>
@@ -24,7 +15,8 @@
     <Text>
       <GUID>1500011540</GUID>
       <!-- Mod origin/name -->
-      <Text>Shared Production</Text>
+      <Text>Producción compartida</Text>
+      <IndustrialCities />
     </Text>
   </ModOp>
 </ModOps>
