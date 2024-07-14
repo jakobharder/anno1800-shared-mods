@@ -395,7 +395,7 @@
   <!-- farm specialist and item pools -->
   <ModOp Type="add" GUID="194006,191471,190865,190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010830</GUID>
+      <GUID>1500011458</GUID>
     </Item>
   </ModOp>
   <!-- land reform act -->
@@ -432,6 +432,13 @@
           </Item>
         </VehicleSpawners>
       </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Option: Disable Fertilities -->
+  <Group Condition="#disable-fertilities-jakob">
+    <ModOp Type="replace" GUID="1500011458" Path="/Values/Factory7/NeededFertility">
+      <NeededFertility>0</NeededFertility>
     </ModOp>
   </Group>
 </ModOps>

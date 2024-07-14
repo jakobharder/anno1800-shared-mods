@@ -28,12 +28,12 @@
 
   <!-- # Consumer Europe -->
   <!-- After Worker Cloth -->
-  <ModOp Type="addNextSibling" GUID="501995"
+  <!-- <ModOp Type="addNextSibling" GUID="501995"
     Path="/Values/ProductList/List/Item[Product='1010237']">
     <Item>
       <Product>1500011326</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Agriculture Europe -->
   <!-- After Wool -->

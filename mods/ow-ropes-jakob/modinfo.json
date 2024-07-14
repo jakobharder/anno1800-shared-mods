@@ -1,12 +1,13 @@
 {
-  "Version": "1.0.5",
+  "Version": "1.0.6",
   "ModID": "ow-ropes-jakob",
   "ModDependencies": [
     "shared-pools-and-definitions",
     "ropes-jakob"
   ],
   "LoadAfterIds": [
-    "shared-pools-and-definitions"
+    "shared-pools-and-definitions",
+    "hemp-jakob"
   ],
   "Category": {
     "English": "Production"

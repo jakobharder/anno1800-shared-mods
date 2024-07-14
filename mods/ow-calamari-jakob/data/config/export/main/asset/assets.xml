@@ -43,6 +43,9 @@
           </Colors>
         </Selection>
         <Locked />
+        <Factory7>
+          <NeededFertility>1500011532</NeededFertility>
+        </Factory7>
         <FactoryBase>
           <FactoryOutputs>
             <Item>
@@ -227,6 +230,13 @@
       <Item>
         <Building>1500011531</Building>
       </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Option: Disable Fertilities -->
+  <Group Condition="#disable-fertilities-jakob">
+    <ModOp Type="replace" GUID="1500011531" Path="/Values/Factory7/NeededFertility">
+      <NeededFertility>0</NeededFertility>
     </ModOp>
   </Group>
 </ModOps>

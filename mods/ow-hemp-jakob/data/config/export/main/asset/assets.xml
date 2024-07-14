@@ -367,4 +367,11 @@
       <Effect>1500010184</Effect>
     </Item>
   </ModOp>
+
+  <!-- # Option: Disable Fertilities -->
+  <Group Condition="#disable-fertilities-jakob">
+    <ModOp Type="replace" GUID="1500010124" Path="/Values/Factory7/NeededFertility">
+      <NeededFertility>0</NeededFertility>
+    </ModOp>
+  </Group>
 </ModOps>
