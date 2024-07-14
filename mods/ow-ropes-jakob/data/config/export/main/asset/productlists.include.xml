@@ -1,47 +1,32 @@
 <ModOps>
   <!-- # All Europe -->
-  <!-- After Fur Coats -->
+  <!-- After Fur Coats or Hemp -->
   <ModOp Type="addNextSibling" GUID="502019"
-    Condition="!~/Values/ProductList/List/Item[Product='1440224']"
-    Path="/Values/ProductList/List/Item[Product='1010247']">
-    <Item>
-      <Product>1440224</Product>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="502019"
-    Condition="!~/Values/ProductList/List/Item[Product='114391']"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010825']"
     Path="/Values/ProductList/List/Item[Product='1010247' or Product='1440224'][last()]">
     <Item>
-      <Product>114391</Product>
+      <Product>1500010825</Product>
     </Item>
   </ModOp>
 
-  <!-- # Agriculture Europe -->
-  <!-- After Furs -->
-  <ModOp Type="addNextSibling" GUID="502037"
-    Condition="!~/Values/ProductList/List/Item[Product='1440224']"
-    Path="/Values/ProductList/List/Item[Product='1010209']">
+  <!-- # Construction Material -->
+  <!-- After Windows -->
+  <ModOp Type="addNextSibling" GUID="501957"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010825']"
+    Path="/Values/ProductList/List/Item[Product='1010221']">
     <Item>
-      <Product>1440224</Product>
+      <Product>1500010825</Product>
     </Item>
   </ModOp>
 
   <!-- # Intermediate Europe -->
-  <!-- After Goulash -->
-  <ModOp Type="addNextSibling" GUID="502043"
-    Condition="!~/Values/ProductList/List/Item[Product='114391']"
-    Path="/Values/ProductList/List/Item[Product='1010215']">
-    <Item>
-      <Product>114391</Product>
-    </Item>
-  </ModOp>
 
   <!-- # Workforce Goods -->
   <!-- End -->
-  <ModOp Type="addNextSibling" GUID="502004"
+  <ModOp Type="addNextSibling" GUID="502005"
     Path="/Values/ProductList/List/Item[last()]">
     <Item>
-      <Product>1440224</Product>
+      <Product>1500010825</Product>
     </Item>
   </ModOp>
 </ModOps>
