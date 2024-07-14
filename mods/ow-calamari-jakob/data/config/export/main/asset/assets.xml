@@ -235,7 +235,7 @@
 
   <!-- # Option: Disable Fertilities -->
   <Group Condition="#disable-fertilities-jakob">
-    <ModOp Type="add" GUID="1500011531" Path="/Values/Factory7/NeededFertility">
+    <ModOp Type="replace" GUID="1500011531" Path="/Values/Factory7/NeededFertility">
       <NeededFertility>0</NeededFertility>
     </ModOp>
   </Group>
