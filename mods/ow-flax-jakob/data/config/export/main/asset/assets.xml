@@ -395,7 +395,7 @@
   <!-- farm specialist and item pools -->
   <ModOp Type="add" GUID="194006,191471,190865,190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010830</GUID>
+      <GUID>1500011458</GUID>
     </Item>
   </ModOp>
   <!-- land reform act -->
