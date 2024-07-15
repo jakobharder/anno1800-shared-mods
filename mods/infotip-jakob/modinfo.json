@@ -1,0 +1,12 @@
+{
+  "Version": "1.0",
+  "ModID": "infotip-jakob",
+  "Category": {
+    "English": "UI"
+  },
+  "ModName": {
+    "English": "Improved Infotips (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}
