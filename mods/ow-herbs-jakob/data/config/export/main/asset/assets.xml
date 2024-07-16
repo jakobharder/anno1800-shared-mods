@@ -3,7 +3,7 @@
   <Include File="./fertility.include.xml" />
 
   <Group Condition="!#shared_herb_garden_kurila">
-    <ModOp Type="add" GUID="114365"
+    <ModOp Type="add" GUID="5383"
       Condition="!/Values/Product/ProductionRegions[Item/RegionType='Moderate']"
       Path="/Values/Product/ProductionRegions">
       <Item>
