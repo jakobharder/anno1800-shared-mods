@@ -32,7 +32,9 @@
         <Fertility>1500011532</Fertility>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="500204" Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010570']">
+    <ModOp Type="addNextSibling" GUID="500204"
+      Condition="!#disable-fertilities-jakob"
+      Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010570']">
       <Item>
         <GUID>1500011532</GUID>
       </Item>
