@@ -32,13 +32,15 @@
         <Fertility>1500011342</Fertility>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="500204"
-      Condition="!#disable-fertilities-jakob"
-      Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010569']">
-      <Item>
-        <GUID>1500011342</GUID>
-      </Item>
-    </ModOp>
+    <Group Condition="!#vegetable_integration_kurila">
+      <ModOp Type="addNextSibling" GUID="500204"
+        Condition="!#disable-fertilities-jakob"
+        Path="/Values/MinimapScene/FertilityOrder/Item[GUID='1010569']">
+        <Item>
+          <GUID>1500011342</GUID>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <!-- # Old Save Support -->
