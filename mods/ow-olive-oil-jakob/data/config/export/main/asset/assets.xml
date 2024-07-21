@@ -127,6 +127,9 @@
             </ConstructionOptions>
             <ModuleBuildRadius>27</ModuleBuildRadius>
             <AdditionalModule>269837</AdditionalModule>
+            <FertilizerModuleData>
+              <Module>25240</Module>
+            </FertilizerModuleData>
             <FarmType>PlantFarm</FarmType>
           </ModuleOwner>
           <AmbientMoodProvider>
