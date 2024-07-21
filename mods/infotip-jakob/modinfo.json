@@ -1,4 +1,5 @@
 {
+  "out": "${annoMods}/infotip-jakob",
   "Version": "1.0.1",
   "ModID": "infotip-jakob",
   "Category": {
