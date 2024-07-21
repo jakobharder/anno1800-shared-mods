@@ -2,7 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Ферма лечебных трав</Text>
+      <Text>Ферма трав</Text>
     </Text>
     <Text>
       <GUID>1500011398</GUID>
@@ -15,7 +15,7 @@
     <Text>
       <GUID>1500011517</GUID>
       <!-- Mod origin/name -->
-      <Text>Production (Jakob)</Text>
+      <Text>Производство (Jakob)</Text>
       <IndustrialCities />
     </Text>
   </ModOp>

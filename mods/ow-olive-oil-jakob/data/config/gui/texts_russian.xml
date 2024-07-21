@@ -10,7 +10,7 @@
     </Text>
     <Text>
       <GUID>1500011325</GUID>
-      <Text>Завод оливкового масла</Text>
+      <Text>Пресс для оливкового масла</Text>
     </Text>
     <Text>
       <GUID>1500011326</GUID>
@@ -31,7 +31,7 @@
     <Text>
       <GUID>1500011519</GUID>
       <!-- Mod origin/name -->
-      <Text>Production (Jakob)</Text>
+      <Text>Производство (Jakob)</Text>
       <IndustrialCities />
     </Text>
   </ModOp>
