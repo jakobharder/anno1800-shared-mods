@@ -2,7 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010127</GUID>
-      <Text>Фраки</Text>
+      <Text>Костюмы</Text>
     </Text>
   </ModOp>
 </ModOps>
