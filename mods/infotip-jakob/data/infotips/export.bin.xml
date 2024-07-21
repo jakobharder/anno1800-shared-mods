@@ -7,16 +7,39 @@
       <ChildCount>1</ChildCount>
       <VisibilityElement>
         <ElementType>
-          <ElementType>1</ElementType>
+          <ElementType>2</ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator>
+              <CompareOperator>1</CompareOperator>
+            </CompareOperator>
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>0</ExpectedValueInt>
+            <Condition>[ProductAssetData([RefGuid]) ProducingRegions Count]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <ChildCount>1</ChildCount>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType />
+              <ExpectedValueBool>False</ExpectedValueBool>
+              <Condition>[Selection Object Area Economy NeedLocked({PopulationGuid}, [RefGuid])]</Condition>
+            </VisibilityElement>
+            <OperatorType />
+          </VisibilityElement>
+          <CompareOperator />
         </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>0</ExpectedValueInt>
-        <Condition>[ProductAssetData([RefGuid]) ProducingRegions Count]</Condition>
       </VisibilityElement>
       <!-- <InfoElement>
         <ElementType>4</ElementType>
