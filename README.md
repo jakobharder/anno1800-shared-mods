@@ -15,6 +15,19 @@ Easily add shared mods by adding the following URL pattern to the dependencies i
 ]
 ```
 
+### Check Dependencies
+
+Be sure to include dependencies.
+Many mods require `shared-pools-and-definitions`.
+
+```json
+"ModDependencies": [
+  "https://github.com/anno-mods/shared-resources/releases/download/v10.4/shared-pools-and-definitions.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/cheese-jakob.zip",
+  "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.1/ow-cheese-jakob.zip"
+]
+```
+
 ## Products and Productions
 
 Product mods contain product asset, icon, storage list, expedition values and Docklands information if applicable - at least a fake factory for `IsMainFactory` handling.
