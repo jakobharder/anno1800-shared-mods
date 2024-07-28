@@ -43,7 +43,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/suits/worker_multifactory/worker_multifactory.cfg</Filename>
+              <Filename>data/jakob/cloth-workshop/worker_multifactory.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -119,7 +119,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/suits/worker_multifactory/worker_multifactory.cfg</Filename>
+              <Filename>data/jakob/cloth-workshop/worker_multifactory.cfg</Filename>
             </Item>
           </Variations>
         </Object>

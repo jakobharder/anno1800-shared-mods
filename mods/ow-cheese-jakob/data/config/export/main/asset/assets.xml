@@ -446,7 +446,7 @@
     </Asset>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1 and not(Building='1010516')][last()]">
     <Item>
       <Building>1500010111</Building>
       <Worker>1</Worker>
