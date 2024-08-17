@@ -41,6 +41,81 @@
   <!-- # Expeditions -->
   <!-- nope -->
 
-  <!-- # Docklands -->
-  <!-- nope -->
+  <!-- # Docklands: export only -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010217">
+      <Asset>
+        <Template>FarmBuilding</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011585</GUID>
+            <Name>IsMainFactory Fake: Olive Grove</Name>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+          </Building>
+          <Blocking />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>4000</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\graphics\buildings\production\agriculture_03\agriculture_03.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Locked />
+          <FeedbackController />
+          <Infolayer />
+          <UpgradeList />
+          <FactoryBase>
+            <FactoryOutputs>
+              <Item>
+                <Product>1500010105</Product>
+                <Amount>1</Amount>
+                <StorageAmount>2</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>60</CycleTime>
+            <IsMainFactory>1</IsMainFactory>
+          </FactoryBase>
+          <LogisticNode />
+          <ModuleOwner>
+            <ModuleLimits>
+              <Main>
+                <Limit>75</Limit>
+              </Main>
+            </ModuleLimits>
+            <ConstructionOptions>
+              <Item>
+                <ModuleGUID>1010270</ModuleGUID>
+              </Item>
+            </ConstructionOptions>
+            <FarmType>PlantFarm</FarmType>
+          </ModuleOwner>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>40</Amount>
+                <InactiveAmount>20</InactiveAmount>
+              </Item>
+              <Item>
+                <Product>1010052</Product>
+                <Amount>30</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <Pausable />
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
 </ModOps>
