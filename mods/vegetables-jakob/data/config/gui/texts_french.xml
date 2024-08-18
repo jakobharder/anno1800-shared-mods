@@ -2,7 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010836</GUID>
-      <Text>Légumes</Text>
+      <Text>Légumes de champ</Text>
     </Text>
   </ModOp>
 </ModOps>
