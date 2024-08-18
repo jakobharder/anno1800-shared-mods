@@ -104,8 +104,6 @@
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <!-- enable asphalt -->
-          <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
           <BuildingCategoryName>1500011514</BuildingCategoryName>
         </Building>
         <Blocking />
@@ -709,4 +707,5 @@
   </ModOp>
 
   <Include File="./legacy.include.xml" />
+  <Include File="./salt.include.xml" Condition="#shared_salt_works_kurila" />
 </ModOps>

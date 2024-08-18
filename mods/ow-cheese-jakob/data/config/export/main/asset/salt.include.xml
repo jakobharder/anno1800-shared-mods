@@ -1,0 +1,183 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="190011">
+    <Asset>
+      <Template>FactoryBuilding7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011587</GUID>
+          <Name>cheese_dairy</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011514</BuildingCategoryName>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/cheese/dairy/dairy.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216877</Sound>
+            </Item>
+            <Item>
+              <Sound>203616</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>5385</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+            <Item>
+              <Product>114358</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1500010102</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>40</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>1750</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <CultureType>Culture</CultureType>
+        </Culture>
+        <Electrifiable />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type="merge" GUID="1500010103" Path="/Values/Building">
+    <Building>
+      <PickingAsset>1500011587</PickingAsset>
+    </Building>
+  </ModOp>
+
+  <ModOp Type="merge" GUID="1500010111" Path="/Values/ProductionChain/Building">
+    <Building>1500011587</Building>
+  </ModOp>
+
+  <ModOp Type="add" GUID="1500010111" Path="/Values/ProductionChain/Tier1"
+    Condition="~/Values/Production/Tier1[not(Item/Building='1500302160')]">
+    <Item>
+      <Building>1500302160</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011587</GUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories/Item[Factory='1500010103']">
+    <Item>
+      <Factory>1500011587</Factory>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011587</Building>
+    </Item>
+  </ModOp>
+</ModOps>
