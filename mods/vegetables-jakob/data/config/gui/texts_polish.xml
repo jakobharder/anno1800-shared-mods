@@ -2,7 +2,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010836</GUID>
-      <Text>Warzywa</Text>
+      <Text>Warzywa polne</Text>
     </Text>
   </ModOp>
 </ModOps>

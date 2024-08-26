@@ -496,9 +496,8 @@
 
   <!-- # Buffs -->
   <Group>
-    <!-- all kinds of crop stuff -->
-    <!-- don't do: 191471,190865,190011 -->
-    <ModOp Type="add" GUID="194006,194008"
+    <!-- all kinds of crop and orchard stuff -->
+    <ModOp Type="add" GUID="194006,194008,191471,190865,190011"
       Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
         <GUID>1500010107</GUID>
