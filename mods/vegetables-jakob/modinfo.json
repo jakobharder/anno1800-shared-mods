@@ -1,6 +1,10 @@
 {
-  "Version": "1.0",
+  "Version": "1.0.1",
   "ModID": "vegetables-jakob",
+  "LoadAfterIds": [
+    "shared-products-jakob",
+    "production-cans-and-suits-jakob"
+  ],
   "Category": {
     "English": "Product"
   },
