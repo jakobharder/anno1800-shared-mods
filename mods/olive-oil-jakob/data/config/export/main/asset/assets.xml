@@ -45,11 +45,11 @@
   <Group>
     <ModOp Type="addNextSibling" GUID="1010217">
       <Asset>
-        <Template>FarmBuilding</Template>
+        <Template>FactoryBuilding7</Template>
         <Values>
           <Standard>
             <GUID>1500011585</GUID>
-            <Name>IsMainFactory Fake: Olive Grove</Name>
+            <Name>IsMainFactory Fake: Olive Oil Press</Name>
           </Standard>
           <Building>
             <AssociatedRegions>Moderate</AssociatedRegions>
@@ -60,14 +60,22 @@
             <Costs>
               <Item>
                 <Ingredient>1010017</Ingredient>
-                <Amount>4000</Amount>
+                <Amount>2500</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>4</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>2</Amount>
               </Item>
             </Costs>
           </Cost>
           <Object>
             <Variations>
               <Item>
-                <Filename>data\graphics\buildings\production\agriculture_03\agriculture_03.cfg</Filename>
+                <Filename>data/graphics/buildings/production/food_01/food_01.cfg</Filename>
               </Item>
             </Variations>
           </Object>
@@ -76,30 +84,24 @@
           <Infolayer />
           <UpgradeList />
           <FactoryBase>
-            <FactoryOutputs>
+            <FactoryInputs>
               <Item>
                 <Product>1500010105</Product>
                 <Amount>1</Amount>
-                <StorageAmount>2</StorageAmount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+            </FactoryInputs>
+            <FactoryOutputs>
+              <Item>
+                <Product>1500011326</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
               </Item>
             </FactoryOutputs>
-            <CycleTime>60</CycleTime>
+            <CycleTime>30</CycleTime>
             <IsMainFactory>1</IsMainFactory>
           </FactoryBase>
           <LogisticNode />
-          <ModuleOwner>
-            <ModuleLimits>
-              <Main>
-                <Limit>75</Limit>
-              </Main>
-            </ModuleLimits>
-            <ConstructionOptions>
-              <Item>
-                <ModuleGUID>1010270</ModuleGUID>
-              </Item>
-            </ConstructionOptions>
-            <FarmType>PlantFarm</FarmType>
-          </ModuleOwner>
           <Maintenance>
             <Maintenances>
               <Item>
@@ -108,8 +110,8 @@
                 <InactiveAmount>20</InactiveAmount>
               </Item>
               <Item>
-                <Product>1010052</Product>
-                <Amount>30</Amount>
+                <Product>1010115</Product>
+                <Amount>40</Amount>
               </Item>
             </Maintenances>
           </Maintenance>
