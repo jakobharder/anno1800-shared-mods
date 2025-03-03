@@ -1,6 +1,6 @@
 <ModOps>
   <Include File="./productlists.include.xml" />
-  <Include File="./fertility.include.xml" />
+  <!-- <Include File="./fertility.include.xml" /> -->
 
   <!-- # Vegetables -->
   <ModOp GUID="500945" Type="addNextSibling">
@@ -38,9 +38,9 @@
             </Item>
           </Costs>
         </Cost>
-        <Factory7>
+        <!-- <Factory7>
           <NeededFertility>1500011342</NeededFertility>
-        </Factory7>
+        </Factory7> -->
         <FactoryBase>
           <FactoryOutputs>
             <Item>
