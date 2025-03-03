@@ -318,7 +318,7 @@
           <Standard>
             <GUID>1500011325</GUID>
             <Name>Olive Oil Press</Name>
-            <IconFilename>data/ui/jakob/icon_olive_oil3.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_olive_oil2.png</IconFilename>
           </Standard>
           <Building>
             <BuildModeRandomRotation>180</BuildModeRandomRotation>
