@@ -59,7 +59,7 @@ Production mods contain production buildings in one region and sometimes a chain
 
 Automatically merge progression tier tabs when you run out of space.
 
-See [Merge Tabs README](./mods/merge-menu-jakob/README.md) for details and how to use.
+See [Merge Tabs README](./mods/merge-tabs-jakob/README.md) for details and how to use.
 
 ![](./doc/merge-menus.jpg)
 
