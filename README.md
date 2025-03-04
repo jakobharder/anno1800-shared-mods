@@ -2,6 +2,10 @@
 
 Shared mods from Jakob's Collection.
 
+- [Products and Productions](#products-and-productions)
+- [Merge Progression Tier Tabs](#merge-progression-tier-tabs)
+- [Shared Decals and Models](#shared-decals-and-models)
+
 ## Include in your Mod
 
 You are free to include ground textures and shared products, as long as you don't modify the mods themselves.
@@ -51,6 +55,14 @@ Production mods contain production buildings in one region and sometimes a chain
 <img src="./doc/icons/icon_herbs.png" style="vertical-align: text-bottom;18px" width="18" /> | Herbs | 5383 | vanilla | `ow-herbs-jakob`<br/>(`shared_herb_garden_kurila`)<br>*compatible, differ in fertility*
 <img src="./mods/tea-jakob/data/ui/jakob/icon_tea.png" style="vertical-align: text-bottom;18px" width="18" /> | Tea | 1500010847 | `tea-jakob` | (`ow-tea-jakob`) | 900 <img src="./doc/icons/icon_artisan.png" style="vertical-align: text-bottom;18px" width="18" />
 
+## Merge Progression Tier Tabs
+
+Automatically merge progression tier tabs when you run out of space.
+
+See [Merge Tabs README](./mods/merge-menu-jakob/README.md) for details and how to use.
+
+![](./doc/merge-menus.jpg)
+
 ## Shared Decals and Models
 
 Shared decals and models mods contain mostly CFGs to use in your own buildings.
@@ -91,15 +103,6 @@ Non-starter 11 | <img src="./doc/icons/icon_fur.png" style="vertical-align: text
 
 *) Extra herb fertility on easy only with `ow-herbs-jakob`.
 `shared_herb_garden_kurila` has the same on all difficulty levels, but comes with fertility items.
-
-## Changes
-
-### 4.1
-
-- Split products, productions into individual mods
-- Added olive oil to olive related productions
-- Added fertilities to vegetables, olives and hemp including existing save fallback with buffs
-- Shortened ModIDs of `shared-ground-texture-industry-jakob` and `.. city-jakob` to `decals-industry-jakob` and `decals-city-jakob`.
 
 ## How to Build
 

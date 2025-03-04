@@ -1,0 +1,104 @@
+<ModOps>
+  <!-- # Merge Tourists into Scholars -->
+  <Group Condition="@25000035/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[8]">
+    <ModOp Type="addNextSibling" GUID="1010035">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011611</GUID>
+            <Name>Tourists and Scholars</Name>
+            <IconFilename>data/ui/jakob/icon_tourists_scholars.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <!-- move content: Toursits first -->
+    <ModOp Type="add" GUID="1500011611"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@132779/ConstructionCategory/BuildingList/Item">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011611"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@502107/ConstructionCategory/BuildingList/Item">
+    </ModOp>
+
+    <!-- remove Scholars, reposition Tourists at the end -->
+    <ModOp Type="addNextSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='502107']">
+      <Item>
+        <Category>1500011611</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='132779' or Category='502107']" />
+  </Group>
+
+  <!-- # Merge Workers into Farmers -->
+  <Group>
+    <ModOp Type="add" GUID="25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1000178']">
+      <CompactStreet />
+    </ModOp>
+    <ModOp Type="add" GUID="25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010035']">
+      <CompactStreet />
+    </ModOp>
+  </Group>
+
+  <Group Condition="@25000035/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[8]">
+    <ModOp Type="addNextSibling" GUID="1010035">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011612</GUID>
+            <Name>Farmers and Workers</Name>
+            <IconFilename>data/ui/jakob/icon_farmers_workers.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <!-- move content: Streets first first -->
+    <ModOp Type="add" GUID="1500011612"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000189/ConstructionCategory/BuildingList/Item[CompactStreet]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011612"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000190/ConstructionCategory/BuildingList/Item[CompactStreet]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011612"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000189/ConstructionCategory/BuildingList/Item[not(CompactStreet)]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011612"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000190/ConstructionCategory/BuildingList/Item[not(CompactStreet)]">
+    </ModOp>
+
+    <!-- remove old, insert new -->
+    <ModOp Type="addNextSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000190']">
+      <Item>
+        <Category>1500011612</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000189' or Category='25000190']" />
+  </Group>
+</ModOps>

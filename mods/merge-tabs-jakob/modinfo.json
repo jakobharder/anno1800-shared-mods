@@ -1,0 +1,15 @@
+{
+  "Version": "1.0.0",
+  "ModID": "merge-tabs-jakob",
+  "LoadAfterIds": [
+    "*"
+  ],
+  "Category": {
+    "English": "UI"
+  },
+  "ModName": {
+    "English": "Merge Tabs (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}
