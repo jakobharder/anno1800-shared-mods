@@ -8,6 +8,8 @@ This mod is meant to be used as a sub-mod in mods that add progression type cons
 
 `Compact Menus` and `Industrial Cities` for example include it.
 
+Merging is disabled when `spice_more_construction_tabs` is active.
+
 ## Tabs
 
 The mod merges tabs until there are only 7 left

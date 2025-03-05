@@ -1,8 +1,9 @@
 {
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "ModID": "merge-tabs-jakob",
   "LoadAfterIds": [
-    "*"
+    "*",
+    "jakob_compact_menus"
   ],
   "Category": {
     "English": "UI"
