@@ -38,9 +38,9 @@
             </Item>
           </Costs>
         </Cost>
-        <!-- <Factory7>
-          <NeededFertility>1500011342</NeededFertility>
-        </Factory7> -->
+        <Factory7>
+          <NeededFertility>0</NeededFertility>
+        </Factory7>
         <FactoryBase>
           <FactoryOutputs>
             <Item>
