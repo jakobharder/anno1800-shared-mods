@@ -1,0 +1,16 @@
+{
+  "out": "${annoMods}/neighbors-jakob",
+  "Version": "1.0.0",
+  "ModID": "neighbors-jakob",
+  "LoadAfterIds": [
+    "*"
+  ],
+  "Category": {
+    "English": "Shared"
+  },
+  "ModName": {
+    "English": "Auto Neighbors (Jakob)"
+  },
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno1800-shared-mods"
+}
