@@ -3,9 +3,22 @@ Simplify `<InfluencedByNeighbors>` compatibility with other mods.
 This mod allows you to add a single tag to your building.
 It scans the complete `assets.xml` and inserts the neighbors for you.
 
+```xml
+<Standard>
+  <!-- .. -->
+
+  <!-- react on residences beginning from this level -->
+  <AdjustToNeighbors>Farmer</AdjustToNeighbors>
+
+  <!-- define your level by height (not population) -->
+  <NeighborLevel>Engineer</NeighborLevel>
+</Standard>
+```
+
 You don't need to add buildings to your `InfluencedByNeighbors`, nor do you need to add your building to the engineer residence and others.
 
 Mods which added themselves manually to Engineers are compatible with this approach.
+
 
 ## Use
 

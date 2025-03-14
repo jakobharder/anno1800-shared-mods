@@ -94,7 +94,7 @@
         <AdjustToNeighbors>Farmer</AdjustToNeighbors>
       </ModOp>
     </Group>
-    <!-- <Group Condition="#lion053_downtown"> -->
+    <Group Condition="#lion053_downtown">
       <!-- <ModOp Type="add"
         Condition="/Values/Standard[not(NeighborLevel)]"
         Path="/Values/Standard"
@@ -110,7 +110,7 @@
       </ModOp> -->
       <!-- compatibility with tags is way too expensive -->
       <ModOp Type="add" GUID="1500011676"
-        Condition="!@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
+        Condition="@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
         Path="/Values/TerracedUp/InfluencedByNeighbors">
         <Item>
           <Building>2100116106</Building>
@@ -172,7 +172,7 @@
       </ModOp>
       <!-- exclude Pub, Firestation, Hospital from Engineers-->
       <ModOp Type="add" GUID="1500011676"
-        Condition="!@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
+        Condition="@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
         Path="/Values/EngineersUp/InfluencedByNeighbors">
         <Item>
           <Building>2100116106</Building>
@@ -211,7 +211,7 @@
           <Building>2100116127</Building>
         </Item>
       </ModOp>
-    <!-- </Group> -->
+    </Group>
   </Group>
 
   <!-- all residences copied from engineers -->

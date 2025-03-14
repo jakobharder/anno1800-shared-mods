@@ -6,6 +6,8 @@
     "lion053_downtown",
     "ow-commercial-jakob"
   ],
+  "ModDependencies": [
+  ],
   "LoadAfterIds": [
     "lion053_downtown",
     "ow-commercial-jakob",
