@@ -26,11 +26,11 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
+          <BaseMorale>0</BaseMorale>
           <ExpeditionAttributes>
             <Item>
               <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
+              <Amount>35</Amount>
             </Item>
           </ExpeditionAttributes>
           <FluffText>19796</FluffText>

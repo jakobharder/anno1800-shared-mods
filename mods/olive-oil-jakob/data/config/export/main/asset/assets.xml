@@ -24,6 +24,12 @@
         </Product>
         <ExpeditionAttribute>
           <BaseMorale>10</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>5</Amount>
+            </Item>
+          </ExpeditionAttributes>
         </ExpeditionAttribute>
       </Values>
     </Asset>

@@ -23,11 +23,11 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>30</BaseMorale>
+          <BaseMorale>25</BaseMorale>
           <ExpeditionAttributes>
             <Item>
               <Attribute>Medicine</Attribute>
-              <Amount>15</Amount>
+              <Amount>20</Amount>
             </Item>
           </ExpeditionAttributes>
         </ExpeditionAttribute>

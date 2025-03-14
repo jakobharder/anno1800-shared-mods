@@ -27,11 +27,11 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
+          <BaseMorale>0</BaseMorale>
           <ExpeditionAttributes>
             <Item>
               <Attribute>Diplomacy</Attribute>
-              <Amount>40</Amount>
+              <Amount>5</Amount>
             </Item>
           </ExpeditionAttributes>
           <FluffText>12862</FluffText>

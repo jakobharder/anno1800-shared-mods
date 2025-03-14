@@ -23,21 +23,8 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>30</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>10</Amount>
-            </Item>
-            <Item>
-              <Attribute>Faith</Attribute>
-              <Amount>10</Amount>
-            </Item>
-            <Item>
-              <Attribute>Medicine</Attribute>
-              <Amount>10</Amount>
-            </Item>
-          </ExpeditionAttributes>
+          <BaseMorale>15</BaseMorale>
+          <ExpeditionAttributes />
         </ExpeditionAttribute>
       </Values>
     </Asset>

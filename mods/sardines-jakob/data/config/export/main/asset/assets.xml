@@ -23,7 +23,7 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>40</BaseMorale>
+          <BaseMorale>30</BaseMorale>
         </ExpeditionAttribute>
       </Values>
     </Asset>

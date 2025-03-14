@@ -23,11 +23,11 @@
           </ProductionRegions>
         </Product>
         <ExpeditionAttribute>
-          <BaseMorale>40</BaseMorale>
+          <BaseMorale>10</BaseMorale>
           <ExpeditionAttributes>
             <Item>
               <Attribute>Crafting</Attribute>
-              <Amount>35</Amount>
+              <Amount>25</Amount>
             </Item>
             <Item>
               <Attribute>Melee</Attribute>
