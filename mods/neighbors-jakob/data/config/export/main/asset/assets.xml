@@ -1,5 +1,5 @@
 <ModOps>
-  <ModOp Type="addNextSibling" GUID="133557">
+  <ModOp Type="addNextSibling" GUID="1010346">
     <Asset>
       <Template>Text</Template>
       <Values>
@@ -10,64 +10,290 @@
         <FarmersUp>
           <InfluencedByNeighbors />
         </FarmersUp>
+        <TerracedUp>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1010346</Building>
+            </Item>
+            <Item>
+              <Building>1010347</Building>
+            </Item>
+            <Item>
+              <Building>601888</Building>
+            </Item>
+            <Item>
+              <Building>601889</Building>
+            </Item>
+            <Item>
+              <Building>601890</Building>
+            </Item>
+            <Item>
+              <Building>601882</Building>
+            </Item>
+            <Item>
+              <Building>601883</Building>
+            </Item>
+            <Item>
+              <Building>601884</Building>
+            </Item>
+            <Item>
+              <Building>601886</Building>
+            </Item>
+            <Item>
+              <Building>601891</Building>
+            </Item>
+          </InfluencedByNeighbors>
+        </TerracedUp>
         <EngineersUp>
-          <InfluencedByNeighbors />
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1010346</Building>
+            </Item>
+            <Item>
+              <Building>1010347</Building>
+            </Item>
+            <Item>
+              <Building>601888</Building>
+            </Item>
+            <Item>
+              <Building>601889</Building>
+            </Item>
+            <Item>
+              <Building>601890</Building>
+            </Item>
+            <Item>
+              <Building>601882</Building>
+            </Item>
+            <Item>
+              <Building>601883</Building>
+            </Item>
+            <Item>
+              <Building>601884</Building>
+            </Item>
+            <Item>
+              <Building>601886</Building>
+            </Item>
+            <Item>
+              <Building>601891</Building>
+            </Item>
+          </InfluencedByNeighbors>
         </EngineersUp>
+        <Standards />
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- compat -->
+  <Group>
+    <Group Condition="#jakob_terraced_houses">
+      <ModOp Type="add"
+        Condition="/Values/Standard[not(NeighborLevel)]"
+        Path="/Values/Standard"
+        GUID="1500010226">
+        <NeighborLevel>Engineer</NeighborLevel>
+        <AdjustToNeighbors>Farmer</AdjustToNeighbors>
+      </ModOp>
+    </Group>
+    <!-- <Group Condition="#lion053_downtown"> -->
+      <!-- <ModOp Type="add"
+        Condition="/Values/Standard[not(NeighborLevel)]"
+        Path="/Values/Standard"
+        GUID="2100116106,2100116112,2100116100,2100116109,2100116115,2100116111,2100116257,2100116159,2100116163,2100116167,2100116127,2100116156">
+        <NeighborLevel>Engineer</NeighborLevel>
+      </ModOp> -->
+      <!-- fire station, hospital, pub -->
+      <!-- <ModOp Type="add"
+        Condition="/Values/Standard[not(NeighborLevel)]"
+        Path="/Values/Standard"
+        GUID="2100116128,2100116149,2100116150,2100116141,2100116166">
+        <NeighborLevel>Terraced</NeighborLevel>
+      </ModOp> -->
+      <!-- compatibility with tags is way too expensive -->
+      <ModOp Type="add" GUID="1500011676"
+        Condition="!@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
+        Path="/Values/TerracedUp/InfluencedByNeighbors">
+        <Item>
+          <Building>2100116106</Building>
+        </Item>
+        <Item>
+          <Building>2100116112</Building>
+        </Item>
+        <Item>
+          <Building>2100116100</Building>
+        </Item>
+        <Item>
+          <Building>2100116109</Building>
+        </Item>
+        <Item>
+          <Building>2100116115</Building>
+        </Item>
+        <Item>
+          <Building>2100116111</Building>
+        </Item>
+        <Item>
+          <Building>2100116141</Building>
+        </Item>
+        <Item>
+          <Building>2100116257</Building>
+        </Item>
+        <Item>
+          <Building>2100116159</Building>
+        </Item>
+        <Item>
+          <Building>2100116163</Building>
+        </Item>
+        <Item>
+          <Building>2100116113</Building>
+        </Item>
+        <Item>
+          <Building>2100116114</Building>
+        </Item>
+        <Item>
+          <Building>2100116149</Building>
+        </Item>
+        <Item>
+          <Building>2100116150</Building>
+        </Item>
+        <Item>
+          <Building>2100116166</Building>
+        </Item>
+        <Item>
+          <Building>2100116167</Building>
+        </Item>
+        <Item>
+          <Building>2100116127</Building>
+        </Item>
+        <Item>
+          <Building>2100116128</Building>
+        </Item>
+        <Item>
+          <Building>2100116156</Building>
+        </Item>
+      </ModOp>
+      <!-- exclude Pub, Firestation, Hospital from Engineers-->
+      <ModOp Type="add" GUID="1500011676"
+        Condition="!@1010346/Building/InfluencedByNeighbors/Item[Building='2100116106']"
+        Path="/Values/EngineersUp/InfluencedByNeighbors">
+        <Item>
+          <Building>2100116106</Building>
+        </Item>
+        <Item>
+          <Building>2100116112</Building>
+        </Item>
+        <Item>
+          <Building>2100116100</Building>
+        </Item>
+        <Item>
+          <Building>2100116109</Building>
+        </Item>
+        <Item>
+          <Building>2100116115</Building>
+        </Item>
+        <Item>
+          <Building>2100116111</Building>
+        </Item>
+        <Item>
+          <Building>2100116257</Building>
+        </Item>
+        <Item>
+          <Building>2100116159</Building>
+        </Item>
+        <Item>
+          <Building>2100116163</Building>
+        </Item>
+        <Item>
+          <Building>2100116113</Building>
+        </Item>
+        <Item>
+          <Building>2100116114</Building>
+        </Item>
+        <Item>
+          <Building>2100116127</Building>
+        </Item>
+      </ModOp>
+    <!-- </Group> -->
+  </Group>
 
   <!-- all residences copied from engineers -->
   <ModOp Type="add" GUID="1500011676"
     Content="@1010346/Building/InfluencedByNeighbors/Item"
     Path="/Values/FarmersUp/InfluencedByNeighbors" />
 
-  <!-- same, but remove lower terraced (+lions pub) and non terraced buildings -->
-  <ModOp Type="add" GUID="1500011676"
-    Content="@1010346/Building/InfluencedByNeighbors/Item[not(Building='1010343') and not(Building='1010344') and not(Building='1010345') and not(Building='1500010200') and not(Building='1500010201') and not(Building='1500010225') and not(Building='2100116141')]"
-    Path="/Values/EngineersUp/InfluencedByNeighbors" />
+  <!-- copy down to terraced, remove farmers to workers -->
+  <!-- <ModOp Type="add" GUID="1500011676"
+    Content="~/Values/FarmersUp/InfluencedByNeighbors/Item[not(Building='1010343') and not(Building='1010344') and not(Building='1010345')]"
+    Path="/Values/TerracedUp/InfluencedByNeighbors" /> -->
 
-  <!-- compat -->
-  <Group>
-    <!-- terraced houses, only artisan level 2 -->
-    <!-- <ModOp Type="merge" GUID="1500010226" Condition="~" Path="/Values/Standard">
-      <Standard>
-        <InfluencedByEngineersUp />
-      </Standard>
-    </ModOp> -->
-  </Group>
+  <!-- copy down to engineers, remove low terraced and lions pub -->
+  <!-- <ModOp Type="add" GUID="1500011676"
+    Content="~/Values/TerracedUp/InfluencedByNeighbors/Item[not(Building='1500010200') and not(Building='1500010201') and not(Building='1500010225') and not(Building='2100116141')]"
+    Path="/Values/EngineersUp/InfluencedByNeighbors" /> -->
 
   <!-- collect neighbors -->
-  <ModOp Type="add" GUID="1500011676"
-    AllowNoMatch="1"
-    Content="//Standard[../Building/InfluencedByEngineersUp or ../Standard/InfluenceEngineersUp]/GUID/text()"
-    Path="/Values/EngineersUp/InfluencedByNeighbors">
-    <Item>
-      <Building><ModOpContent /></Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="1500011676"
-    AllowNoMatch="1"
-    Content="//Standard[../Building/InfluencedByFarmersUp or ../Standard/InfluenceFarmersUp or ../Building/InfluencedByEngineersUp or ../Standard/InfluenceEngineersUp]/GUID/text()"
-    Path="/Values/FarmersUp/InfluencedByNeighbors">
-    <Item>
-      <Building><ModOpContent /></Building>
-    </Item>
-  </ModOp>
+  <Group>
+    <!-- First collect all standards and copy them. That's faster than doing a search per level. -->
+    <ModOp Type="add" GUID="1500011676"
+      AllowNoMatch="1"
+      Content="//Standard[NeighborLevel]"
+      Path="/Values/Standards" />
+
+    <ModOp Type="add" GUID="1500011676"
+      Condition="~/Values/Standards/Standard[NeighborLevel='Engineer']"
+      Content="~/Values/Standards/Standard[NeighborLevel='Engineer']/GUID/text()"
+      Path="/Values/EngineersUp/InfluencedByNeighbors">
+      <Item>
+        <Building><ModOpContent /></Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1500011676"
+      Condition="~/Values/Standards/Standard[NeighborLevel='Terraced' or NeighborLevel='Engineer']"
+      Content="~/Values/Standards/Standard[NeighborLevel='Terraced' or NeighborLevel='Engineer']/GUID/text()"
+      Path="/Values/TerracedUp/InfluencedByNeighbors">
+      <Item>
+        <Building><ModOpContent /></Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1500011676"
+      Condition="~/Values/Standards/Standard[NeighborLevel='Farmer' or NeighborLevel='Terraced' or NeighborLevel='Engineer']"
+      Content="~/Values/Standards/Standard[NeighborLevel='Farmer' or NeighborLevel='Terraced' or NeighborLevel='Engineer']/GUID/text()"
+      Path="/Values/FarmersUp/InfluencedByNeighbors">
+      <Item>
+        <Building><ModOpContent /></Building>
+      </Item>
+    </ModOp>
+  </Group>
 
   <!-- add neighbors to all marked buildings -->
-  <ModOp Type="replace"
+  <ModOp Type="merge"
     AllowNoMatch="1"
     Content="@1500011676/EngineersUp/InfluencedByNeighbors"
-    Path="//InfluencedByEngineersUp" />
-  <ModOp Type="replace"
+    Path="//AdjustToNeighbors[text()='Engineer']/../..">
+    <Building>
+      <ModOpContent />
+    </Building>
+  </ModOp>
+  <ModOp Type="merge"
+    AllowNoMatch="1"
+    Content="@1500011676/TerracedUp/InfluencedByNeighbors"
+    Path="//AdjustToNeighbors[text()='Terraced']/../..">
+    <Building>
+      <ModOpContent />
+    </Building>
+  </ModOp>
+  <ModOp Type="merge"
     AllowNoMatch="1"
     Content="@1500011676/FarmersUp/InfluencedByNeighbors"
-    Path="//InfluencedByFarmersUp" />
+    Path="//AdjustToNeighbors[text()='Farmer']/../..">
+    <Building>
+      <ModOpContent />
+    </Building>
+  </ModOp>
 
   <!-- write back to engineers and investors -->
   <ModOp Type="replace"
     GUID="1010346,1010347"
     Content="@1500011676/FarmersUp/InfluencedByNeighbors"
     Path="/Values/Building/InfluencedByNeighbors" />
+
+  <ModOp Type="remove" GUID="1500011676" />
 </ModOps>

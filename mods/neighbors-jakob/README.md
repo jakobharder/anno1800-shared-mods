@@ -15,21 +15,30 @@ No `LoadAfterIds` is required.
 This mod loads as `*`.
 You can't use it if you do too.
 
-## Case 1 - Behave like Engineer residences
+## Adjust to Neighbors
 
-Add the tag `Building/InfluencedByFarmersUp` if you want your building to behave exactly like Engineer/Investor residences do.
-They adjust themselves to any type of residence.
+Add the tag `AdjustToNeighbors` if you want your building to behave like Engineer/Investor residences do.
 
 ```xml
-<Building>
+<Standard>
   <!-- .. -->
-  <InfluencedByFarmersUp />
-</Building>
+  <AdjustToNeighbors>Farmer</AdjustToNeighbors>
+</Standard>
 ```
+
+In most cases `Farmer` is what you want - that the vanilla game is doing.
+
+OW Levels | Adjust to the following buildings |
+---|---|
+Farmer | any residence
+Terraced | Engineers, Investors, Terraced Houses and up
+Engineer | Engineers, Investors, Terraced Artisans Level 2, 3x3 Malls
+
+*Note: NW behavior is not yet implemented*
 
 ### What it does
 
-`InfluencedByFarmersUp` is replaced by the same `InfluenceByNeighbors` that Engineers have.
+The mod adds `InfluenceByNeighbors` to your `Building` section.
 
 ```xml
 <Building>
@@ -52,45 +61,59 @@ They adjust themselves to any type of residence.
 
 Additionally, your GUID is added to `InfluencedByNeighbors` of all buildings that are listed for as Engineer neighbors.
 
-## Case 2 - Behave like Farmer residences
+## Influence Neighbors
 
-Add the tag `Standard/InfluenceFarmersUp` if you want your building to behave like Farmer/Worker/Artisan residences do.
-
-Your building does not adjust to neighbors, but expects neighbors adjust to them.
+Add the tag `NeighborLevel` if you want your building to influence neighbors like Engineer residences, similar to how Farmer to Artisan residences do.
 
 ```xml
 <Standard>
   <!-- .. -->
-  <InfluenceFarmersUp />
+  <NeighborLevel>Engineer</NeighborLevel>
 </Standard>
 ```
 
+See the level table above.
+
+Make sure to only add buildings that are as tall or taller than Engineers in the Engineer level!
+
 ### What it does
 
-Your GUID is added to `InfluenceByNeighbors` of all buildings that behave like Engineers/Investors.
+Your GUID is added to `InfluenceByNeighbors` of all buildings that adjust themselves to the wanted level.
 
-But `Building/InfluenceByNeighbors` won't be created for your building.
+## Examples
 
-## Case 3 - Adjust only to tall buildings
+### Mall
 
-This is a special case, if you want your buildings adjust to Engineer/Investor residences, but ignore Farmers to Artisans.
+The mall in City Variations behaves the same as Engineer residences.
+
+It is tall as Engineers or higher.
+And it adjusts to any residence.
 
 ```xml
-<Building>
+<Standard>
   <!-- .. -->
-  <InfluencedByEngineersUp />
-</Building>
+  <AdjustToNeighbors>Farmer</AdjustToNeighbors>
+  <NeighborLevel>Engineer</NeighborLevel>
+</Standard>
 ```
 
-The behavior is very similar to the Engineer residences from case 1, except lower buildings like Farmers, Workers, Artisans, Terraced Workers are excluded.
-They don't count as neighbor for your building.
+### Restaurant
 
-### Example use case
+The restaurant in City Variations is tall.
+Its height matches Engineers and Investors.
 
-The restaurant in City Variations is tall. Its height matches Engineers and Investors.
 The `end` and `single` pieces are smaller, fitting to Workers and Artisans.
+
 By ignoring lower residences as neighbors, the restaurant automatically switches to the lower `end` or `single` variant.
 
 - Two Engineer residence neighbors: tall `corner` or `mid` variant.
 - One Engineer residence neighbor: medium `end` variant
 - No residence / low residence neighbors: small `single` variant
+
+```xml
+<Standard>
+  <!-- .. -->
+  <AdjustToNeighbors>Engineer</AdjustToNeighbors>
+  <NeighborLevel>Engineer</NeighborLevel>
+</Standard>
+```

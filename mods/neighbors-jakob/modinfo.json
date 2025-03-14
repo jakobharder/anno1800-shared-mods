@@ -1,8 +1,14 @@
 {
   "out": "${annoMods}/neighbors-jakob",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "ModID": "neighbors-jakob",
+  "OptionalDependencies": [
+    "lion053_downtown",
+    "ow-commercial-jakob"
+  ],
   "LoadAfterIds": [
+    "lion053_downtown",
+    "ow-commercial-jakob",
     "*"
   ],
   "Category": {
