@@ -1,12 +1,24 @@
-Simplify `<InfluencedByNeighbors>` setup.
+Simplify `<InfluencedByNeighbors>` compatibility with other mods.
+
+This mod allows you to add a single tag to your building.
+It scans the complete `assets.xml` and inserts the neighbors for you.
 
 You don't need to add buildings to your `InfluencedByNeighbors`, nor do you need to add your building to the engineer residence and others.
 
-The mod will scan the complete `assets.xml` and insert the neighbors for you.
+Mods which added themselves manually to Engineers are compatible with this approach.
+
+## Use
+
+Just add the mod as a sub-mod.
+No `LoadAfterIds` is required.
+
+This mod loads as `*`.
+You can't use it if you do too.
 
 ## Case 1 - Behave like Engineer residences
 
-Same behavior as Engineer residences - your building adjusts itself to all other residences, and vice versa.
+Add the tag `Building/InfluencedByFarmersUp` if you want your building to behave exactly like Engineer/Investor residences do.
+They adjust themselves to any type of residence.
 
 ```xml
 <Building>
@@ -15,30 +27,53 @@ Same behavior as Engineer residences - your building adjusts itself to all other
 </Building>
 ```
 
-`<InfluencedByFarmersUp />` will be replaced by the same `<InfluenceByNeighbors>` that Engineers have.
+### What it does
 
-Additionally, your GUID will be added to `<InfluenceByNeighbors>` of all buildings that are listed for as Engineer neighbors.
+`InfluencedByFarmersUp` is replaced by the same `InfluenceByNeighbors` that Engineers have.
 
-Your loading order does not matter, this mod uses `*` to catch also mods loading after yours.
+```xml
+<Building>
+  <!-- .. -->
+  <InfluenceByNeighbors>
+    <Item>
+      <!-- Farmer -->
+      <Building>1010343</Building>
+    </Item>
+    <Item>
+      <!-- Worker -->
+      <Building>1010344</Building>
+    </Item>
+    <!-- .. -->
+    <!-- up to Investors, Skyscrapers -->
+    <!-- including other mod buildings -->
+  </InfluenceByNeighbors>
+</Building>
+```
+
+Additionally, your GUID is added to `InfluencedByNeighbors` of all buildings that are listed for as Engineer neighbors.
 
 ## Case 2 - Behave like Farmer residences
 
-Same behavior as Farmer residences - other buildings adjust themselves to your building.
+Add the tag `Standard/InfluenceFarmersUp` if you want your building to behave like Farmer/Worker/Artisan residences do.
+
+Your building does not adjust to neighbors, but expects neighbors adjust to them.
 
 ```xml
 <Standard>
   <!-- .. -->
-  <InfluencedByFarmersUp />
+  <InfluenceFarmersUp />
 </Standard>
 ```
 
-Your GUID will be added to `<InfluenceByNeighbors>` of all buildings that are listed for as Engineer neighbors.
+### What it does
 
-But `<Building><InfluenceByNeighbors>` won't be created for your building.
+Your GUID is added to `InfluenceByNeighbors` of all buildings that behave like Engineers/Investors.
+
+But `Building/InfluenceByNeighbors` won't be created for your building.
 
 ## Case 3 - Adjust only to tall buildings
 
-Adjust your building to Engineer residences, but ignore Farmers to Artisans.
+This is a special case, if you want your buildings adjust to Engineer/Investor residences, but ignore Farmers to Artisans.
 
 ```xml
 <Building>
@@ -47,5 +82,15 @@ Adjust your building to Engineer residences, but ignore Farmers to Artisans.
 </Building>
 ```
 
-Same as case 1, except lower buildings like Farmers, Workers, Artisans, Terraced Workers are excluded.
+The behavior is very similar to the Engineer residences from case 1, except lower buildings like Farmers, Workers, Artisans, Terraced Workers are excluded.
 They don't count as neighbor for your building.
+
+### Example use case
+
+The restaurant in City Variations is tall. Its height matches Engineers and Investors.
+The `end` and `single` pieces are smaller, fitting to Workers and Artisans.
+By ignoring lower residences as neighbors, the restaurant automatically switches to the lower `end` or `single` variant.
+
+- Two Engineer residence neighbors: tall `corner` or `mid` variant.
+- One Engineer residence neighbor: medium `end` variant
+- No residence / low residence neighbors: small `single` variant

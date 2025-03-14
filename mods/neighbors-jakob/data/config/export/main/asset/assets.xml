@@ -40,7 +40,7 @@
   <!-- collect neighbors -->
   <ModOp Type="add" GUID="1500011676"
     AllowNoMatch="1"
-    Content="//Standard[../Building/InfluencedByEngineersUp or ../Standard/InfluencedByEngineersUp]/GUID/text()"
+    Content="//Standard[../Building/InfluencedByEngineersUp or ../Standard/InfluenceEngineersUp]/GUID/text()"
     Path="/Values/EngineersUp/InfluencedByNeighbors">
     <Item>
       <Building><ModOpContent /></Building>
@@ -48,7 +48,7 @@
   </ModOp>
   <ModOp Type="add" GUID="1500011676"
     AllowNoMatch="1"
-    Content="//Standard[../Building/InfluencedByFarmersUp or ../Standard/InfluencedByFarmersUp or ../Building/InfluencedByEngineersUp or ../Standard/InfluencedByEngineersUp]/GUID/text()"
+    Content="//Standard[../Building/InfluencedByFarmersUp or ../Standard/InfluenceFarmersUp or ../Building/InfluencedByEngineersUp or ../Standard/InfluenceEngineersUp]/GUID/text()"
     Path="/Values/FarmersUp/InfluencedByNeighbors">
     <Item>
       <Building><ModOpContent /></Building>
