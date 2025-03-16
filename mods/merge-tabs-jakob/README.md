@@ -16,6 +16,7 @@ The mod merges tabs until there are only 7 left
 
 - Tourists + Scholars
 - Farmers + Workers
+- Engineers + Investors
 
 Generally, the order is just the one tab after the other.
 There are a few exceptions like streets that get pushed to the front to make the Farmer+Worker combination less awkward.

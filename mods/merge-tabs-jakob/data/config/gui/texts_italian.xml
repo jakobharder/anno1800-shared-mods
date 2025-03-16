@@ -2,11 +2,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011611</GUID>
-      <Text>Turisti / Studiosi</Text>
+      <Text>Turisti|Studiosi</Text>
     </Text>
     <Text>
       <GUID>1500011612</GUID>
-      <Text>Contadini / Lavoratori</Text>
+      <Text>Contadini|Lavoratori</Text>
+    </Text>
+    <Text>
+      <GUID>1500011679</GUID>
+      <Text>Ingegneri|Investitori</Text>
     </Text>
   </ModOp>
 </ModOps>

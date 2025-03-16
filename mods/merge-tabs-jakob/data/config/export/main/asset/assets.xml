@@ -103,4 +103,58 @@
         Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000189' or Category='25000190']" />
     </Group>
   </Group>
+
+  <!-- # Merge Investors into Engineers -->
+  <!-- <Group Condition="@25000035/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[8]"> -->
+    <ModOp Type="addNextSibling" GUID="25000192">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011679</GUID>
+            <Name>Engineers and Investors</Name>
+            <IconFilename>data/ui/jakob/icon_engineers_investors.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <!-- move content: Engineers, Investors, Engineer Skyscrapers, Investor Skyscrapers -->
+    <ModOp Type="add" GUID="1500011679"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000192/ConstructionCategory/BuildingList/Item[not(Investor)]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011679"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500447/ConstructionCategory/BuildingList/Item[Investor&lt;5000 or not(Investor) or Building='500021' or Building='137602']">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011679"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000192/ConstructionCategory/BuildingList/Item[Investor]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011679"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500447/ConstructionCategory/BuildingList/Item[Investor&gt;=5000 and not(Building='500021' or Building='137602')]">
+    </ModOp>
+
+    <!-- remove duplicates -->
+    <ModOp Type="remove" GUID="1500011679"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
+
+    <!-- remove old, insert new -->
+    <ModOp Type="addNextSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='500447']">
+      <Item>
+        <Category>1500011679</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000192' or Category='500447']" />
+  <!-- </Group> -->
 </ModOps>

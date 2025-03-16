@@ -2,11 +2,15 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011611</GUID>
-      <Text>游客 / 学者</Text>
+      <Text>游客 | 学者</Text>
     </Text>
     <Text>
       <GUID>1500011612</GUID>
-      <Text>农夫 / 工人</Text>
+      <Text>农夫 | 工人</Text>
+    </Text>
+    <Text>
+      <GUID>1500011679</GUID>
+      <Text>工程师 | 投资人</Text>
     </Text>
   </ModOp>
 </ModOps>
