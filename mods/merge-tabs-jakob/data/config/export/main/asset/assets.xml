@@ -31,6 +31,10 @@
         Content="@502107/ConstructionCategory/BuildingList/Item">
       </ModOp>
 
+      <!-- remove duplicates -->
+      <ModOp Type="remove" GUID="1500011612"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
+
       <!-- remove Scholars, reposition Tourists at the end -->
       <ModOp Type="addNextSibling" GUID="25000035"
         Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='502107']">
@@ -92,6 +96,10 @@
         Content="@25000190/ConstructionCategory/BuildingList/Item[not(CompactStreet)]">
       </ModOp>
 
+      <!-- remove duplicates -->
+      <ModOp Type="remove" GUID="1500011612"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
+
       <!-- remove old, insert new -->
       <ModOp Type="addNextSibling" GUID="25000035"
         Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000190']">
@@ -105,7 +113,7 @@
   </Group>
 
   <!-- # Merge Investors into Engineers -->
-  <!-- <Group Condition="@25000035/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[8]"> -->
+  <Group Condition="@25000035/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[8]">
     <ModOp Type="addNextSibling" GUID="25000192">
       <Asset>
         <Template>ConstructionCategory</Template>
@@ -156,5 +164,5 @@
     </ModOp>
     <ModOp Type="remove" GUID="25000035"
       Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/Tier/Categories/Item[Category='25000192' or Category='500447']" />
-  <!-- </Group> -->
+  </Group>
 </ModOps>

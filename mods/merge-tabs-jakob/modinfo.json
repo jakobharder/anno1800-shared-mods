@@ -1,9 +1,13 @@
 {
-  "Version": "1.0.1",
+  "Version": "1.1.0",
   "ModID": "merge-tabs-jakob",
+  "ModDependencies": [
+    "shared-pools-and-definitions"
+  ],
   "LoadAfterIds": [
     "*",
-    "jakob_compact_menus"
+    "jakob_compact_menus",
+    "shared-pools-and-definitions"
   ],
   "Category": {
     "English": "UI"
