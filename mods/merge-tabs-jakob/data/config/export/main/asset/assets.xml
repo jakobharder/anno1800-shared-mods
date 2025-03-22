@@ -32,7 +32,8 @@
       </ModOp>
 
       <!-- remove duplicates -->
-      <ModOp Type="remove" GUID="1500011612"
+      <ModOp Type="remove" GUID="1500011611"
+        Condition="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]"
         Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
 
       <!-- remove Scholars, reposition Tourists at the end -->
@@ -98,6 +99,7 @@
 
       <!-- remove duplicates -->
       <ModOp Type="remove" GUID="1500011612"
+        Condition="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]"
         Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
 
       <!-- remove old, insert new -->
@@ -153,6 +155,7 @@
 
     <!-- remove duplicates -->
     <ModOp Type="remove" GUID="1500011679"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building = preceding-sibling::Item/Building]" />
 
     <!-- remove old, insert new -->
