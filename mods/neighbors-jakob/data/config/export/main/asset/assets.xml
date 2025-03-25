@@ -78,6 +78,19 @@
             </Item>
           </InfluencedByNeighbors>
         </EngineersUp>
+        <JornalerosUp>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>101254</Building>
+            </Item>
+            <Item>
+              <Building>101255</Building>
+            </Item>
+            <Item>
+              <Building>5405</Building>
+            </Item>
+          </InfluencedByNeighbors>
+        </JornalerosUp>
         <Standards />
       </Values>
     </Asset>
@@ -261,33 +274,55 @@
         <Building><ModOpContent /></Building>
       </Item>
     </ModOp>
+
+    <!-- New World -->
+    <ModOp Type="add" GUID="1500011676"
+      Condition="~/Values/Standards/Standard[NeighborLevel='Jornalero']"
+      Content="~/Values/Standards/Standard[NeighborLevel='Jornalero']/GUID/text()"
+      Path="/Values/JornalerosUp/InfluencedByNeighbors">
+      <Item>
+        <Building><ModOpContent /></Building>
+      </Item>
+    </ModOp>
   </Group>
 
   <!-- add neighbors to all marked buildings -->
-  <ModOp Type="merge"
-    AllowNoMatch="1"
-    Content="@1500011676/EngineersUp/InfluencedByNeighbors"
-    Path="//AdjustToNeighbors[text()='Engineer']/../..">
-    <Building>
-      <ModOpContent />
-    </Building>
-  </ModOp>
-  <ModOp Type="merge"
-    AllowNoMatch="1"
-    Content="@1500011676/TerracedUp/InfluencedByNeighbors"
-    Path="//AdjustToNeighbors[text()='Terraced']/../..">
-    <Building>
-      <ModOpContent />
-    </Building>
-  </ModOp>
-  <ModOp Type="merge"
-    AllowNoMatch="1"
-    Content="@1500011676/FarmersUp/InfluencedByNeighbors"
-    Path="//AdjustToNeighbors[text()='Farmer']/../..">
-    <Building>
-      <ModOpContent />
-    </Building>
-  </ModOp>
+  <Group>
+    <ModOp Type="merge"
+      AllowNoMatch="1"
+      Content="@1500011676/EngineersUp/InfluencedByNeighbors"
+      Path="//AdjustToNeighbors[text()='Engineer']/../..">
+      <Building>
+        <ModOpContent />
+      </Building>
+    </ModOp>
+    <ModOp Type="merge"
+      AllowNoMatch="1"
+      Content="@1500011676/TerracedUp/InfluencedByNeighbors"
+      Path="//AdjustToNeighbors[text()='Terraced']/../..">
+      <Building>
+        <ModOpContent />
+      </Building>
+    </ModOp>
+    <ModOp Type="merge"
+      AllowNoMatch="1"
+      Content="@1500011676/FarmersUp/InfluencedByNeighbors"
+      Path="//AdjustToNeighbors[text()='Farmer']/../..">
+      <Building>
+        <ModOpContent />
+      </Building>
+    </ModOp>
+
+    <!-- New World -->
+    <ModOp Type="merge"
+      AllowNoMatch="1"
+      Content="@1500011676/JornalerosUp/InfluencedByNeighbors"
+      Path="//AdjustToNeighbors[text()='Jornalero']/../..">
+      <Building>
+        <ModOpContent />
+      </Building>
+    </ModOp>
+  </Group>
 
   <!-- write back to engineers and investors -->
   <ModOp Type="replace"

@@ -41,13 +41,12 @@ Add the tag `AdjustToNeighbors` if you want your building to behave like Enginee
 
 In most cases `Farmer` is what you want - that the vanilla game is doing.
 
-OW Levels | Adjust to the following buildings |
+Levels | Adjust to the following buildings |
 ---|---|
-Farmer | any residence
+Farmer | any OW residence
 Terraced | Engineers, Investors, Terraced Houses and up
 Engineer | Engineers, Investors, Terraced Artisans Level 2, 3x3 Malls
-
-*Note: NW behavior is not yet implemented*
+Jornalero | any NW residence
 
 ### What it does
 

@@ -1,6 +1,6 @@
 {
   "out": "${annoMods}/neighbors-jakob",
-  "Version": "1.0.1",
+  "Version": "1.1.0",
   "ModID": "neighbors-jakob",
   "OptionalDependencies": [
     "lion053_downtown",
