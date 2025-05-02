@@ -8,7 +8,7 @@
   <!-- # Milk Farm -->
   <ModOp Type="addNextSibling" GUID="190011">
     <Asset>
-      <BaseAssetGUID>1010263</BaseAssetGUID>
+      <Template>FarmBuilding</Template>
       <Values>
         <Standard>
           <GUID>1500010104</GUID>
@@ -16,6 +16,8 @@
           <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
         </Standard>
         <Building>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <BuildingCategoryName>1500011514</BuildingCategoryName>
         </Building>
@@ -38,7 +40,51 @@
             </Item>
           </Variations>
         </Object>
+        <Selection>
+          <OnSelection />
+          <ParticipantMessageArcheType>Resident_tier01_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
         <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>214800</Sound>
+            </Item>
+            <Item>
+              <Sound>206307</Sound>
+            </Item>
+          </ActiveSounds>
+          <ConstructionSounds>
+            <BuildMoveSuccess>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>FarmBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+                <Sound>214783</Sound>
+              </Item>
+            </BuildMoveSuccess>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <MaterialType>Wood</MaterialType>
+        </SoundEmitter>
+        <Factory7>
+          <IsAgriculture>0</IsAgriculture>
+        </Factory7>
         <FactoryBase>
           <FactoryOutputs>
             <Item>
@@ -56,18 +102,18 @@
               <Limit>4</Limit>
             </Main>
           </ModuleLimits>
-          <FertilizerModuleData>
-            <Module>0</Module>
-          </FertilizerModuleData>
-          <!-- <ConstructionOptions>
+          <ConstructionOptions>
             <Item>
-              <ModuleGUID>1500011588</ModuleGUID>
+              <ModuleGUID>1010271</ModuleGUID>
             </Item>
           </ConstructionOptions>
           <AdditionalModule>269957</AdditionalModule>
           <ModuleBuildRadius>7</ModuleBuildRadius>
-          <FarmType>AnimalFarm</FarmType> -->
+          <FarmType>AnimalFarm</FarmType>
         </ModuleOwner>
+        <AmbientMoodProvider>
+          <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
+        </AmbientMoodProvider>
         <Maintenance>
           <Maintenances>
             <Item>
@@ -81,6 +127,52 @@
             </Item>
           </Maintenances>
         </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>1500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <IncidentInfectable>
+          <Infectable>
+            <Illness>
+              <Escalated>0</Escalated>
+            </Illness>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Pausable />
+        <Culture>
+          <CultureType>Military</CultureType>
+        </Culture>
+        <QuestObject />
+        <Industrializable>
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Motorizable>
+          <MotorizableType>Silo</MotorizableType>
+        </Motorizable>
+        <EcoSystemProvider />
+        <MonoCulture />
       </Values>
     </Asset>
     <Asset>
