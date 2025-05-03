@@ -55,16 +55,6 @@ Production mods contain production buildings in one region and sometimes a chain
 <img src="./doc/icons/icon_herbs.png" style="vertical-align: text-bottom;18px" width="18" /> | Herbs | 5383 | vanilla | `ow-herbs-jakob`<br/>(`shared_herb_garden_kurila`)<br>*compatible, differ in fertility*
 <img src="./mods/tea-jakob/data/ui/jakob/icon_tea.png" style="vertical-align: text-bottom;18px" width="18" /> | Tea | 1500010847 | `tea-jakob` | (`ow-tea-jakob`) | 900 <img src="./doc/icons/icon_artisan.png" style="vertical-align: text-bottom;18px" width="18" />
 
-## Merge Progression Tier Tabs
-
-Automatically merge progression tier tabs when you run out of space.
-
-Use `merge-tabs-jakob.zip`.
-
-See [Merge Tabs README](./mods/merge-tabs-jakob/README.md) for details and how to use.
-
-![](./doc/merge-menus.jpg)
-
 ## Shared Decals and Models
 
 Shared decals and models mods contain mostly CFGs to use in your own buildings.
