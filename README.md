@@ -3,7 +3,6 @@
 Shared mods from Jakob's Collection.
 
 - [Products and Productions](#products-and-productions)
-- [Merge Progression Tier Tabs](#merge-progression-tier-tabs)
 - [Shared Decals and Models](#shared-decals-and-models)
 
 ## Include in your Mod
