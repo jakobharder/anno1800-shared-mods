@@ -30,5 +30,21 @@
       <Text>Production (Jakob)</Text>
       <IndustrialCities />
     </Text>
+    <Text>
+      <GUID>1555000699</GUID>
+      <Text>Flax Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000700</GUID>
+      <Text>These sprouts can help you grow a few fields of Flax in alien soil.</Text>
+    </Text>
+    <Text>
+      <GUID>1555000701</GUID>
+      <Text>Quality Flax Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000702</GUID>
+      <Text>Hybrid Flax Seeds</Text>
+    </Text>
   </ModOp>
 </ModOps>

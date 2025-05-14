@@ -18,5 +18,21 @@
       <Text>Production (Jakob)</Text>
       <IndustrialCities />
     </Text>
+    <Text>
+      <GUID>1555000703</GUID>
+      <Text>Herb Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000704</GUID>
+      <Text>These sprouts can help you grow a few fields of Herbs in alien soil.</Text>
+    </Text>
+    <Text>
+      <GUID>1555000705</GUID>
+      <Text>Quality Herb Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000706</GUID>
+      <Text>Hybrid Herb Seeds</Text>
+    </Text>
   </ModOp>
 </ModOps>

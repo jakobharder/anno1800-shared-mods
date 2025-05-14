@@ -34,5 +34,21 @@
       <Text>Production (Jakob)</Text>
       <IndustrialCities />
     </Text>
+    <Text>
+      <GUID>1555000703</GUID>
+      <Text>Olive Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000704</GUID>
+      <Text>These sprouts can help you grow a few fields of Olive in alien soil.</Text>
+    </Text>
+    <Text>
+      <GUID>1555000705</GUID>
+      <Text>Quality Olive Seeds</Text>
+    </Text>
+    <Text>
+      <GUID>1555000706</GUID>
+      <Text>Hybrid Olive Seeds</Text>
+    </Text>
   </ModOp>
 </ModOps>

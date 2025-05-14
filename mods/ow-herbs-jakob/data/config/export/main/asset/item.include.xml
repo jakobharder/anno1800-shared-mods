@@ -1,0 +1,222 @@
+<ModOps>
+<!-- START FERTILITY -->
+  <!-- Herb -->
+  <ModOp Type="addNextSibling" GUID='11703'>
+  <!-- Uncommon -->
+    <Asset>
+      <Template>GuildhouseItem</Template>
+      <Values>
+        <Standard>
+          <GUID>1555000703</GUID>
+          <Name>Uncommon Herb Seeds</Name>
+          <IconFilename>data/ui/jakob/icon_fertility_herbs.png</IconFilename>
+          <InfoDescription>1555000704</InfoDescription>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Herb Seeds</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>20272</LineID>
+        </Text>
+        <Item>
+          <MaxStackSize>1</MaxStackSize>
+          <Rarity>Uncommon</Rarity>
+          <TradePrice>24000</TradePrice>
+        </Item>
+        <FactoryUpgrade>
+          <ProductivityUpgrade>
+            <Value>-15</Value>
+            <Percental>1</Percental>
+          </ProductivityUpgrade>
+          <AddedFertility>6250</AddedFertility>
+        </FactoryUpgrade>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010848</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <ItemAction/>
+        <ExpeditionAttribute>
+          <ItemDifficulties>Easy;Average</ItemDifficulties>
+        </ExpeditionAttribute>
+        <CultureUpgrade/>
+        <BuildingUpgrade/>
+        <ModuleOwnerUpgrade/>
+        <IncidentInfluencerUpgrade/>
+        <IncidentInfectableUpgrade/>
+        <ResidenceUpgrade/>
+        <PopulationUpgrade/>
+        <IndustrializableUpgrade/>
+        <Locked/>
+        <Buff/>
+        <CraftableItem/>
+        <HeaterUpgrade/>
+        <PowerplantUpgrade/>
+        <IrrigationUpgrade/>
+        <EcoSystemProviderUpgrade/>
+      </Values>
+    </Asset>
+  <!-- Rare -->
+    <Asset>
+      <Template>GuildhouseItem</Template>
+      <Values>
+        <Standard>
+          <GUID>1555000705</GUID>
+          <Name>Rare Herb Seeds</Name>
+          <IconFilename>data/ui/jakob/icon_fertility_herbs.png</IconFilename>
+          <InfoDescription>1555000704</InfoDescription>
+          <!--item fluff Bell Pepper Seeds-->
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Quality Herb Seeds</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>20273</LineID>
+        </Text>
+        <Item>
+          <MaxStackSize>1</MaxStackSize>
+          <Rarity>Rare</Rarity>
+          <TradePrice>80000</TradePrice>
+        </Item>
+        <FactoryUpgrade>
+          <AddedFertility>6250</AddedFertility>
+        </FactoryUpgrade>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010848</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <ItemAction/>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+          <ItemDifficulties>Easy;Average</ItemDifficulties>
+        </ExpeditionAttribute>
+        <CultureUpgrade/>
+        <BuildingUpgrade/>
+        <ModuleOwnerUpgrade/>
+        <IncidentInfluencerUpgrade/>
+        <IncidentInfectableUpgrade/>
+        <ResidenceUpgrade/>
+        <PopulationUpgrade/>
+        <IndustrializableUpgrade/>
+        <Locked/>
+        <Buff/>
+        <CraftableItem/>
+        <HeaterUpgrade/>
+        <PowerplantUpgrade/>
+        <IrrigationUpgrade/>
+        <EcoSystemProviderUpgrade/>
+      </Values>
+    </Asset>
+  <!-- Epic -->
+    <Asset>
+      <Template>GuildhouseItem</Template>
+      <Values>
+        <Standard>
+          <GUID>1555000706</GUID>
+          <Name>Epic Herb Seeds</Name>
+          <IconFilename>data/ui/jakob/icon_fertility_herbs.png</IconFilename>
+          <InfoDescription>1555000704</InfoDescription>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Hybrid Herb Seeds</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>20274</LineID>
+        </Text>
+        <Item>
+          <MaxStackSize>1</MaxStackSize>
+          <Rarity>Epic</Rarity>
+          <TradePrice>235000</TradePrice>
+        </Item>
+        <FactoryUpgrade>
+          <ProductivityUpgrade>
+            <Value>25</Value>
+            <Percental>1</Percental>
+          </ProductivityUpgrade>
+          <AddedFertility>6250</AddedFertility>
+        </FactoryUpgrade>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010848</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <ItemAction/>
+        <ExpeditionAttribute>
+          <BaseMorale>15</BaseMorale>
+          <ItemDifficulties>Average;Hard</ItemDifficulties>
+        </ExpeditionAttribute>
+        <CultureUpgrade/>
+        <BuildingUpgrade/>
+        <ModuleOwnerUpgrade/>
+        <IncidentInfluencerUpgrade/>
+        <IncidentInfectableUpgrade/>
+        <ResidenceUpgrade/>
+        <PopulationUpgrade/>
+        <IndustrializableUpgrade/>
+        <Locked/>
+        <Buff/>
+        <CraftableItem/>
+        <HeaterUpgrade/>
+        <PowerplantUpgrade/>
+        <IrrigationUpgrade/>
+        <EcoSystemProviderUpgrade/>
+      </Values>
+    </Asset>
+  </ModOp>
+
+<!-- Specific Items -->
+<!-- Uncommon -->
+<ModOp Type="add" GUID="192688,191233,191281" Path="/Values/RewardPool/ItemsPool">
+  <Item>
+    <ItemLink>1555000699</ItemLink>
+  </Item>
+</ModOp>
+
+<!-- Rare -->
+<ModOp Type="add" GUID="192689,191240,191283" Path="/Values/RewardPool/ItemsPool">
+  <Item>
+    <ItemLink>1555000701</ItemLink>
+  </Item>
+</ModOp>
+
+<!-- Epic -->
+<ModOp Type="add" GUID="192690,191247" Path="/Values/RewardPool/ItemsPool">
+  <Item>
+    <ItemLink>1555000702</ItemLink>
+  </Item>
+</ModOp>
+
+<!-- Worker Uncommon and rare seeds unlock -->
+<ModOp Type="add" GUID="130166" Path="/Values/AssetPool/AssetList">
+  <Item>
+    <Asset>1555000699</Asset>
+  </Item>
+  <Item>
+    <Asset>1555000701</Asset>
+  </Item>
+</ModOp>
+
+<!-- Artisan Epic seeds unlock -->
+<ModOp Type="add" GUID="130172" Path="/Values/AssetPool/AssetList">
+  <Item>
+    <Asset>1555000702</Asset>
+  </Item>
+</ModOp>
+
+</ModOps>

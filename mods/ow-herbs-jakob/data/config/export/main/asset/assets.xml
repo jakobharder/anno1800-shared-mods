@@ -1,6 +1,7 @@
 <ModOps>
   <Include File="./productlists.include.xml" />
   <Include File="./fertility.include.xml" />
+  <Include File="./item.include.xml" />
 
   <Group Condition="!#shared_herb_garden_kurila">
     <ModOp Type="add" GUID="5383"
