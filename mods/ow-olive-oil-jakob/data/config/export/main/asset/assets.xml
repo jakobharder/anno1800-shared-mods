@@ -2,6 +2,7 @@
   <Include File="./unlocks.include.xml" />
   <Include File="./productlists.include.xml" />
   <Include File="./fertility.include.xml" />
+  <Include File="./item.include.xml" />
 
   <!-- # Agriculture: Olives -->
   <Group>
